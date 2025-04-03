@@ -1,0 +1,65 @@
+{
+    "_comment": "This is a custom board configuration for the ESP32-S3 WROOM-1 N8R2 module with 8MB flash and 2MB PSRAM and must be placed at <user>/.platformio/platforms/espressif32/boards",
+    "build": {
+        "arduino": {
+            "ldscript": "esp32s3_out.ld",
+            "partition": "default_8MB.csv",
+            "memory_type": "qio_qspi",
+            "psram": {
+                "size": "2MB",
+                "type": "psram"
+            }
+        },
+        "core": "esp32",
+        "extra_flags": [
+            "-DARDUINO_ESP32S3_DEV",
+            "-DARDUINO_RUNNING_CORE=1",
+            "-DARDUINO_EVENT_RUNNING_CORE=1",
+            "-DARDUINO_USB_MODE=1",
+            "-DARDUINO_USB_CDC_ON_BOOT=0",
+            "-DARDUINO_HAS_PSRAM"
+        ],
+        "f_cpu": "240000000L",
+        "f_flash": "80000000L",
+        "flash_mode": "qio",
+        "flash_size": "8MB",
+        "psram": "2MB",
+        "psram_type": "qio",
+        "hwids": [
+            [
+                "0x303A",
+                "0x1001"
+            ]
+        ],
+        "mcu": "esp32s3",
+        "variant": "esp32s3"
+    },
+    "connectivity": [
+        "wifi",
+        "bluetooth"
+    ],
+    "debug": {
+        "default_tool": "esp-builtin",
+        "onboard_tools": [
+            "esp-builtin"
+        ],
+        "openocd_target": "esp32s3.cfg"
+    },
+    "frameworks": [
+        "arduino",
+        "espidf"
+    ],
+    "name": "ESP32-S3 WROOM-1 N8R2 Custom",
+    "upload": {
+        "flash_size": "8MB",
+        "maximum_ram_size": 327680,
+        "maximum_size": 8388608,
+        "require_erase_all": true,
+        "use_1200bps_touch": true,
+        "wait_for_upload_port": true,
+        "require_upload_port": true,
+        "speed": 921600
+    },
+    "url": "https://www.espressif.com/en/products/modules/esp32-s3-wroom-1",
+    "vendor": "Espressif"
+}
