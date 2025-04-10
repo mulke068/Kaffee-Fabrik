@@ -1,5 +1,5 @@
+#include <MotorDriver.h>
 
-#include <MotorDrivers.h>
 
 Motor::Motor(uint8_t enablePin, uint8_t in1, uint8_t in2)
 {
@@ -8,9 +8,9 @@ Motor::Motor(uint8_t enablePin, uint8_t in1, uint8_t in2)
     _in2Pin = in2;
 }
 
-Motor::~Motor(){
-    return; 
-}
+// Motor::~Motor(){
+//     return;
+// }
 
 void Motor::begin()
 {
@@ -19,6 +19,7 @@ void Motor::begin()
     pinMode(_in2Pin, OUTPUT);
     stop();
 }
+
 
 void Motor::setDirection(MotorDirection dir)
 {
@@ -66,12 +67,12 @@ bool Motor::isActive()
     return _isRunning;
 }
 
-int Motor::getSpeed() 
+int Motor::getSpeed()
 {
     return map(_currentSpeed, 0, 255, 0, 100);
 }
 
-MotorDirection Motor::getDirection() 
+MotorDirection Motor::getDirection()
 {
     return _direction;
 }

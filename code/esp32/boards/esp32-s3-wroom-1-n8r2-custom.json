@@ -10,7 +10,6 @@
                 "type": "psram"
             }
         },
-        "core": "esp32",
         "extra_flags": [
             "-DARDUINO_ESP32S3_DEV",
             "-DARDUINO_RUNNING_CORE=1",
@@ -31,8 +30,9 @@
                 "0x1001"
             ]
         ],
+        "variant": "esp32s3",
         "mcu": "esp32s3",
-        "variant": "esp32s3"
+        "core": "esp32"
     },
     "connectivity": [
         "wifi",
