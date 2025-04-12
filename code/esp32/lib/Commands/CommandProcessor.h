@@ -6,6 +6,10 @@
 #include "LedController.h"
 #include "SensorController.h"
 #include "Config.h"
+// #include <esp_heap_caps.h>
+// #include <Arduino.h>
+// #include <freertos/FreeRTOS.h>
+// #include <freertos/task.h>
 
 
 class CommandProcessor
@@ -20,6 +24,7 @@ public:
 
     void printHelp();
     void printStatus();
+    void printSystemMonitor();
 
 private:
     Motor *_motor1;

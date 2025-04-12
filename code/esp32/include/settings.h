@@ -5,7 +5,7 @@
 #define SETTINGS_H
 
 
-#include <Arduino.h>
+#include <Arduino.h> // TODO: remove this dependency
 
 #define SDA_PIN 17
 #define SCL_PIN 18

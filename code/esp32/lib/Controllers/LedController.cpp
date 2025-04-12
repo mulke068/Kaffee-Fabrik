@@ -26,7 +26,11 @@ void LedController::begin()
   Wire.write(0b00000000);
   Wire.endTransmission();
 
-  setLeds(0b00000000, 0b00000000);
+  setLeds(0b00000000, 0b00000000);  
+  pinMode(led17, OUTPUT);
+  pinMode(led18, OUTPUT);
+  digitalWrite(led17, HIGH);
+  digitalWrite(led18, HIGH);
   Serial.println("PCA9555 initialized");
 }
 
@@ -97,22 +101,22 @@ void LedController::runLedPattern(int patternNum)
 /**
  * @brief Turn on all LEDs
  **/
-void LedController::allOn()
+void LedController::setAllOn()
 {
   setLeds(0xFF, 0xFF);
-  digitalWrite(led17, HIGH);
-  digitalWrite(led18, HIGH);
+  digitalWrite(led17, LOW);
+  digitalWrite(led18, LOW);
   Serial.println("All LEDs on");
 }
 
 /**
  * @brief  Turn off all LEDs
  **/
-void LedController::allOff()
+void LedController::setAllOff()
 {
   setLeds(0b00000000, 0b00000000);
-  digitalWrite(led17, LOW);
-  digitalWrite(led18, LOW);
+  digitalWrite(led17, HIGH);
+  digitalWrite(led18, HIGH);
   Serial.println("All LEDs off");
 }
 
@@ -130,9 +134,19 @@ void LedController::toggleLed(int ledNum)
     setLeds(_port0State, _port1State);
     Serial.println("LED " + String(ledNum) + " toggled");
   }
-  else if (ledNum == led17 || ledNum == led18)
+  else if (ledNum == 17 || ledNum == 18)
   {
-    digitalWrite(ledNum, !digitalRead(ledNum));
+    Serial.println("LED " + String(ledNum) + " toggled");
+    switch (ledNum) 
+    {
+      case 17:
+        ledNum = led17;
+        break;
+      case 18:
+        ledNum = led18;
+        break;
+    }
+    digitalWrite(ledNum, digitalRead(ledNum) == HIGH ? LOW : HIGH);
   }
   else
   {
@@ -159,14 +173,23 @@ void LedController::setLed(int ledNum, bool state)
     }
     else
     {
-      *portState &= ledmask;
+      *portState &= ~ledmask;
       Serial.println("LED " + String(ledNum) + " turned OFF");
     }
     setLeds(_port0State, _port1State);
   }
-  else if (ledNum == led17 || ledNum == led18)
+  else if (ledNum == 17 || ledNum == 18)
   {
-    digitalWrite(ledNum, state);
+    switch (ledNum) 
+    {
+      case 17:
+        ledNum = led17;
+        break;
+      case 18:
+        ledNum = led18;
+        break;
+    }
+    digitalWrite(ledNum, state ? LOW : HIGH);
     Serial.println("LED " + String(ledNum) + " turned " + (state ? "ON" : "OFF"));
   }
   else

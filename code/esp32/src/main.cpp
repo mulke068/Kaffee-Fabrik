@@ -1,4 +1,5 @@
-#include <Arduino.h>
+// #include <Arduino.h>
+#include <Wire.h>
 #include "MotorDriver.h"
 #include "SensorController.h"
 #include "LedController.h"
@@ -11,9 +12,10 @@
 #define ESP_STOP_SWITCH
 #define BOARD_HAS_PSRAM
 
-Motor motor1(PWMA_1, AIN1_1, AIN2_1);
+// Motor 1 & 3 Pins are reversed on the PCB
+Motor motor1(PWMA_1, AIN2_1, AIN1_1);
 Motor motor2(PWMB_1, BIN1_1, BIN2_1);
-Motor motor3(PWMA_2, AIN1_2, AIN2_2);
+Motor motor3(PWMA_2, AIN2_2, AIN1_2);
 Motor motor4(PWMB_2, BIN1_2, BIN2_2);
 
 Config config;
@@ -45,10 +47,6 @@ void setup()
 
   // Userbutton and ESP Lights
   pinMode(BUTTON_PIN, INPUT_PULLUP);
-  pinMode(led17, OUTPUT);
-  pinMode(led18, OUTPUT);
-  digitalWrite(led17, HIGH);
-  digitalWrite(led18, HIGH);
 
 #ifdef ESP_STOP_SWITCH
   pinMode(config.stopPin1, INPUT);
@@ -56,7 +54,9 @@ void setup()
 #endif
 
 #if defined(BOARD_HAS_PSRAM)
-  if (psramFound())
+  delay(1000);
+
+  if (esp_spiram_is_initialized())
   {
     Serial.println("PSRAM is initialized");
   }
@@ -72,18 +72,18 @@ void setup()
   Serial.println("Type 'HELP' for available commands");
   commandProcessor.printHelp();
 
-
   taskManager.begin(&sensorController, &ledController, &config, &commandProcessor);
 
-// #ifdef ESP_WIFI_MQTT
-//   setupWiFi();
+  // #ifdef ESP_WIFI_MQTT
+  //   setupWiFi();
 
-//   setupMQTT();
+  //   setupMQTT();
 
-//   xTaskCreate(MQTTTask, "MQTTTask", 4096, NULL, 1, NULL);
-// #endif
+  //   xTaskCreate(MQTTTask, "MQTTTask", 4096, NULL, 1, NULL);
+  // #endif
 }
 
-void loop() {
+void loop()
+{
   vTaskDelete(NULL);
 }

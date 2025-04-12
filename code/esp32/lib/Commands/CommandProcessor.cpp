@@ -43,7 +43,7 @@ void CommandProcessor::processCommand(const String &command)
   int count = 0;
   int lastIndex = 0;
 
-  for (int i = 0; i < cmd.length() && count < 4; i++)
+  for (int i = 0; i < cmd.length() && count < 3; i++)
   {
     if (cmd[i] == ':')
     {
@@ -56,44 +56,46 @@ void CommandProcessor::processCommand(const String &command)
     parts[count++] = cmd.substring(lastIndex);
   }
 
-#ifdef ESP_WIFI_MQTT
+  // #ifdef ESP_WIFI_MQTT
 
-  if (parts[0] == "WIFI")
+  //   if (parts[0] == "WIFI")
+  //   {
+  //     processWiFiCommand(cmd);
+  //     return;
+  //   }
+  //   if (parts[0] == "MQTT")
+  //   {
+  //     processMQTTCommand(cmd);
+  //     return;
+  //   }
+  // #endif
+
+  if (parts[0] == "M1" || parts[0] == "M2" || parts[0] == "M3" || parts[0] == "M4")
   {
-    processWiFiCommand(cmd);
+    parts[2] = count < 3 ? "" : parts[2];
+    processMotorCommand(parts[0], parts[1], parts[2]);
     return;
   }
-  if (parts[0] == "MQTT")
+  else if (parts[0] == "LED")
   {
-    processMQTTCommand(cmd);
+    processLedCommand(parts[1], parts[2]);
     return;
   }
-#endif
+  else if (parts[0] == "SENSOR")
+  {
+    parts[3] = count < 4 ? "" : parts[3];
+    processSensorCommand(parts[1], parts[2], parts[3]);
+    return;
+  }
+
 #ifdef ESP_STOP_SWITCH
-  if (parts[0] == "STOP")
+  else if (parts[0] == "STOP")
   {
     processStopSwitchCommand(parts[1], parts[2]);
   }
 #endif
 
-  if (parts[0] == "M1" || parts[0] == "M2" || parts[0] == "M3" || parts[0] == "M4")
-  {
-    parts[2] = count < 2 ? parts[2] : "";
-    processMotorCommand(parts[0], parts[1], parts[2]);
-  }
-
-  if (parts[0] == "LED")
-  {
-    processLedCommand(parts[1], parts[2]);
-  }
-
-  if (parts[0] == "SENSOR")
-  {
-    parts[3] = count < 3 ? parts[3] : ""; // Wenn keine value vorhanden sende lehrer string und nicht nichts
-    processSensorCommand(parts[1], parts[2], parts[3]);
-  }
-
-  if (cmd == "STOP" || cmd == "ALERT")
+  else if (cmd == "STOP" || cmd == "ALERT")
   {
     _motor1->stop();
     _motor2->stop();
@@ -102,21 +104,54 @@ void CommandProcessor::processCommand(const String &command)
 
     _ledCtrl->setLeds(0b00000000, 0b00000000);
     Serial.println("ALERT STOP: All motors stopped, all LEDs off");
+    return;
   }
-
-  if (cmd == "STATUS")
+  else if (cmd == "STATUS")
   {
     printStatus();
+    return;
   }
-
-  if (cmd == "HELP")
+  // else if (cmd == "MONITOR")
+  // {
+  //   printSystemMonitor();
+  //   return;
+  // }
+  else if (cmd == "CLEAR")
+  {
+    Serial.println("\033[2J\033[H"); // Clear the console
+    return;
+  }
+  else if (cmd == "HELP")
   {
     printHelp();
+    return;
   }
-
-  Serial.println("Unknown command: " + cmd);
-  Serial.println("Type HELP for available commands");
+  else if (cmd == "SAVE")
+  {
+    _cfg->saveSettings();
+    Serial.println("Settings saved");
+    return;
+  }
+  else if (cmd == "REBOOT")
+  {
+    ESP.restart();
+    return;
+  }
+  else
+  {
+    Serial.println("Unknown command: " + cmd);
+    Serial.println("Type HELP for available commands");
+  }
 }
+
+/*
+                ____  _             ____          _   _      _           _____ _   _
+               / ___|| |_ ___  _ __/ ___|_      _| |_(_) ___| |__       |  ___| \ | |
+               \___ \| __/ _ \| '_ \___ \ \ /\ / / __| |/ __| '_ \ _____| |_  |  \| |
+                ___) | || (_) | |_) |__) \ V  V /| |_| | (__| | | |_____|  _| | |\  |
+               |____/ \__\___/| .__/____/ \_/\_/  \__|_|\___|_| |_|     |_|   |_| \_|
+                              |_|
+*/
 
 #ifdef ESP_STOP_SWITCH
 void CommandProcessor::processStopSwitchCommand(const String &action, const String &value)
@@ -124,14 +159,12 @@ void CommandProcessor::processStopSwitchCommand(const String &action, const Stri
   if (action == "PIN1")
   {
     _cfg->stopPin1 = value.toInt();
-    _cfg->saveSettings();
     Serial.println("Stop switch pin 1 set to " + String(_cfg->stopPin1));
     return;
   }
   else if (action == "PIN2")
   {
     _cfg->stopPin2 = value.toInt();
-    _cfg->saveSettings();
     Serial.println("Stop switch pin 2 set to " + String(_cfg->stopPin2));
     return;
   }
@@ -146,6 +179,14 @@ void CommandProcessor::processStopSwitchCommand(const String &action, const Stri
   }
 }
 #endif
+
+/*
+                      __  __       _                  _____ _   _
+                     |  \/  | ___ | |_ ___  _ __     |  ___| \ | |
+                     | |\/| |/ _ \| __/ _ \| '__|____| |_  |  \| |
+                     | |  | | (_) | || (_) | | |_____|  _| | |\  |
+                     |_|  |_|\___/ \__\___/|_|       |_|   |_| \_|
+*/
 
 void CommandProcessor::processMotorCommand(const String &motor, const String &action, const String &value)
 {
@@ -171,27 +212,27 @@ void CommandProcessor::processMotorCommand(const String &motor, const String &ac
   {
     if (action == "RL" || action == "FWD")
     {
-      targetMotor->setDirection(FORWARD);
+      targetMotor->updateDirection(FORWARD);
       if (value.length() > 0)
       {
-        targetMotor->setSpeed(value.toInt());
+        targetMotor->updateSpeed(value.toInt());
       }
       Serial.println(String(motor) + " set FORWARD at speed " + String(value.length() > 0 ? value.toInt() : targetMotor->getSpeed()) + "%");
       return;
     }
     else if (action == "LL" || action == "REV" || action == "BWD")
     {
-      targetMotor->setDirection(BACKWARD);
+      targetMotor->updateDirection(BACKWARD);
       if (value.length() > 0)
       {
-        targetMotor->setSpeed(value.toInt());
-        Serial.println(String(motor) + " set BACKWARD at speed " + String(value) + "%");
-        return;
+        targetMotor->updateSpeed(value.toInt());
       }
+      Serial.println(String(motor) + " set BACKWARD at speed " + String(value.length() > 0 ? value.toInt() : targetMotor->getSpeed()) + "%");
+      return;
     }
     else if (action == "STOP")
     {
-      targetMotor->setDirection(STOP);
+      targetMotor->updateDirection(STOP);
       Serial.println(String(motor) + " stopped");
       return;
     }
@@ -199,7 +240,7 @@ void CommandProcessor::processMotorCommand(const String &motor, const String &ac
     {
       if (value.length() > 0)
       {
-        targetMotor->setSpeed(value.toInt());
+        targetMotor->updateSpeed(value.toInt());
         Serial.println(String(motor) + " speed set to " + String(value) + "%");
         return;
       }
@@ -211,23 +252,8 @@ void CommandProcessor::processMotorCommand(const String &motor, const String &ac
     }
     else if (action == "STATUS")
     {
-      String dirStr = "Unknown";
-      switch (targetMotor->getDirection())
-      {
-      case FORWARD:
-        dirStr = "FORWARD";
-        break;
-      case BACKWARD:
-        dirStr = "BACKWARD";
-        break;
-      case STOP:
-        dirStr = "STOPPED";
-        break;
-      default:
-        dirStr = "Unknown";
-        break;
-      }
-      Serial.println(String(motor) + " status: Direction=" + dirStr + ", Speed=" + String(targetMotor->getSpeed()) + "%");
+      Serial.println(String(motor) + ":");
+      targetMotor->printStatus();
       return;
     }
     else
@@ -238,19 +264,27 @@ void CommandProcessor::processMotorCommand(const String &motor, const String &ac
   }
 }
 
+/*
+                            _             _       _____ _   _
+                           | |    ___  __| |     |  ___| \ | |
+                           | |   / _ \/ _` |_____| |_  |  \| |
+                           | |__|  __/ (_| |_____|  _| | |\  |
+                           |_____\___|\__,_|     |_|   |_| \_|
+*/
+
 void CommandProcessor::processLedCommand(const String &ledIndex, const String &action)
 {
   if (ledIndex == "ALL")
   {
     if (action == "ON")
     {
-      _ledCtrl->setLeds(0xFF, 0xFF);
+      _ledCtrl->setAllOn();
       Serial.println("All LEDs turned ON");
       return;
     }
     else if (action == "OFF")
     {
-      _ledCtrl->setLeds(0b00000000, 0b00000000);
+      _ledCtrl->setAllOff();
       Serial.println("All LEDs turned OFF");
       return;
     }
@@ -281,6 +315,14 @@ void CommandProcessor::processLedCommand(const String &ledIndex, const String &a
   }
 }
 
+/*
+                       ____                                 _____ _   _
+                      / ___|  ___ _ __  ___  ___  _ __     |  ___| \ | |
+                      \___ \ / _ \ '_ \/ __|/ _ \| '__|____| |_  |  \| |
+                       ___) |  __/ | | \__ \ (_) | | |_____|  _| | |\  |
+                      |____/ \___|_| |_|___/\___/|_|       |_|   |_| \_|
+*/
+
 void CommandProcessor::processSensorCommand(const String &action, const String &sensor, const String &value)
 {
   if (action == "READ")
@@ -307,18 +349,13 @@ void CommandProcessor::processSensorCommand(const String &action, const String &
     if (sensor == "ON")
     {
       _cfg->sensorConsolePrintingEnabled = true;
-      if (value.length() > 0)
-      {
-        _cfg->sensorConsolePrintingInterval = value.toInt() * 1000;
-      }
-      _cfg->saveSettings();
+      _cfg->sensorConsolePrintingInterval = value.toInt() * 1000;
       Serial.println("Auto sensor readings enabled every " + String(_cfg->sensorConsolePrintingInterval / 1000) + " seconds");
       return;
     }
     else if (sensor == "OFF")
     {
       _cfg->sensorConsolePrintingEnabled = false;
-      _cfg->saveSettings();
       Serial.println("Auto sensor readings disabled");
       return;
     }
@@ -538,7 +575,6 @@ void CommandProcessor::processSensorCommand(const String &action, const String &
 void CommandProcessor::printStatus()
 {
   Serial.println("\n===== System Status =====");
-
   Serial.println("MOTORS:");
   for (int i = 1; i <= 4; i++)
   {
@@ -584,13 +620,8 @@ void CommandProcessor::printStatus()
   Serial.println("  Port 0: 0b" + String(_ledCtrl->getPort0State(), BIN));
   Serial.println("  Port 1: 0b" + String(_ledCtrl->getPort1State(), BIN));
 
-  Serial.println("\n===== Sensor Status =====");
-  Serial.println(" Temperature Sensors");
+  // Serial.println("\n===== Sensor Status =====");
   _sensorCtrl->readTMP102();
-  Serial.println("  Motor Driver: " + String(_sensorCtrl->getMotorDriverAlert() ? "ALERT" : "Normal"));
-  Serial.println("  Power Unit: " + String(_sensorCtrl->getPowerUnitAlert() ? "ALERT" : "Normal"));
-
-  Serial.println(" Power Sensor");
   _sensorCtrl->readINA219();
 
   Serial.println("\n===== Sensor Configuration =====");
@@ -598,7 +629,8 @@ void CommandProcessor::printStatus()
   if (_cfg->sensorConsolePrintingEnabled)
     Serial.println("  Interval: " + String(_cfg->sensorConsolePrintingInterval / 1000) + " seconds");
   Serial.println("SENSOR UPDATE: " + String(_cfg->sensorUpdateEnabled ? "Enabled" : "Disabled"));
-  Serial.println("  Interval: " + String(_cfg->sensorUpdateInterval / 1000) + " seconds");
+  if (_cfg->sensorUpdateEnabled)
+    Serial.println("  Interval: " + String(_cfg->sensorUpdateInterval / 1000) + " seconds");
 
 #ifdef ESP_STOP_SWITCH
   Serial.println("\n===== Stop Switch Status =====");
@@ -626,6 +658,52 @@ void CommandProcessor::printStatus()
 
 #endif
 }
+/*
+                                   ____       _       _        _____
+                                  |  _ \ _ __(_)_ __ | |_     |  ___| __
+                                  | |_) | '__| | '_ \| __|____| |_ | '_ \
+                                  |  __/| |  | | | | | ||_____|  _|| | | |
+                                  |_|   |_|  |_|_| |_|\__|    |_|  |_| |_|
+
+
+*/
+
+// NOT MY CODE!
+// void CommandProcessor::printSystemMonitor()
+// {
+//   // Get free heap size (RAM usage)
+//   size_t freeHeap = xPortGetFreeHeapSize();
+//   size_t minFreeHeap = xPortGetMinimumEverFreeHeapSize();
+
+//   // Print RAM usage
+//   Serial.println("=== System Monitor ===");
+//   Serial.print("Free Heap: ");
+//   Serial.print(freeHeap);
+//   Serial.println(" bytes");
+//   Serial.print("Minimum Free Heap: ");
+//   Serial.print(minFreeHeap);
+//   Serial.println(" bytes");
+
+//   // Optional: Print task-level CPU usage
+//   const UBaseType_t taskCount = uxTaskGetNumberOfTasks();
+//   TaskStatus_t *taskStatusArray = (TaskStatus_t *)pvPortMalloc(taskCount * sizeof(TaskStatus_t));
+//   if (taskStatusArray != NULL)
+//   {
+//     UBaseType_t totalRunTime;
+//     UBaseType_t tasks = uxTaskGetSystemState(taskStatusArray, taskCount, &totalRunTime);
+
+//     Serial.println("Task Name\t\tCPU Time\t\tState");
+//     for (UBaseType_t i = 0; i < tasks; i++)
+//     {
+//       Serial.print(taskStatusArray[i].pcTaskName);
+//       Serial.print("\t\t");
+//       Serial.print(taskStatusArray[i].ulRunTimeCounter);
+//       Serial.print("\t\t");
+//       Serial.println(taskStatusArray[i].eCurrentState);
+//     }
+//     vPortFree(taskStatusArray);
+//   }
+// }
 
 void CommandProcessor::printHelp()
 {

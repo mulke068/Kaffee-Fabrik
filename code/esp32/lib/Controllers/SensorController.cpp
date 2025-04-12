@@ -107,13 +107,13 @@ void SensorController::readTMP102()
     Serial.print("Motor Driver Temp: ");
     Serial.print(_motorDriverTemp);
     Serial.print("°C (Alert: ");
-    Serial.print(getMotorDriverAlert() ? "No" : "YES");
+    Serial.print(getMotorDriverAlert() ? "Yes" : "NO");
     Serial.println(")");
 
     Serial.print("Power Unit Temp:   ");
     Serial.print(_powerUnitTemp);
     Serial.print("°C (Alert: ");
-    Serial.print(getPowerUnitAlert() ? "No" : "YES");
+    Serial.print(getPowerUnitAlert() ? "YES" : "NO");
     Serial.println(")");
 }
 

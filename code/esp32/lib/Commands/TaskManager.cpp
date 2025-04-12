@@ -37,7 +37,7 @@ void TaskManager::createCommandTask()
       "CommandTask",
       4096,
       this,
-      2,
+      1,
       &_commandTaskHandle);
 }
 
@@ -48,7 +48,7 @@ void TaskManager::createMotorTask()
       "MotorTask",
       2048,
       this,
-      1,
+      2,
       &_motorTaskHandle);
 }
 

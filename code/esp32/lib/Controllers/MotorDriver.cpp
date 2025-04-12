@@ -1,16 +1,27 @@
 #include <MotorDriver.h>
 
-
 Motor::Motor(uint8_t enablePin, uint8_t in1, uint8_t in2)
 {
     _enPin = enablePin;
     _in1Pin = in1;
     _in2Pin = in2;
+
+    _currentSpeed = 0;
+    _targetSpeed = 0;
+    _direction = STOP;
+
+    _pendingDirectionChange = false;
+    _pendingDirection = STOP;
+    _orginalTargetSpeed = 0;
+
+    _rampStep = 5;
+    _isRunning = false;
 }
 
-// Motor::~Motor(){
-//     return;
-// }
+Motor::~Motor()
+{
+    // Destructor implementation (if needed)
+}
 
 void Motor::begin()
 {
@@ -20,25 +31,46 @@ void Motor::begin()
     stop();
 }
 
-
-void Motor::setDirection(MotorDirection dir)
+void Motor::updateDirection(MotorDirection dir)
 {
     if (_direction != dir)
     {
-        _direction = dir;
-        updateSpeed();
-        updatePins();
+        if (_currentSpeed > 0) {
+            Serial.println("Motor direction change requested, current speed: " + String(_currentSpeed) + ", target speed: " + String(_targetSpeed));
+            _pendingDirectionChange = true;
+            _pendingDirection = dir;
+            _orginalTargetSpeed = _targetSpeed;
+            updateSpeed(0, false);
+        } else {
+            _direction = dir;
+            setDirection();
+            Serial.println("Motor direction changed to " + String(_pendingDirection));
+        }
+        return;
     }
 }
 
-void Motor::setSpeed(int speed, bool immediate)
+void Motor::updateSpeed(int speed, bool immediate)
 {
     speed = constrain(map(speed, 0, 100, 0, 255), 0, 255);
-    _targetSpeed = speed;
     if (immediate)
     {
-        _currentSpeed = _targetSpeed;
-        updateSpeed();
+        _targetSpeed = speed;
+        _currentSpeed = speed;
+        setSpeed();
+        return;
+    }
+    else if (_pendingDirectionChange)
+    {
+        _targetSpeed = 0;
+        _orginalTargetSpeed = speed;
+        Serial.println("Motor pending direction change, speed set to " + String(_orginalTargetSpeed) + " (target: " + String(_targetSpeed) + ")");
+        return;
+    }
+    else
+    {
+        _targetSpeed = speed;
+        Serial.println("Motor speed set to " + String(_targetSpeed) + " (target: " + String(_targetSpeed) + ")");
     }
 }
 
@@ -52,14 +84,64 @@ void Motor::update()
             step = abs(_targetSpeed - _currentSpeed);
         }
         _currentSpeed += (_targetSpeed > _currentSpeed) ? step : -step;
-        updateSpeed();
+        setSpeed();
+    }
+
+    if (_pendingDirectionChange && _currentSpeed <= 5) {
+
+        _currentSpeed = 0;
+        setSpeed();
+
+        vTaskDelay(pdMS_TO_TICKS(50));
+
+        _direction = _pendingDirection;
+        setDirection();
+
+        _pendingDirectionChange = false;
+        _targetSpeed = _orginalTargetSpeed;
+
+        Serial.println("Direction change completed to " + String(_direction == FORWARD ? "FORWARD" :
+            (_direction == BACKWARD ? "BACKWARD" : "STOP")) +
+            ", resuming to speed: " + String(map(_targetSpeed, 0, 255, 0, 100)) + "%");
     }
 }
 
 void Motor::stop()
 {
-    setDirection(STOP);
-    setSpeed(0, true);
+    updateDirection(STOP);
+    updateSpeed(0, true);
+    return;
+}
+
+void Motor::setDirection()
+{
+    Serial.println("Setting physical direction to: " + String(_direction == FORWARD ? "FORWARD" :
+        (_direction == BACKWARD ? "BACKWARD" : "STOP")));
+    switch (_direction)
+    {
+    case FORWARD:
+        digitalWrite(_in1Pin, HIGH);
+        digitalWrite(_in2Pin, LOW);
+        Serial.println("Setting pins: IN1=HIGH, IN2=LOW");
+        break;
+    case BACKWARD:
+        digitalWrite(_in1Pin, LOW);
+        digitalWrite(_in2Pin, HIGH);
+        Serial.println("Setting pins: IN1=LOW, IN2=HIGH");
+        break;
+    default:
+        digitalWrite(_in1Pin, LOW);
+        digitalWrite(_in2Pin, LOW);
+        Serial.println("Setting pins: IN1=LOW, IN2=LOW");
+    }
+    _isRunning = (_direction != STOP);
+    return;
+}
+
+void Motor::setSpeed()
+{
+    analogWrite(_enPin, _currentSpeed);
+    return;
 }
 
 bool Motor::isActive()
@@ -77,26 +159,25 @@ MotorDirection Motor::getDirection()
     return _direction;
 }
 
-void Motor::updatePins()
+void Motor::printStatus()
 {
-    switch (_direction)
+    String dirStr = "Unknown";
+    switch (getDirection())
     {
     case FORWARD:
-        digitalWrite(_in1Pin, HIGH);
-        digitalWrite(_in2Pin, LOW);
+        dirStr = "FORWARD";
         break;
     case BACKWARD:
-        digitalWrite(_in1Pin, LOW);
-        digitalWrite(_in2Pin, HIGH);
+        dirStr = "BACKWARD";
+        break;
+    case STOP:
+        dirStr = "STOPPED";
         break;
     default:
-        digitalWrite(_in1Pin, LOW);
-        digitalWrite(_in2Pin, LOW);
+        dirStr = "Unknown";
+        break;
     }
-    _isRunning = (_direction != STOP);
-}
-
-void Motor::updateSpeed()
-{
-    analogWrite(_enPin, _currentSpeed);
+    int speedPercent = map(_currentSpeed, 0, 255, 0, 100);
+    Serial.println("Motor status: Direction=" + dirStr + ", Speed=" + String(speedPercent) + "%");
+    return;
 }
