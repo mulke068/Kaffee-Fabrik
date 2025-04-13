@@ -9,7 +9,6 @@ LedController::LedController()
 LedController::~LedController()
 {
   // Destructor implementation (if needed)
-  
 }
 
 /**
@@ -17,21 +16,21 @@ LedController::~LedController()
  **/
 void LedController::begin()
 {
-  Wire.beginTransmission(PCA9555_ADDR);
+  Wire.beginTransmission(SensorAdress::PCA9555);
   Wire.write(0b00000110);
   Wire.write(0b00000000);
   Wire.endTransmission();
-  Wire.beginTransmission(PCA9555_ADDR);
+  Wire.beginTransmission(SensorAdress::PCA9555);
   Wire.write(0b00000111);
   Wire.write(0b00000000);
   Wire.endTransmission();
 
-  setLeds(0b00000000, 0b00000000);  
-  pinMode(led17, OUTPUT);
-  pinMode(led18, OUTPUT);
-  digitalWrite(led17, HIGH);
-  digitalWrite(led18, HIGH);
-  Serial.println("PCA9555 initialized");
+  setLeds(0b00000000, 0b00000000);
+  pinMode(LedAdress::led17, OUTPUT);
+  pinMode(LedAdress::led18, OUTPUT);
+  digitalWrite(LedAdress::led17, HIGH);
+  digitalWrite(LedAdress::led18, HIGH);
+  Serial.write("PCA9555 initialized\n");
 }
 
 /**
@@ -44,12 +43,12 @@ void LedController::setLeds(byte newPort0State, byte newPort1State)
   _port0State = newPort0State;
   _port1State = newPort1State;
 
-  Wire.beginTransmission(PCA9555_ADDR);
+  Wire.beginTransmission(SensorAdress::PCA9555);
   Wire.write(0b00000010);
   Wire.write(~_port0State);
   Wire.endTransmission();
 
-  Wire.beginTransmission(PCA9555_ADDR);
+  Wire.beginTransmission(SensorAdress::PCA9555);
   Wire.write(0b00000011);
   Wire.write(~_port1State);
   Wire.endTransmission();
@@ -64,11 +63,11 @@ void LedController::runLedPattern(int patternNum)
   switch (patternNum)
   {
   case 1: // Same Color ON OFF Pattern
-    setLeds(led1 | led4, led10 | led7);
+    setLeds(LedAdress::led1 | LedAdress::led4, LedAdress::led10 | LedAdress::led7);
     vTaskDelay(pdMS_TO_TICKS(1000));
-    setLeds(led2 | led5, led11 | led8);
+    setLeds(LedAdress::led2 | LedAdress::led5, LedAdress::led11 | LedAdress::led8);
     vTaskDelay(pdMS_TO_TICKS(1000));
-    setLeds(led3 | led6, led9 | led12);
+    setLeds(LedAdress::led3 | LedAdress::led6, LedAdress::led12 | LedAdress::led9);
     vTaskDelay(pdMS_TO_TICKS(1000));
     setLeds(0b00000000, 0b00000000);
     break;
@@ -104,9 +103,9 @@ void LedController::runLedPattern(int patternNum)
 void LedController::setAllOn()
 {
   setLeds(0xFF, 0xFF);
-  digitalWrite(led17, LOW);
-  digitalWrite(led18, LOW);
-  Serial.println("All LEDs on");
+  digitalWrite(LedAdress::led17, LOW);
+  digitalWrite(LedAdress::led18, LOW);
+  Serial.write("All LEDs on\n");
 }
 
 /**
@@ -115,9 +114,9 @@ void LedController::setAllOn()
 void LedController::setAllOff()
 {
   setLeds(0b00000000, 0b00000000);
-  digitalWrite(led17, HIGH);
-  digitalWrite(led18, HIGH);
-  Serial.println("All LEDs off");
+  digitalWrite(LedAdress::led17, HIGH);
+  digitalWrite(LedAdress::led18, HIGH);
+  Serial.write("All LEDs off\n");
 }
 
 /**
@@ -132,25 +131,31 @@ void LedController::toggleLed(int ledNum)
   {
     *portState ^= ledmask;
     setLeds(_port0State, _port1State);
-    Serial.println("LED " + String(ledNum) + " toggled");
+    Serial.print("LED ");
+    Serial.print(ledNum);
+    Serial.print(" toggled to ");
+    Serial.println((*portState & ledmask) ? "ON" : "OFF");
   }
   else if (ledNum == 17 || ledNum == 18)
   {
-    Serial.println("LED " + String(ledNum) + " toggled");
-    switch (ledNum) 
+    Serial.print("LED ");
+    Serial.print(ledNum);
+    Serial.print(" toggled to ");
+    Serial.println(digitalRead(ledNum) == HIGH ? "OFF" : "ON");
+    switch (ledNum)
     {
-      case 17:
-        ledNum = led17;
-        break;
-      case 18:
-        ledNum = led18;
-        break;
+    case 17:
+      ledNum = LedAdress::led17;
+      break;
+    case 18:
+      ledNum = LedAdress::led18;
+      break;
     }
     digitalWrite(ledNum, digitalRead(ledNum) == HIGH ? LOW : HIGH);
   }
   else
   {
-    Serial.println("Invalid LED number. Must be between 1 and 12, or 17 or 18.");
+    Serial.write("Invalid LED number. Must be between 1 and 12, or 17 or 18.\n");
     return;
   }
 }
@@ -169,43 +174,50 @@ void LedController::setLed(int ledNum, bool state)
     if (state)
     {
       *portState |= ledmask;
-      Serial.println("LED " + String(ledNum) + " turned ON");
+      Serial.print("LED ");
+      Serial.print(ledNum);
+      Serial.print(" turned ON\n");
     }
     else
     {
       *portState &= ~ledmask;
-      Serial.println("LED " + String(ledNum) + " turned OFF");
+      Serial.print("LED ");
+      Serial.print(ledNum);
+      Serial.print(" turned OFF\n");
     }
     setLeds(_port0State, _port1State);
   }
   else if (ledNum == 17 || ledNum == 18)
   {
-    switch (ledNum) 
+    switch (ledNum)
     {
-      case 17:
-        ledNum = led17;
-        break;
-      case 18:
-        ledNum = led18;
-        break;
+    case 17:
+      ledNum = LedAdress::led17;
+      break;
+    case 18:
+      ledNum = LedAdress::led18;
+      break;
     }
     digitalWrite(ledNum, state ? LOW : HIGH);
-    Serial.println("LED " + String(ledNum) + " turned " + (state ? "ON" : "OFF"));
+    Serial.print("LED ");
+    Serial.print(ledNum);
+    Serial.print(" turned ");
+    Serial.println(state ? "ON" : "OFF");
   }
   else
   {
-    Serial.println("Invalid LED number. Must be between 1 and 12, or 17 or 18.");
+    Serial.write("Invalid LED number. Must be between 1 and 12, or 17 or 18.\n");
     return;
   }
 }
 
 /**
-  * @brief  Get the LED mask and port state for a specific LED number
-  * @param ledNum  LED number (1-12, 17, or 18)
-  * @param ledmask  Reference to store the LED mask
-  * @param portState  Reference to store the port state pointer
-  * @return true if valid LED number, false otherwise
-  **/
+ * @brief  Get the LED mask and port state for a specific LED number
+ * @param ledNum  LED number (1-12, 17, or 18)
+ * @param ledmask  Reference to store the LED mask
+ * @param portState  Reference to store the port state pointer
+ * @return true if valid LED number, false otherwise
+ **/
 bool LedController::getLedMaskAndPort(int ledNum, byte &ledmask, byte *&portState)
 {
   // ledNum is 1-12, state is true or false but also 18 and 17 are valid ledNum

@@ -1,7 +1,6 @@
 
 // #ifdef ESP_WIFI_MQTT
 
-
 // void setupWiFi()
 // {
 //   Serial.print("Connecting to WiFi");
@@ -37,7 +36,6 @@
 //   }
 // }
 
-
 // float readTMP102Temperature(uint8_t address)
 // {
 //   Wire.beginTransmission(address);
@@ -63,8 +61,6 @@
 //     return "BACKWARD";
 //   return "STOPPED";
 // }
-
-
 
 // void printNetworkSettings()
 // {

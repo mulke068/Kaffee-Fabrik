@@ -11,7 +11,7 @@ SensorController::SensorController()
   _power_mW = 0.0;
   _motorDriverTemp = 0.0;
   _powerUnitTemp = 0.0;
-  _ina219 = Adafruit_INA219(INA219_ADDR);
+  _ina219 = Adafruit_INA219(SensorAdress::INA219);
 }
 
 SensorController::~SensorController()
@@ -24,52 +24,52 @@ void SensorController::begin()
 {
   initINA219();
   initTMP102();
-  Serial.println("SensorController initialized");
+  Serial.write("SensorController initialized\n");
 }
 
 void SensorController::initINA219()
 {
   if (!_ina219.begin())
   {
-    Serial.println("Failed to find INA219 chip");
+    Serial.write("Failed to find INA219 chip\n");
   }
   else
   {
-    Serial.println("INA219 initialized successfully");
+    Serial.write("INA219 initialized successfully\n");
   }
 }
 
 void SensorController::initTMP102()
 {
   // Alert pins for TMP102 sensors
-  pinMode(TMP102_IC20_ALERT, INPUT_PULLUP);
-  pinMode(TMP102_IC8_ALERT, INPUT_PULLUP);
-  
+  pinMode(SensorAdress::Alert::TMP102_IC20, INPUT_PULLUP);
+  pinMode(SensorAdress::Alert::TMP102_IC8, INPUT_PULLUP);
+
   // Motor Driver Temp Sensor: Set T_HIGH (70°C) and T_LOW (0°C)
-  Wire.beginTransmission(TMP102_IC20_ADDR);
+  Wire.beginTransmission(SensorAdress::TMP102_IC20);
   Wire.write(0x03);
   Wire.write(0x46);
   Wire.write(0x00);
   Wire.endTransmission();
-  Wire.beginTransmission(TMP102_IC20_ADDR);
+  Wire.beginTransmission(SensorAdress::TMP102_IC20);
   Wire.write(0x02);
   Wire.write(0x00);
   Wire.write(0x00);
   Wire.endTransmission();
 
   // Power Unit Temp Sensor: Set T_HIGH (60°C) and T_LOW (5°C)
-  Wire.beginTransmission(TMP102_IC8_ADDR);
+  Wire.beginTransmission(SensorAdress::TMP102_IC8);
   Wire.write(0x03);
   Wire.write(0x3C);
   Wire.write(0x00);
   Wire.endTransmission();
-  Wire.beginTransmission(TMP102_IC8_ADDR);
+  Wire.beginTransmission(SensorAdress::TMP102_IC8);
   Wire.write(0x02);
   Wire.write(0x08);
   Wire.write(0x00);
   Wire.endTransmission();
 
-  Serial.println("TMP102 sensors initialized");
+  Serial.write("TMP102 sensors initialized\n");
 }
 
 void SensorController::readINA219()
@@ -80,44 +80,45 @@ void SensorController::readINA219()
   _power_mW = _ina219.getPower_mW();
   _loadVoltage = _busVoltage + (_shuntVoltage / 1000);
 
-  Serial.println("===== Power Readings =====");
-  Serial.print("Bus Voltage:   ");
-  Serial.print(_busVoltage);
-  Serial.println(" V");
-  Serial.print("Shunt Voltage: ");
-  Serial.print(_shuntVoltage);
-  Serial.println(" mV");
-  Serial.print("Load Voltage:  ");
-  Serial.print(_loadVoltage);
-  Serial.println(" V");
-  Serial.print("Current:       ");
-  Serial.print(_current_mA);
-  Serial.println(" mA");
-  Serial.print("Power:         ");
-  Serial.print(_power_mW);
-  Serial.println(" mW");
+  Serial.write("===== Power Readings =====\n");
+  Serial.print("Bus Voltage:    ");
+  Serial.print(_busVoltage, 2);
+  Serial.print(" V\n");
+  Serial.print("Shunt Voltage:  ");
+  Serial.print(_shuntVoltage, 2);
+  Serial.print(" mV\n");
+  Serial.print("Load Voltage:   ");
+  Serial.print(_loadVoltage, 2);
+  Serial.print(" V\n");
+  Serial.print("Current:        ");
+  Serial.print(_current_mA, 2);
+  Serial.print(" mA\n");
+  Serial.print("Power:          ");
+  Serial.print(_power_mW, 2);
+  Serial.print(" mW\n");
 }
 
 void SensorController::readTMP102()
 {
-  _motorDriverTemp = readTMP102Temp(TMP102_IC20_ADDR);
-  _powerUnitTemp = readTMP102Temp(TMP102_IC8_ADDR);
+  _motorDriverTemp = readTMP102Temp(SensorAdress::TMP102_IC20);
+  _powerUnitTemp = readTMP102Temp(SensorAdress::TMP102_IC8);
 
-  Serial.println("===== Temperature Readings =====");
-    Serial.print("Motor Driver Temp: ");
-    Serial.print(_motorDriverTemp);
-    Serial.print("°C (Alert: ");
-    Serial.print(getMotorDriverAlert() ? "Yes" : "NO");
-    Serial.println(")");
+  Serial.write("===== Temperature Readings =====\n");
+  Serial.print("Motor Driver Temp: ");
+  Serial.print(_motorDriverTemp, 2);
+  Serial.print(" °C (Alert: ");
+  Serial.print(getMotorDriverAlert() ? "YES" : "NO");
+  Serial.print(")\n");
 
-    Serial.print("Power Unit Temp:   ");
-    Serial.print(_powerUnitTemp);
-    Serial.print("°C (Alert: ");
-    Serial.print(getPowerUnitAlert() ? "YES" : "NO");
-    Serial.println(")");
+  Serial.print("Power Unit Temp:   ");
+  Serial.print(_powerUnitTemp, 2);
+  Serial.print(" °C (Alert: ");
+  Serial.print(getPowerUnitAlert() ? "YES" : "NO");
+  Serial.print(")\n");
 }
 
-float SensorController::readTMP102Temp(uint8_t address) {
+float SensorController::readTMP102Temp(uint8_t address)
+{
   Wire.beginTransmission(address);
   Wire.write(0x00);
   Wire.endTransmission();
@@ -136,10 +137,10 @@ float SensorController::readTMP102Temp(uint8_t address) {
 
 bool SensorController::getMotorDriverAlert()
 {
-  return !digitalRead(TMP102_IC20_ALERT);
+  return !digitalRead(SensorAdress::Alert::TMP102_IC20);
 }
 
 bool SensorController::getPowerUnitAlert()
 {
-  return !digitalRead(TMP102_IC8_ALERT);
+  return !digitalRead(SensorAdress::Alert::TMP102_IC8);
 }

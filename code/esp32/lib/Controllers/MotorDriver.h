@@ -3,6 +3,7 @@
 #define MotorDriver_h
 
 #include <Arduino.h> // TODO: remove this dependency
+#include "GlobalConfig.h"
 
 enum MotorDirection
 {
@@ -31,7 +32,6 @@ public:
 private:
   void setDirection();
   void setSpeed();
-
 
   uint8_t _enPin;
   uint8_t _in1Pin;

@@ -4,11 +4,11 @@
 Config::Config()
 {
 #ifdef ESP_WIFI_MQTT
-  staticIP = IPAddress(0,0,0,0);
-  gateway = IPAddress(0,0,0,0);
-  subnet = IPAddress(255,255,255,0);
-  dns1 = IPAddress(8,8,8,8);
-  dns2 = IPAddress(8,8,4,4);
+  staticIP = IPAddress(0, 0, 0, 0);
+  gateway = IPAddress(0, 0, 0, 0);
+  subnet = IPAddress(255, 255, 255, 0);
+  dns1 = IPAddress(8, 8, 8, 8);
+  dns2 = IPAddress(8, 8, 4, 4);
 #endif
 }
 
@@ -58,7 +58,6 @@ void Config::loadSettings()
 
 #endif
 
-
   preferences.end();
 
   Serial.println("Settings loaded from preferences");
@@ -101,5 +100,5 @@ void Config::saveSettings()
 
   preferences.end();
 
-  Serial.println("Settings saved to preferences");
+  Serial.write("Settings saved to preferences\n");
 }

@@ -30,7 +30,7 @@ void CommandProcessor::begin(SensorController *sensorCtr, LedController *ledCtr,
   _motor3 = &motor3;
   _motor4 = &motor4;
 
-  Serial.println("CommandProcessor initialized.");
+  Serial.write("CommandProcessor initialized.");
 }
 
 void CommandProcessor::processCommand(const String &command)
@@ -84,12 +84,13 @@ void CommandProcessor::processCommand(const String &command)
   else if (parts[0] == "SENSOR")
   {
     parts[3] = count < 4 ? "" : parts[3];
+    // Serial.printf("SENSOR: %s:%s:%s\n", parts[1].c_str(), parts[2].c_str(), parts[3].c_str());
     processSensorCommand(parts[1], parts[2], parts[3]);
     return;
   }
 
 #ifdef ESP_STOP_SWITCH
-  else if (parts[0] == "STOP")
+  else if (parts[0] == "SWITCH")
   {
     processStopSwitchCommand(parts[1], parts[2]);
   }
@@ -103,7 +104,7 @@ void CommandProcessor::processCommand(const String &command)
     _motor4->stop();
 
     _ledCtrl->setLeds(0b00000000, 0b00000000);
-    Serial.println("ALERT STOP: All motors stopped, all LEDs off");
+    Serial.write("ALERT STOP: All motors stopped, all LEDs off\n");
     return;
   }
   else if (cmd == "STATUS")
@@ -111,14 +112,16 @@ void CommandProcessor::processCommand(const String &command)
     printStatus();
     return;
   }
-  // else if (cmd == "MONITOR")
-  // {
-  //   printSystemMonitor();
-  //   return;
-  // }
+#ifdef MONITORING_ENABLED
+  else if (cmd == "MONITOR")
+  {
+    printSystemMonitor();
+    return;
+  }
+#endif
   else if (cmd == "CLEAR")
   {
-    Serial.println("\033[2J\033[H"); // Clear the console
+    Serial.write("\033[2J\033[H"); // Clear the console
     return;
   }
   else if (cmd == "HELP")
@@ -129,7 +132,7 @@ void CommandProcessor::processCommand(const String &command)
   else if (cmd == "SAVE")
   {
     _cfg->saveSettings();
-    Serial.println("Settings saved");
+    Serial.write("Settings saved\n");
     return;
   }
   else if (cmd == "REBOOT")
@@ -139,8 +142,9 @@ void CommandProcessor::processCommand(const String &command)
   }
   else
   {
-    Serial.println("Unknown command: " + cmd);
-    Serial.println("Type HELP for available commands");
+    Serial.print("Unknown command: ");
+    Serial.println(cmd);
+    Serial.write("Type HELP for available commands");
   }
 }
 
@@ -159,27 +163,37 @@ void CommandProcessor::processStopSwitchCommand(const String &action, const Stri
   if (action == "PIN1")
   {
     _cfg->stopPin1 = value.toInt();
-    Serial.println("Stop switch pin 1 set to " + String(_cfg->stopPin1));
+    Serial.print("Stop switch pin 1 set to ");
+    Serial.println(_cfg->stopPin1);
     return;
   }
   else if (action == "PIN2")
   {
     _cfg->stopPin2 = value.toInt();
-    Serial.println("Stop switch pin 2 set to " + String(_cfg->stopPin2));
+    Serial.print("Stop switch pin 2 set to ");
+    Serial.println(_cfg->stopPin2);
     return;
   }
   else if (action == "STATUS")
   {
-    Serial.println("\n===== Stop Switch Status =====");
-    Serial.println("Stop switch pin 1: " + String(_cfg->stopPin1));
-    Serial.println(" Pin 1 Triggert: " + String(digitalRead(_cfg->stopPin1) ? "YES" : "NO"));
-    Serial.println("Stop switch pin 2: " + String(_cfg->stopPin2));
-    Serial.println(" Pin 2 Triggert: " + String(digitalRead(_cfg->stopPin2) ? "YES" : "NO"));
+    printStopSwitch();   
     return;
   }
 }
 #endif
 
+void CommandProcessor::printStopSwitch() {
+  Serial.write("\n===== Stop Switch Status =====\n");
+  Serial.print("Stop switch pin 1: ");
+  Serial.println(_cfg->stopPin1);
+  Serial.print("  Pin 1 Triggered: ");
+  Serial.println(digitalRead(_cfg->stopPin1) ? "YES" : "NO");
+  Serial.print("Stop switch pin 2: ");
+  Serial.println(_cfg->stopPin2);
+  Serial.print("  Pin 2 Triggered: ");
+  Serial.println(digitalRead(_cfg->stopPin2) ? "YES" : "NO");
+  return;
+}
 /*
                       __  __       _                  _____ _   _
                      |  \/  | ___ | |_ ___  _ __     |  ___| \ | |
@@ -217,7 +231,10 @@ void CommandProcessor::processMotorCommand(const String &motor, const String &ac
       {
         targetMotor->updateSpeed(value.toInt());
       }
-      Serial.println(String(motor) + " set FORWARD at speed " + String(value.length() > 0 ? value.toInt() : targetMotor->getSpeed()) + "%");
+      Serial.print(motor);
+      Serial.print(" set FORWARD at speed ");
+      Serial.print(value.length() > 0 ? value.toInt() : targetMotor->getSpeed());
+      Serial.print("%\n");
       return;
     }
     else if (action == "LL" || action == "REV" || action == "BWD")
@@ -227,13 +244,17 @@ void CommandProcessor::processMotorCommand(const String &motor, const String &ac
       {
         targetMotor->updateSpeed(value.toInt());
       }
-      Serial.println(String(motor) + " set BACKWARD at speed " + String(value.length() > 0 ? value.toInt() : targetMotor->getSpeed()) + "%");
+      Serial.print(motor);
+      Serial.print(" set BACKWARD at speed ");
+      Serial.print(value.length() > 0 ? value.toInt() : targetMotor->getSpeed());
+      Serial.print("%\n");
       return;
     }
     else if (action == "STOP")
     {
       targetMotor->updateDirection(STOP);
-      Serial.println(String(motor) + " stopped");
+      Serial.print(motor);
+      Serial.print(" stopped\n");
       return;
     }
     else if (action == "SPD")
@@ -241,24 +262,29 @@ void CommandProcessor::processMotorCommand(const String &motor, const String &ac
       if (value.length() > 0)
       {
         targetMotor->updateSpeed(value.toInt());
-        Serial.println(String(motor) + " speed set to " + String(value) + "%");
+        Serial.print(motor);
+        Serial.print(" speed set to ");
+        Serial.print(value);
+        Serial.print("%\n");
         return;
       }
       else
       {
-        Serial.println(String(motor) + " speed not set");
+        Serial.print(motor);
+        Serial.print(" speed not set\n");
         return;
       }
     }
     else if (action == "STATUS")
     {
-      Serial.println(String(motor) + ":");
       targetMotor->printStatus();
       return;
     }
     else
     {
-      Serial.println("Unknown motor command: " + action);
+      Serial.print("Unknown motor command: ");
+      Serial.println(action);
+
       return;
     }
   }
@@ -279,13 +305,13 @@ void CommandProcessor::processLedCommand(const String &ledIndex, const String &a
     if (action == "ON")
     {
       _ledCtrl->setAllOn();
-      Serial.println("All LEDs turned ON");
+      Serial.write("All LEDs turned ON\n");
       return;
     }
     else if (action == "OFF")
     {
       _ledCtrl->setAllOff();
-      Serial.println("All LEDs turned OFF");
+      Serial.write("All LEDs turned OFF\n");
       return;
     }
   }
@@ -350,19 +376,22 @@ void CommandProcessor::processSensorCommand(const String &action, const String &
     {
       _cfg->sensorConsolePrintingEnabled = true;
       _cfg->sensorConsolePrintingInterval = value.toInt() * 1000;
-      Serial.println("Auto sensor readings enabled every " + String(_cfg->sensorConsolePrintingInterval / 1000) + " seconds");
+      Serial.print("Auto sensor readings enabled every :");
+      Serial.print(_cfg->sensorConsolePrintingInterval / 1000);
+      Serial.print(" seconds\n");
       return;
     }
     else if (sensor == "OFF")
     {
       _cfg->sensorConsolePrintingEnabled = false;
-      Serial.println("Auto sensor readings disabled");
+      Serial.write("Auto sensor readings disabled\n");
       return;
     }
   }
   else
   {
-    Serial.println("Unknown sensor command: " + action);
+    Serial.print("Unknown sensor command: ");
+    Serial.println(action);
     return;
   }
 }
@@ -574,13 +603,12 @@ void CommandProcessor::processSensorCommand(const String &action, const String &
 
 void CommandProcessor::printStatus()
 {
-  Serial.println("\n===== System Status =====");
-  Serial.println("MOTORS:");
+  Serial.write("\n===== System Status =====\n");
+  Serial.write("MOTORS:\n");
   for (int i = 1; i <= 4; i++)
   {
-    String dirStr = "STOPPED";
     Motor *targetMotor = nullptr;
-    ;
+    const char *dirStr = "UNKNOWN";
     switch (i)
     {
     case 1:
@@ -596,51 +624,81 @@ void CommandProcessor::printStatus()
       targetMotor = _motor4;
       break;
     }
-    if (targetMotor != nullptr)
+
+    if (!targetMotor)
     {
-      dirStr = "STOPPED";
+      Serial.print("Motor");
+      Serial.print(i);
+      Serial.print(" Null pointer Error\n");
+      continue;
     }
-    else if (targetMotor->getDirection() == FORWARD)
+
+    switch (targetMotor->getDirection())
     {
+    case FORWARD:
       dirStr = "FORWARD";
-    }
-    else if (targetMotor->getDirection() == BACKWARD)
-    {
+      break;
+    case BACKWARD:
       dirStr = "BACKWARD";
-    }
-    else
-    {
-      Serial.println("Null pointer error in Motor " + String(i));
+      break;
+    case STOP:
+      dirStr = "STOPPED";
+      break;
+    default:
+      dirStr = "UNKNOWN";
       break;
     }
-    Serial.println("  M" + String(i) + ": " + dirStr + " at " + String(targetMotor->getSpeed()) + "%");
+
+    Serial.print("  M");
+    Serial.print(i);
+    Serial.print(": ");
+    Serial.print("Direction: ");
+    Serial.print(dirStr);
+    Serial.print("  Speed: ");
+    Serial.print(targetMotor->getSpeed());
+    Serial.print("%\n");
   }
 
-  Serial.println("LEDs:");
-  Serial.println("  Port 0: 0b" + String(_ledCtrl->getPort0State(), BIN));
-  Serial.println("  Port 1: 0b" + String(_ledCtrl->getPort1State(), BIN));
+  Serial.write("LEDs:\n");
+  Serial.print("  Port 0: 0b");
+  Serial.println(_ledCtrl->getPort0State(), BIN);
+  Serial.print("  Port 1: 0b");
+  Serial.println(_ledCtrl->getPort1State(), BIN);
 
   // Serial.println("\n===== Sensor Status =====");
   _sensorCtrl->readTMP102();
   _sensorCtrl->readINA219();
 
-  Serial.println("\n===== Sensor Configuration =====");
-  Serial.println("AUTO SENSOR READINGS: " + String(_cfg->sensorConsolePrintingEnabled ? "Enabled" : "Disabled"));
+  Serial.write("\n===== Sensor Configuration =====\n");
+  Serial.print("AUTO SENSOR READINGS: ");
+  Serial.println(_cfg->sensorConsolePrintingEnabled ? "Enabled" : "Disabled");
   if (_cfg->sensorConsolePrintingEnabled)
-    Serial.println("  Interval: " + String(_cfg->sensorConsolePrintingInterval / 1000) + " seconds");
-  Serial.println("SENSOR UPDATE: " + String(_cfg->sensorUpdateEnabled ? "Enabled" : "Disabled"));
+  {
+    Serial.print("  Interval: ");
+    Serial.print(_cfg->sensorConsolePrintingInterval / 1000);
+    Serial.print(" seconds\n");
+  }
+
+  Serial.print("SENSOR UPDATE: ");
+  Serial.println(_cfg->sensorUpdateEnabled ? "Enabled" : "Disabled");
   if (_cfg->sensorUpdateEnabled)
-    Serial.println("  Interval: " + String(_cfg->sensorUpdateInterval / 1000) + " seconds");
+  {
+    Serial.print("  Interval: ");
+    Serial.print(_cfg->sensorUpdateInterval / 1000);
+    Serial.print(" seconds\n");
+  }
 
 #ifdef ESP_STOP_SWITCH
-  Serial.println("\n===== Stop Switch Status =====");
-  Serial.println("  Pin 1 Triggert: " + String(digitalRead(_cfg->stopPin1) ? "YES" : "NO"));
-  Serial.println("  Pin 2 Triggert: " + String(digitalRead(_cfg->stopPin2) ? "YES" : "NO"));
+  Serial.write("\n===== Stop Switch Status =====\n");
+  Serial.print("  Pin 1 Triggered: ");
+  Serial.println(digitalRead(_cfg->stopPin1) ? "Yes" : "No");
+  Serial.print("  Pin 2 Triggered: ");
+  Serial.println(digitalRead(_cfg->stopPin2) ? "Yes" : "No");
 #endif
 
 #ifdef ESP_WIFI_MQTT
-  Serial.println("\n===== Network Status =====");
-  Serial.println("WiFi:");
+  Serial.write("\n===== Network Status =====\n");
+  Serial.write("WiFi:\n");
   if (_wifiManager)
   {
     _wifiManager->printNetworkSettings();
@@ -669,99 +727,148 @@ void CommandProcessor::printStatus()
 */
 
 // NOT MY CODE!
-// void CommandProcessor::printSystemMonitor()
-// {
-//   // Get free heap size (RAM usage)
-//   size_t freeHeap = xPortGetFreeHeapSize();
-//   size_t minFreeHeap = xPortGetMinimumEverFreeHeapSize();
+#ifdef MONITORING_ENABLED
+void CommandProcessor::printSystemMonitor()
+{
+  // Memory statistics
+  size_t freeHeap = xPortGetFreeHeapSize();
+  size_t minFreeHeap = xPortGetMinimumEverFreeHeapSize();
+  size_t totalHeap = ESP.getHeapSize();
+  
+  // PSRAM statistics (if available)
+  #ifdef BOARD_HAS_PSRAM
+  size_t freePsram = ESP.getFreePsram();
+  size_t totalPsram = ESP.getPsramSize();
+  #endif
 
-//   // Print RAM usage
-//   Serial.println("=== System Monitor ===");
-//   Serial.print("Free Heap: ");
-//   Serial.print(freeHeap);
-//   Serial.println(" bytes");
-//   Serial.print("Minimum Free Heap: ");
-//   Serial.print(minFreeHeap);
-//   Serial.println(" bytes");
+  // Task statistics
+  UBaseType_t taskCount = uxTaskGetNumberOfTasks();
+  TaskStatus_t *taskStatus = (TaskStatus_t*)pvPortMalloc(taskCount * sizeof(TaskStatus_t));
+  
+  if(taskStatus) {
+    UBaseType_t capturedTasks = uxTaskGetSystemState(
+      taskStatus, 
+      taskCount, 
+      nullptr
+    );
 
-//   // Optional: Print task-level CPU usage
-//   const UBaseType_t taskCount = uxTaskGetNumberOfTasks();
-//   TaskStatus_t *taskStatusArray = (TaskStatus_t *)pvPortMalloc(taskCount * sizeof(TaskStatus_t));
-//   if (taskStatusArray != NULL)
-//   {
-//     UBaseType_t totalRunTime;
-//     UBaseType_t tasks = uxTaskGetSystemState(taskStatusArray, taskCount, &totalRunTime);
+    // CPU usage calculation
+    static uint32_t prevTotalRuntime = 0;
+    uint32_t totalRuntime = 0;
+    for(UBaseType_t i = 0; i < capturedTasks; i++) {
+      totalRuntime += taskStatus[i].ulRunTimeCounter;
+    }
+    float cpuUsage = (totalRuntime - prevTotalRuntime) / 10000.0f;
+    prevTotalRuntime = totalRuntime;
 
-//     Serial.println("Task Name\t\tCPU Time\t\tState");
-//     for (UBaseType_t i = 0; i < tasks; i++)
-//     {
-//       Serial.print(taskStatusArray[i].pcTaskName);
-//       Serial.print("\t\t");
-//       Serial.print(taskStatusArray[i].ulRunTimeCounter);
-//       Serial.print("\t\t");
-//       Serial.println(taskStatusArray[i].eCurrentState);
-//     }
-//     vPortFree(taskStatusArray);
-//   }
-// }
+    // Temperature monitoring
+    float temp = temperatureRead(); // Requires #include "esp32-hal-adc.h"
+
+    // Print system summary
+    Serial.printf("\n\033[1;36m=== System Monitor (%.1f°C) ===\033[0m\n", temp);
+    Serial.printf("RAM: %6.1fkB free (Min: %6.1fkB) | Total: %.1fkB\n", 
+                 freeHeap/1024.0f, 
+                 minFreeHeap/1024.0f,
+                 totalHeap/1024.0f);
+    
+    #ifdef BOARD_HAS_PSRAM
+    Serial.printf("PSRAM: %.1fkB/%.1fkB free\n", 
+                 freePsram/1024.0f, 
+                 totalPsram/1024.0f);
+    #endif
+
+    Serial.printf("CPU Usage: %5.1f%% | Tasks: %d\n", cpuUsage, taskCount);
+    
+    // Task table header
+    Serial.println("\n\033[1mTask Name          State      CPU%\033   Stack Free\033[0m");
+    Serial.println("--------------------------------------------------");
+
+    // Print task details
+    for(UBaseType_t i = 0; i < capturedTasks; i++) {
+      const char *state;
+      switch(taskStatus[i].eCurrentState) {
+        case eRunning: state = "Run"; break;
+        case eReady: state = "Rdy"; break;
+        case eBlocked: state = "Blk"; break;
+        case eSuspended: state = "Sus"; break;
+        case eDeleted: state = "Del"; break;
+        default: state = "Unk"; break;
+      }
+
+      // Calculate stack usage
+      UBaseType_t stackFree = taskStatus[i].usStackHighWaterMark;
+      
+      Serial.printf("%-18s %-6s %6.1f%%   %5d bytes ",
+                    taskStatus[i].pcTaskName,
+                    state,
+                    (taskStatus[i].ulRunTimeCounter / 10000.0f),
+                    stackFree * sizeof(StackType_t));
+    }
+    
+    vPortFree(taskStatus);
+  } else {
+    Serial.println("Failed to allocate memory for task status!");
+  }
+}
+#endif
 
 void CommandProcessor::printHelp()
 {
-  Serial.println("\n===== Available Commands =====");
-  Serial.println("MOTOR CONTROL:");
-  Serial.println("  Mx:RL:y    - Set motor x forward at y% speed (x=1-4, y=0-100)");
-  Serial.println("  Mx:LL:y    - Set motor x backward at y% speed");
-  Serial.println("  Mx:STOP     - Stop motor x");
-  Serial.println("  Mx:SPD:y    - Set motor x speed to y%");
-  Serial.println("  Mx:STATUS   - Get motor x status");
+  Serial.write("\n===== Available Commands =====\n");
+  Serial.write("MOTOR CONTROL:\n");
+  Serial.write("  Mx:RL:y     - Set motor x forward at y% speed (x=1-4, y=0-100)\n");
+  Serial.write("  Mx:LL:y     - Set motor x backward at y% speed\n");
+  Serial.write("  Mx:STOP     - Stop motor x\n");
+  Serial.write("  Mx:SPD:y    - Set motor x speed to y%\n");
+  Serial.write("  Mx:STATUS   - Get motor x status\n");
 
-  Serial.println("\nLED CONTROL:");
-  Serial.println("  LED:ALL:ON   - Turn on all LEDs");
-  Serial.println("  LED:ALL:OFF  - Turn off all LEDs");
-  Serial.println("  LED:n:ON     - Turn on LED n (n=1-12)");
-  Serial.println("  LED:n:OFF    - Turn off LED n");
-  Serial.println("  LED:n:TOGGLE - Toggle LED n");
-  Serial.println("  LED:PATTERN:n - Run LED pattern n (n=1-3)");
+  Serial.write("\nLED CONTROL:\n");
+  Serial.write("  LED:ALL:ON     - Turn on all LEDs\n");
+  Serial.write("  LED:ALL:OFF    - Turn off all LEDs\n");
+  Serial.write("  LED:n:ON       - Turn on LED n (n=1-12)\n");
+  Serial.write("  LED:n:OFF      - Turn off LED n\n");
+  Serial.write("  LED:n:TOGGLE   - Toggle LED n\n");
+  Serial.write("  LED:PATTERN:n  - Run LED pattern n (n=1-3)\n");
 
-  Serial.println("\nSENSOR COMMANDS:");
-  Serial.println("  SENSOR:READ:ALL  - Read all sensors");
-  Serial.println("  SENSOR:READ:POWER - Read power sensor (INA219)");
-  Serial.println("  SENSOR:READ:TEMP - Read temperature sensors (TMP102)");
-  Serial.println("  SENSOR:AUTO:ON:n - Enable auto sensor readings every n seconds");
-  Serial.println("  SENSOR:AUTO:OFF  - Disable auto sensor readings");
+  Serial.write("\nSENSOR COMMANDS:\n");
+  Serial.write("  SENSOR:READ:ALL   - Read all sensors\n");
+  Serial.write("  SENSOR:READ:POWER - Read power sensor (INA219)\n");
+  Serial.write("  SENSOR:READ:TEMP  - Read temperature sensors (TMP102)\n");
+  Serial.write("  SENSOR:AUTO:ON:n  - Enable auto sensor readings every n seconds\n");
+  Serial.write("  SENSOR:AUTO:OFF   - Disable auto sensor readings\n");
 
 #ifdef ESP_WIFI_MQTT
-  Serial.println("\nWIFI COMMANDS:");
-  Serial.println("  WIFI:SSID:name    - Set WiFi SSID");
-  Serial.println("  WIFI:PASSWORD:pwd - Set WiFi password");
-  Serial.println("  WIFI:STATIC:ON    - Enable static IP");
-  Serial.println("  WIFI:STATIC:OFF   - Disable static IP (use DHCP)");
-  Serial.println("  WIFI:IP:x.x.x.x   - Set static IP address");
-  Serial.println("  WIFI:GATEWAY:x.x.x.x - Set gateway address");
-  Serial.println("  WIFI:SUBNET:x.x.x.x  - Set subnet mask");
-  Serial.println("  WIFI:CONNECT      - Connect to WiFi using current settings");
-  Serial.println("  WIFI:STATUS       - Show WiFi settings and status");
+  Serial.write("\nWIFI COMMANDS:\n");
+  Serial.write("  WIFI:SSID:name    - Set WiFi SSID\n");
+  Serial.write("  WIFI:PASSWORD:pwd - Set WiFi password\n");
+  Serial.write("  WIFI:STATIC:ON    - Enable static IP\n");
+  Serial.write("  WIFI:STATIC:OFF   - Disable static IP (use DHCP)\n");
+  Serial.write("  WIFI:IP:x.x.x.x   - Set static IP address\n");
+  Serial.write("  WIFI:GATEWAY:x.x.x.x - Set gateway address\n");
+  Serial.write("  WIFI:SUBNET:x.x.x.x  - Set subnet mask\n");
+  Serial.write("  WIFI:CONNECT      - Connect to WiFi using current settings\n");
+  Serial.write("  WIFI:STATUS       - Show WiFi settings and status");
 
-  Serial.println("\nMQTT COMMANDS:");
-  Serial.println("  MQTT:SERVER:host  - Set MQTT server hostname/IP");
-  Serial.println("  MQTT:PORT:n       - Set MQTT server port");
-  Serial.println("  MQTT:USER:name    - Set MQTT username");
-  Serial.println("  MQTT:PASSWORD:pwd - Set MQTT password");
-  Serial.println("  MQTT:ID:id        - Set MQTT client ID");
-  Serial.println("  MQTT:TOPIC:topic  - Set MQTT base topic");
-  Serial.println("  MQTT:CONNECT      - Connect to MQTT server");
-  Serial.println("  MQTT:PUBLISH      - Publish current status to MQTT");
-  Serial.println("  MQTT:STATUS       - Show MQTT settings and status");
+  Serial.write("\nMQTT COMMANDS:\n");
+  Serial.write("  MQTT:SERVER:host  - Set MQTT server hostname/IP\n");
+  Serial.write("  MQTT:PORT:n       - Set MQTT server port\n");
+  Serial.write("  MQTT:USER:name    - Set MQTT username\n");
+  Serial.write("  MQTT:PASSWORD:pwd - Set MQTT password\n");
+  Serial.write("  MQTT:ID:id        - Set MQTT client ID\n");
+  Serial.write("  MQTT:TOPIC:topic  - Set MQTT base topic\n");
+  Serial.write("  MQTT:CONNECT      - Connect to MQTT server\n");
+  Serial.write("  MQTT:PUBLISH      - Publish current status to MQTT\n");
+  Serial.write("  MQTT:STATUS       - Show MQTT settings and status\n");
 #endif
 #ifdef ESP_STOP_SWITCH
-  Serial.println("\nSTOP SWITCH COMMANDS:");
-  Serial.println("  STOP:PIN1:n      - Set stop switch pin 1 default: 15");
-  Serial.println("  STOP:PIN2:n      - Set stop switch pin 2 default: 16");
-  Serial.println("  STOP:STATUS       - Show stop switch settings");
+  Serial.write("\nSTOP SWITCH COMMANDS:\n");
+  Serial.write("  SWITCH:PIN1:n      - Set stop switch pin 1 default: 15\n");
+  Serial.write("  SWITCH:PIN2:n      - Set stop switch pin 2 default: 16\n");
+  Serial.write("  SWITCH:STATUS      - Show stop switch settings\n");
 #endif
 
-  Serial.println("\nSYSTEM COMMANDS:");
-  Serial.println("  STATUS      - Print system status");
-  Serial.println("  STOP        - Emergency stop all motors and LEDs off");
-  Serial.println("  HELP        - Show this help message");
+  Serial.write("\nSYSTEM COMMANDS:\n");
+  Serial.write("  STATUS      - Print system status\n");
+  Serial.write("  STOP        - Emergency stop all motors and LEDs off\n");
+  Serial.write("  HELP        - Show this help message\n");
 }

@@ -2,15 +2,20 @@
 #ifndef CommandProcessor_h
 #define CommandProcessor_h
 
+// #define MONITORING_ENABLED
+
+#ifdef MONITORING_ENABLED
+#include <esp32-hal-adc.h>
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
+#endif
+// Test
 #include "MotorDriver.h"
 #include "LedController.h"
 #include "SensorController.h"
 #include "Config.h"
-// #include <esp_heap_caps.h>
-// #include <Arduino.h>
-// #include <freertos/FreeRTOS.h>
-// #include <freertos/task.h>
-
+// #include "HardwareConfig.h"
+#include "GlobalConfig.h"
 
 class CommandProcessor
 {
@@ -25,6 +30,7 @@ public:
     void printHelp();
     void printStatus();
     void printSystemMonitor();
+    void printStopSwitch();
 
 private:
     Motor *_motor1;

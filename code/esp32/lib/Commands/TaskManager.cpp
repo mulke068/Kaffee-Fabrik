@@ -1,6 +1,5 @@
 
 #include "TaskManager.h"
-#include "settings.h"
 
 TaskManager::TaskManager()
 {
@@ -57,7 +56,7 @@ void TaskManager::createSensorTask()
   xTaskCreate(
       sensorTaskFunction,
       "SensorTask",
-      2048,
+      2048, // 4069,
       this,
       2,
       &_sensorTaskHandle);
@@ -114,7 +113,7 @@ void TaskManager::sensorTaskFunction(void *pvParameters)
 
       vTaskDelay(pdMS_TO_TICKS(taskManager->_cfg->sensorConsolePrintingInterval));
     }
-    if (!digitalRead(BUTTON_PIN))
+    if (!digitalRead(Hardware::BUTTON_PIN))
     {
       taskManager->_ledCtrl->runLedPattern(1);
     }
@@ -122,10 +121,13 @@ void TaskManager::sensorTaskFunction(void *pvParameters)
     vTaskDelay(pdMS_TO_TICKS(500));
 #endif
 #ifdef ESP_STOP_SWITCH
-    if (digitalRead(taskManager->_cfg->stopPin1) || digitalRead(taskManager->_cfg->stopPin2))
+    if (digitalRead(46) || digitalRead(46))
     {
-      extern Motor motor3;
-      motor3.stop();
+      Serial.println("STOP SWITCH TRIGGERED!");
+
+      taskManager->_cmdProc->printStopSwitch();
+      // extern Motor motor4;
+      // motor4.stop();
     }
     vTaskDelay(pdMS_TO_TICKS(100));
 #endif

@@ -9,7 +9,8 @@
 #include "SensorController.h"
 #include "CommandProcessor.h"
 #include "Config.h"
-#include "settings.h"
+#include "HardwareConfig.h"
+#include "GlobalConfig.h"
 
 #ifdef ESP_WIFI_MQTT
 #include "WiFiManager.h"

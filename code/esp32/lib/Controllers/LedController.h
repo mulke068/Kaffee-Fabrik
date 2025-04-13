@@ -4,7 +4,8 @@
 
 #include <Arduino.h> // TODO: remove this dependency
 #include <Wire.h>
-#include "settings.h"
+#include "HardwareConfig.h"
+#include "GlobalConfig.h"
 
 class LedController
 {

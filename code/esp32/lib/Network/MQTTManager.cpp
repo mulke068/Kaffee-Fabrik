@@ -65,7 +65,6 @@
 //   }
 // }
 
-
 // void publishStatus()
 // {
 //   if (!mqttClient.connected() || WiFi.status() != WL_CONNECTED)

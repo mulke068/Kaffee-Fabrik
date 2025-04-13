@@ -5,7 +5,8 @@
 #include <Adafruit_INA219.h>
 #include <Wire.h>
 #include "Config.h"
-#include "settings.h"
+#include "HardwareConfig.h"
+#include "GlobalConfig.h"
 
 class SensorController
 {
