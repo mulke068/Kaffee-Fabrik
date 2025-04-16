@@ -1,3 +1,13 @@
+/**
+ * @file SensorController.h
+ * @author Kevin Muller (@kevbcef.com)
+ * @brief This header file defines the SensorController class for managing sensor operations.
+ * @version 1.0
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
 
 #ifndef SensorController_h
 #define SensorController_h
@@ -45,4 +55,4 @@ private:
     float _powerUnitTemp;
 };
 
-#endif
+#endif // SensorController_h

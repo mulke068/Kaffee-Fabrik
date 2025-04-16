@@ -1,6 +1,22 @@
+/**
+ * @file CommandProcessor.cpp
+ * @author Kevin Muller (@kevbchef.com)
+ * @brief Command Processor for ESP32-based robot
+ * @details This class processes commands received from the serial interface and executes the corresponding actions on motors, LEDs, and sensors.
+ * @version 0.1
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
 
 #include "CommandProcessor.h"
 
+/**
+ * @brief Construct a new Command Processor:: Command Processor object
+ * @details Initializes the motor and sensor pointers to nullptr.
+ *
+ */
 CommandProcessor::CommandProcessor()
 {
   _motor1 = nullptr;
@@ -12,11 +28,21 @@ CommandProcessor::CommandProcessor()
   _cfg = nullptr;
 }
 
+/**
+ * @brief Destroy the Command Processor:: Command Processor object
+ *
+ */
 CommandProcessor::~CommandProcessor()
 {
   // Destructor implementation (if needed)
 }
 
+/**
+ * @brief Initializes the Command Processor with the provided sensor and LED controllers.
+ * @param sensorCtr Pointer to the SensorController object.
+ * @param ledCtr Pointer to the LedController object.
+ * @param cfg Pointer to the Config object.
+ */
 void CommandProcessor::begin(SensorController *sensorCtr, LedController *ledCtr, Config *cfg)
 {
   _sensorCtrl = sensorCtr;
@@ -33,6 +59,12 @@ void CommandProcessor::begin(SensorController *sensorCtr, LedController *ledCtr,
   Serial.write("CommandProcessor initialized.");
 }
 
+/**
+ * @brief Processes the received command string.
+ * @param command The command string to process.
+ * @details This function parses the command string and executes the corresponding action.
+ *          It supports motor control, LED control, sensor reading, and system commands.
+ */
 void CommandProcessor::processCommand(const String &command)
 {
   String cmd = command;
@@ -94,7 +126,7 @@ void CommandProcessor::processCommand(const String &command)
   {
     processStopSwitchCommand(parts[1], parts[2]);
   }
-#endif
+#endif // ESP_STOP_SWITCH
 
   else if (cmd == "STOP" || cmd == "ALERT")
   {
@@ -144,7 +176,7 @@ void CommandProcessor::processCommand(const String &command)
   {
     Serial.print("Unknown command: ");
     Serial.println(cmd);
-    Serial.write("Type HELP for available commands");
+    Serial.write("Type HELP for available commands\n");
   }
 }
 
@@ -158,6 +190,12 @@ void CommandProcessor::processCommand(const String &command)
 */
 
 #ifdef ESP_STOP_SWITCH
+/**
+ * @brief Processes the stop switch command.
+ * @param action The action to perform (PIN1, PIN2, STATUS).
+ * @param value The value associated with the action.
+ * @details This function sets the stop switch pins or prints their status.
+ */
 void CommandProcessor::processStopSwitchCommand(const String &action, const String &value)
 {
   if (action == "PIN1")
@@ -176,13 +214,23 @@ void CommandProcessor::processStopSwitchCommand(const String &action, const Stri
   }
   else if (action == "STATUS")
   {
-    printStopSwitch();   
+    printStopSwitch();
+    return;
+  }
+  else
+  {
+    Serial.write("Unknown stop switch action\n");
     return;
   }
 }
-#endif
+#endif // ESP_STOP_SWITCH
 
-void CommandProcessor::printStopSwitch() {
+/**
+ * @brief Prints the status of the stop switch pins.
+ * @details This function prints the current status of the stop switch pins to the serial console.
+ */
+void CommandProcessor::printStopSwitch()
+{
   Serial.write("\n===== Stop Switch Status =====\n");
   Serial.print("Stop switch pin 1: ");
   Serial.println(_cfg->stopPin1);
@@ -202,6 +250,13 @@ void CommandProcessor::printStopSwitch() {
                      |_|  |_|\___/ \__\___/|_|       |_|   |_| \_|
 */
 
+/**
+ * @brief Processes the motor command.
+ * @param motor The motor to control (M1, M2, M3, M4).
+ * @param action The action to perform (RL, LL, STOP, SPD, STATUS).
+ * @param value The value associated with the action (speed).
+ * @details This function updates the motor's direction and speed based on the received command.
+ */
 void CommandProcessor::processMotorCommand(const String &motor, const String &action, const String &value)
 {
   Motor *targetMotor = nullptr;
@@ -237,7 +292,7 @@ void CommandProcessor::processMotorCommand(const String &motor, const String &ac
       Serial.print("%\n");
       return;
     }
-    else if (action == "LL" || action == "REV" || action == "BWD")
+    else if (action == "LL" || action == "BWD")
     {
       targetMotor->updateDirection(BACKWARD);
       if (value.length() > 0)
@@ -298,6 +353,12 @@ void CommandProcessor::processMotorCommand(const String &motor, const String &ac
                            |_____\___|\__,_|     |_|   |_| \_|
 */
 
+/**
+ * @brief Processes the LED command.
+ * @param ledIndex The index of the LED (ALL, n, PATTERN).
+ * @param action The action to perform (ON, OFF, TOGGLE).
+ * @details This function updates the state of the specified LED or all LEDs based on the received command.
+ */
 void CommandProcessor::processLedCommand(const String &ledIndex, const String &action)
 {
   if (ledIndex == "ALL")
@@ -349,6 +410,13 @@ void CommandProcessor::processLedCommand(const String &ledIndex, const String &a
                       |____/ \___|_| |_|___/\___/|_|       |_|   |_| \_|
 */
 
+/**
+ * @brief Processes the sensor command.
+ * @param action The action to perform (READ, AUTO).
+ * @param sensor The sensor to read (ALL, POWER, TEMP).
+ * @param value The value associated with the action (interval).
+ * @details This function reads the specified sensor or enables/disables auto sensor readings based on the received command.
+ */
 void CommandProcessor::processSensorCommand(const String &action, const String &sensor, const String &value)
 {
   if (action == "READ")
@@ -601,6 +669,10 @@ void CommandProcessor::processSensorCommand(const String &action, const String &
 
 */
 
+/**
+ * @brief Prints the current status of the system.
+ * @details This function prints the status of motors, LEDs, and sensors to the serial console.
+ */
 void CommandProcessor::printStatus()
 {
   Serial.write("\n===== System Status =====\n");
@@ -694,15 +766,15 @@ void CommandProcessor::printStatus()
   Serial.println(digitalRead(_cfg->stopPin1) ? "Yes" : "No");
   Serial.print("  Pin 2 Triggered: ");
   Serial.println(digitalRead(_cfg->stopPin2) ? "Yes" : "No");
-#endif
+#endif // ESP_STOP_SWITCH
 
-#ifdef ESP_WIFI_MQTT
-  Serial.write("\n===== Network Status =====\n");
-  Serial.write("WiFi:\n");
-  if (_wifiManager)
-  {
-    _wifiManager->printNetworkSettings();
-  }
+  // #ifdef ESP_WIFI_MQTT
+  // Serial.write("\n===== Network Status =====\n");
+  // Serial.write("WiFi:\n");
+  // if (_wifiManager)
+  // {
+  //   _wifiManager->printNetworkSettings();
+  // }
   //   Serial.println("WiFi:");
   //   Serial.println("  Connected: " + String(WiFi.status() == WL_CONNECTED ? "Yes" : "No"));
   //   if (WiFi.status() == WL_CONNECTED)
@@ -714,7 +786,7 @@ void CommandProcessor::printStatus()
   //   Serial.println("\nMQTT:");
   //   Serial.println("  Connected: " + String(mqttClient.connected() ? "Yes" : "No"));
 
-#endif
+  // #endif
 }
 /*
                                    ____       _       _        _____
@@ -727,91 +799,142 @@ void CommandProcessor::printStatus()
 */
 
 // NOT MY CODE!
+// at that point i cant help you anymore
+// hope if it works if not in GlobalConfig disable the monitoring
 #ifdef MONITORING_ENABLED
+#include "TaskManager.h"
+#include <map>
+#include <esp_timer.h>
+#include <esp_clk.h> // for esp_clk_cpu_freq()
+
+extern TaskManager taskManager;
+
+/**
+ * @brief Prints the system monitor information.
+ * @details This function prints the system monitor information, including CPU usage, RAM usage, and task status.
+ */
 void CommandProcessor::printSystemMonitor()
 {
-  // Memory statistics
+  static uint64_t lastPrintTime = esp_timer_get_time(); // µs
+  static std::map<std::string, uint32_t> prevTaskRuntime;
+  static uint32_t prevTotalRuntime = 0;
+
   size_t freeHeap = xPortGetFreeHeapSize();
   size_t minFreeHeap = xPortGetMinimumEverFreeHeapSize();
   size_t totalHeap = ESP.getHeapSize();
-  
-  // PSRAM statistics (if available)
-  #ifdef BOARD_HAS_PSRAM
+
+#ifdef BOARD_HAS_PSRAM
   size_t freePsram = ESP.getFreePsram();
   size_t totalPsram = ESP.getPsramSize();
-  #endif
+#endif // BOARD_HAS_PSRAM
 
-  // Task statistics
+  float temp = temperatureRead();
+
   UBaseType_t taskCount = uxTaskGetNumberOfTasks();
-  TaskStatus_t *taskStatus = (TaskStatus_t*)pvPortMalloc(taskCount * sizeof(TaskStatus_t));
-  
-  if(taskStatus) {
-    UBaseType_t capturedTasks = uxTaskGetSystemState(
-      taskStatus, 
-      taskCount, 
-      nullptr
-    );
-
-    // CPU usage calculation
-    static uint32_t prevTotalRuntime = 0;
-    uint32_t totalRuntime = 0;
-    for(UBaseType_t i = 0; i < capturedTasks; i++) {
-      totalRuntime += taskStatus[i].ulRunTimeCounter;
-    }
-    float cpuUsage = (totalRuntime - prevTotalRuntime) / 10000.0f;
-    prevTotalRuntime = totalRuntime;
-
-    // Temperature monitoring
-    float temp = temperatureRead(); // Requires #include "esp32-hal-adc.h"
-
-    // Print system summary
-    Serial.printf("\n\033[1;36m=== System Monitor (%.1f°C) ===\033[0m\n", temp);
-    Serial.printf("RAM: %6.1fkB free (Min: %6.1fkB) | Total: %.1fkB\n", 
-                 freeHeap/1024.0f, 
-                 minFreeHeap/1024.0f,
-                 totalHeap/1024.0f);
-    
-    #ifdef BOARD_HAS_PSRAM
-    Serial.printf("PSRAM: %.1fkB/%.1fkB free\n", 
-                 freePsram/1024.0f, 
-                 totalPsram/1024.0f);
-    #endif
-
-    Serial.printf("CPU Usage: %5.1f%% | Tasks: %d\n", cpuUsage, taskCount);
-    
-    // Task table header
-    Serial.println("\n\033[1mTask Name          State      CPU%\033   Stack Free\033[0m");
-    Serial.println("--------------------------------------------------");
-
-    // Print task details
-    for(UBaseType_t i = 0; i < capturedTasks; i++) {
-      const char *state;
-      switch(taskStatus[i].eCurrentState) {
-        case eRunning: state = "Run"; break;
-        case eReady: state = "Rdy"; break;
-        case eBlocked: state = "Blk"; break;
-        case eSuspended: state = "Sus"; break;
-        case eDeleted: state = "Del"; break;
-        default: state = "Unk"; break;
-      }
-
-      // Calculate stack usage
-      UBaseType_t stackFree = taskStatus[i].usStackHighWaterMark;
-      
-      Serial.printf("%-18s %-6s %6.1f%%   %5d bytes ",
-                    taskStatus[i].pcTaskName,
-                    state,
-                    (taskStatus[i].ulRunTimeCounter / 10000.0f),
-                    stackFree * sizeof(StackType_t));
-    }
-    
-    vPortFree(taskStatus);
-  } else {
-    Serial.println("Failed to allocate memory for task status!");
+  TaskStatus_t *taskStatus = (TaskStatus_t *)pvPortMalloc(taskCount * sizeof(TaskStatus_t));
+  if (!taskStatus)
+  {
+    Serial.println("Memory allocation failed!");
+    return;
   }
+
+  uint32_t totalRuntime = 0;
+  UBaseType_t capturedTasks = uxTaskGetSystemState(taskStatus, taskCount, nullptr);
+  for (UBaseType_t i = 0; i < capturedTasks; i++)
+  {
+    totalRuntime += taskStatus[i].ulRunTimeCounter;
+  }
+
+  uint64_t currentTime = esp_timer_get_time(); // µs
+  float timeDeltaSec = (currentTime - lastPrintTime) / 1e6f;
+  lastPrintTime = currentTime;
+
+  uint32_t runtimeDelta = totalRuntime - prevTotalRuntime;
+  prevTotalRuntime = totalRuntime;
+
+  // Uptime
+  uint64_t uptimeSec = currentTime / 1000000;
+  int hrs = uptimeSec / 3600;
+  int mins = (uptimeSec % 3600) / 60;
+  int secs = uptimeSec % 60;
+
+  // Get actual CPU frequency
+  uint32_t cpuFreqHz = esp_clk_cpu_freq(); // e.g., 240000000
+  float cpuTotalPercent = (runtimeDelta / (float)(cpuFreqHz * timeDeltaSec)) * 100.0f;
+
+  // Header
+  Serial.write("\n\033[1;36m=== System Monitor ===\033[0m\n");
+  Serial.printf("Temperature: \033[1;36m%.1f°C\033[0m\n", temp);
+  Serial.printf("Uptime: \033[1m%02d:%02d:%02d\033[0m\n", hrs, mins, secs);
+  Serial.printf("CPU Usage (Total): \033[1;33m%.1f%%\033[0m\n", cpuTotalPercent);
+
+  Serial.printf("RAM:   Free: \033[32m%.1fkB\033[0m | Min: \033[33m%.1fkB\033[0m | Total: %.1fkB\n",
+                freeHeap / 1024.0f, minFreeHeap / 1024.0f, totalHeap / 1024.0f);
+
+#ifdef BOARD_HAS_PSRAM
+  Serial.printf("PSRAM: Free: \033[32m%.1fkB\033[0m | Total: %.1fkB\n",
+                freePsram / 1024.0f, totalPsram / 1024.0f);
+#endif // BOARD_HAS_PSRAM
+
+  Serial.write("\n\033[1mTask Name           State   CPU%    Stack Free\033[0m\n");
+  Serial.write("------------------------------------------------------\n");
+
+  for (UBaseType_t i = 0; i < capturedTasks; i++)
+  {
+    const char *state;
+    switch (taskStatus[i].eCurrentState)
+    {
+    case eRunning:
+      state = "Run";
+      break;
+    case eReady:
+      state = "Rdy";
+      break;
+    case eBlocked:
+      state = "Blk";
+      break;
+    case eSuspended:
+      state = "Sus";
+      break;
+    case eDeleted:
+      state = "Del";
+      break;
+    default:
+      state = "Unk";
+      break;
+    }
+
+    std::string name(taskStatus[i].pcTaskName);
+    uint32_t prevRuntime = prevTaskRuntime[name];
+    uint32_t currentRuntime = taskStatus[i].ulRunTimeCounter;
+    prevTaskRuntime[name] = currentRuntime;
+
+    float taskDelta = (float)(currentRuntime - prevRuntime);
+    float taskPercent = (runtimeDelta > 0) ? (taskDelta / runtimeDelta) * 100.0f : 0.0f;
+
+    size_t stackFree = taskStatus[i].usStackHighWaterMark * sizeof(StackType_t);
+
+    Serial.printf("%-18s %-6s %6.1f%%   %6d B\n",
+                  taskStatus[i].pcTaskName,
+                  state,
+                  taskPercent,
+                  stackFree);
+  }
+
+  vPortFree(taskStatus);
+
+  // Applications Section
+  Serial.write("\n\033[1;35m== Applications ==\033[0m\n");
+  Serial.write("- Motor Controller\n");
+  Serial.write("- Sensor Processor\n");
+  Serial.write("- Command Processor\n");
 }
 #endif
 
+/**
+ * @brief Prints the help message with available commands.
+ * @details This function prints a list of available commands and their descriptions to the serial console.
+ */
 void CommandProcessor::printHelp()
 {
   Serial.write("\n===== Available Commands =====\n");
@@ -868,7 +991,11 @@ void CommandProcessor::printHelp()
 #endif
 
   Serial.write("\nSYSTEM COMMANDS:\n");
-  Serial.write("  STATUS      - Print system status\n");
-  Serial.write("  STOP        - Emergency stop all motors and LEDs off\n");
-  Serial.write("  HELP        - Show this help message\n");
+  Serial.write("  CLEAR        - Clear console\n");
+  Serial.write("  REBOOT       - Reboot the system\n");
+  Serial.write("  SAVE         - Save settings to flash\n");
+  Serial.write("  STOP / Alert - Emergency stop all motors and LEDs off\n");
+  Serial.write("  MONITOR      - Print system monitor information\n");
+  Serial.write("  STATUS       - Print system status\n");
+  Serial.write("  HELP         - Show this help message\n");
 }

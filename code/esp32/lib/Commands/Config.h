@@ -1,13 +1,23 @@
+/**
+ * @file Config.h
+ * @author Kevin Muller (@kevbchef.com)
+ * @brief Configuration class for managing settings in an ESP32 application.
+ * This class handles loading and saving settings using the Preferences library.
+ * @version 1.0
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
 
 #ifndef Config_h
 #define Config_h
 
-#include <Preferences.h> // Include Preferences.h here
-// #include "Preference.h"
+#include <Preferences.h>
 #include "GlobalConfig.h"
 
-#define STRINGIFY(x) #x
-#define TOSTRING(x) STRINGIFY(x)
+// #define STRINGIFY(x) #x
+// #define TOSTRING(x) STRINGIFY(x)
 
 class Config
 {
@@ -64,4 +74,4 @@ private:
     Preferences preferences;
 };
 
-#endif
+#endif // Config_h

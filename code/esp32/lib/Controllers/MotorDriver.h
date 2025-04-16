@@ -1,3 +1,13 @@
+/**
+ * @file MotorDriver.h
+ * @author Kevin Muller (@kevbcef.com)
+ * @brief This file contains the Motor class which is used to control a motor.
+ * @version 1.0
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
 
 #ifndef MotorDriver_h
 #define MotorDriver_h
@@ -16,7 +26,6 @@ class Motor
 {
 public:
   Motor(uint8_t enablePin, uint8_t in1, uint8_t in2);
-  // virtual ~Motor();
   ~Motor();
   void begin();
   void updateDirection(MotorDirection dir);
@@ -49,4 +58,4 @@ private:
   MotorDirection _direction;
 };
 
-#endif
+#endif // MotorDriver_h

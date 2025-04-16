@@ -1,10 +1,13 @@
+// DEMO Code
+
 #ifndef LOGGER_H
 #define LOGGER_H
 
 #include "GlobalConfig.h"
 #include <Arduino.h>
 
-enum LogLevel {
+enum LogLevel
+{
   LOG_NONE = 0,
   LOG_ERROR,
   LOG_WARNING,
@@ -13,21 +16,22 @@ enum LogLevel {
   LOG_VERBOSE
 };
 
-class Logger {
+class Logger
+{
 public:
   static void begin(unsigned long baudRate = 115200);
   static void setLogLevel(LogLevel level);
-  
-  static void error(const char* module, const char* message, ...);
-  static void warning(const char* module, const char* message, ...);
-  static void info(const char* module, const char* message, ...);
-  static void debug(const char* module, const char* message, ...);
-  static void verbose(const char* module, const char* message, ...);
-  
+
+  static void error(const char *module, const char *message, ...);
+  static void warning(const char *module, const char *message, ...);
+  static void info(const char *module, const char *message, ...);
+  static void debug(const char *module, const char *message, ...);
+  static void verbose(const char *module, const char *message, ...);
+
 private:
   static LogLevel _currentLevel;
   static bool _initialized;
-  static void log(LogLevel level, const char* levelStr, const char* module, const char* format, va_list args);
+  static void log(LogLevel level, const char *levelStr, const char *module, const char *format, va_list args);
 };
 
 // Convenience macros

@@ -1,5 +1,23 @@
-#include <MotorDriver.h>
+/**
+ * @file MotorDriver.cpp
+ * @author Kevin Muller (@kevbchef.com)
+ * @brief Motor driver class for controlling DC motors using PWM and direction pins.
+ * @version 1.0
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
 
+#include "MotorDriver.h"
+
+/**
+ * @brief Construct a new Motor:: Motor object
+ *
+ * @param enablePin Pin for enabling the motor (PWM pin)
+ * @param in1 Pin for direction control (input 1)
+ * @param in2 Pin for direction control (input 2)
+ */
 Motor::Motor(uint8_t enablePin, uint8_t in1, uint8_t in2)
 {
     _enPin = enablePin;
@@ -18,11 +36,19 @@ Motor::Motor(uint8_t enablePin, uint8_t in1, uint8_t in2)
     _isRunning = false;
 }
 
+/**
+ * @brief Destroy the Motor:: Motor object
+ *
+ */
 Motor::~Motor()
 {
     // Destructor implementation (if needed)
 }
 
+/**
+ * @brief Initialize the motor driver and stop the motor at startup.
+ *
+ */
 void Motor::begin()
 {
     pinMode(_enPin, OUTPUT);
@@ -31,13 +57,17 @@ void Motor::begin()
     stop();
 }
 
+/**
+ * @brief Update the motor direction and speed.
+ *
+ * @param dir The desired motor direction (FORWARD, BACKWARD, or STOP).
+ */
 void Motor::updateDirection(MotorDirection dir)
 {
     if (_direction != dir)
     {
         if (_currentSpeed > 0)
         {
-            // Serial.println("Motor direction change requested, current speed: " + String(_currentSpeed) + ", target speed: " + String(_targetSpeed));
             _pendingDirectionChange = true;
             _pendingDirection = dir;
             _orginalTargetSpeed = _targetSpeed;
@@ -47,12 +77,17 @@ void Motor::updateDirection(MotorDirection dir)
         {
             _direction = dir;
             setDirection();
-            // Serial.println("Motor direction changed to " + String(_pendingDirection));
         }
         return;
     }
 }
 
+/**
+ * @brief Update the motor speed.
+ *
+ * @param speed The desired motor speed (0 to 100%).
+ * @param immediate If true, set the speed immediately without ramping.
+ */
 void Motor::updateSpeed(int speed, bool immediate)
 {
     speed = constrain(map(speed, 0, 100, 0, 255), 0, 255);
@@ -67,16 +102,22 @@ void Motor::updateSpeed(int speed, bool immediate)
     {
         _targetSpeed = 0;
         _orginalTargetSpeed = speed;
-        // Serial.println("Motor pending direction change, speed set to " + String(_orginalTargetSpeed) + " (target: " + String(_targetSpeed) + ")");
         return;
     }
     else
     {
         _targetSpeed = speed;
-        // Serial.println("Motor speed set to " + String(_targetSpeed) + " (target: " + String(_targetSpeed) + ")");
     }
 }
 
+/**
+ * @brief Update the motor state (speed and direction) based on the current settings.
+ *
+ * This function adjusts the motor's speed and direction according to the current settings and handles any pending direction changes.
+ *
+ * This function is called periodically to ensure the motor operates smoothly and responds to any changes in speed or direction.
+ *
+ */
 void Motor::update()
 {
     if (_currentSpeed != _targetSpeed)
@@ -103,11 +144,15 @@ void Motor::update()
 
         _pendingDirectionChange = false;
         _targetSpeed = _orginalTargetSpeed;
-
-        // Serial.println("Direction change completed to " + String(_direction == FORWARD ? "FORWARD" : (_direction == BACKWARD ? "BACKWARD" : "STOP")) + ", resuming to speed: " + String(map(_targetSpeed, 0, 255, 0, 100)) + "%");
     }
 }
 
+/**
+ * @brief Stop the motor and set its direction to STOP.
+ *
+ * This function sets the motor's speed to 0 and updates its direction to STOP.
+ *
+ */
 void Motor::stop()
 {
     updateDirection(STOP);
@@ -115,55 +160,82 @@ void Motor::stop()
     return;
 }
 
+/**
+ * @brief Set the motor direction based on the current direction setting.
+ *
+ * This function sets the motor's direction pins (IN1 and IN2) according to the current direction setting.
+ *
+ */
 void Motor::setDirection()
 {
-    // Serial.println("Setting physical direction to: " + String(_direction == FORWARD ? "FORWARD" : (_direction == BACKWARD ? "BACKWARD" : "STOP")));
     switch (_direction)
     {
     case FORWARD:
         digitalWrite(_in1Pin, HIGH);
         digitalWrite(_in2Pin, LOW);
-        // Serial.println("Setting pins: IN1=HIGH, IN2=LOW");
         break;
     case BACKWARD:
         digitalWrite(_in1Pin, LOW);
         digitalWrite(_in2Pin, HIGH);
-        // Serial.println("Setting pins: IN1=LOW, IN2=HIGH");
         break;
     default:
         digitalWrite(_in1Pin, LOW);
         digitalWrite(_in2Pin, LOW);
-        // Serial.println("Setting pins: IN1=LOW, IN2=LOW");
     }
     _isRunning = (_direction != STOP);
     return;
 }
 
+/**
+ * @brief Set the motor speed using PWM.
+ *
+ * This function sets the motor's speed using PWM on the enable pin (EN).
+ *
+ */
 void Motor::setSpeed()
 {
     analogWrite(_enPin, _currentSpeed);
     return;
 }
 
+/**
+ * @brief Get the current state of the motor (running or stopped).
+ *
+ * @return true if the motor is running, false if it is stopped.
+ */
 bool Motor::isActive()
 {
     return _isRunning;
 }
 
+/**
+ * @brief Get the current speed of the motor as a percentage.
+ *
+ * @return The current speed of the motor (0 to 100%).
+ */
 int Motor::getSpeed()
 {
     return map(_currentSpeed, 0, 255, 0, 100);
 }
 
+/**
+ * @brief Get the current direction of the motor.
+ *
+ * @return The current direction of the motor (FORWARD, BACKWARD, or STOP).
+ */
 MotorDirection Motor::getDirection()
 {
     return _direction;
 }
 
+/**
+ * @brief Print the current status of the motor, including direction and speed.
+ *
+ */
 void Motor::printStatus()
 {
     char dirStr[9] = {0};
-    switch (getDirection())
+    switch (_direction)
     {
     case FORWARD:
         strcpy(dirStr, "FORWARD");

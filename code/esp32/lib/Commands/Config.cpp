@@ -1,6 +1,19 @@
-
+/**
+ * @file Config.cpp
+ * @author Kevin Muller (@kevbchef.com)
+ * @brief Configuration management for the application.
+ * @version 1.0
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
 #include "Config.h"
 
+/**
+ * @brief Construct a new Config:: Config object
+ *
+ */
 Config::Config()
 {
 #ifdef ESP_WIFI_MQTT
@@ -12,15 +25,34 @@ Config::Config()
 #endif
 }
 
+/**
+ * @brief Destroy the Config:: Config object
+ *
+ */
 Config::~Config()
 {
   preferences.end();
 }
 
+/**
+ * @brief Initialize the configuration object.
+ *
+ *
+ * @details This function initializes the preferences library.
+ *
+ */
 void Config::begin()
 {
+  Serial.println("Config initialized");
 }
 
+/**
+ * @brief Load settings from the preferences.
+ *
+ * @details This function loads the settings from the preferences library. It retrieves the values for various
+ *          configuration parameters and assigns them to the member variables.
+ *
+ */
 void Config::loadSettings()
 {
   preferences.begin("controller", true); // Read-only mode
@@ -31,7 +63,7 @@ void Config::loadSettings()
 #ifdef ESP_STOP_SWITCH
   stopPin1 = preferences.getInt("sp1", stopPin1);
   stopPin2 = preferences.getInt("sp2", stopPin2);
-#endif
+#endif // ESP_STOP_SWITCH
 #ifdef ESP_WIFI_MQTT
   // WiFi settings
   ssid = preferences.getString("ssid", ssid);
@@ -56,13 +88,20 @@ void Config::loadSettings()
   mqttClientId = preferences.getString("mcid", mqttClientId);
   mqttBaseTopic = preferences.getString("mbt", mqttBaseTopic);
 
-#endif
+#endif // ESP_WIFI_MQTT
 
   preferences.end();
 
   Serial.println("Settings loaded from preferences");
 }
 
+/**
+ * @brief Save settings to the preferences.
+ *
+ * @details This function saves the current settings to the preferences library. It stores the values for various
+ *          configuration parameters in the preferences.
+ *
+ */
 void Config::saveSettings()
 {
   preferences.begin("controller", false); // Read-only mode
@@ -73,7 +112,7 @@ void Config::saveSettings()
 #ifdef ESP_STOP_SWITCH
   preferences.putInt("sp1", stopPin1);
   preferences.putInt("sp2", stopPin2);
-#endif
+#endif // ESP_STOP_SWITCH
 #ifdef ESP_WIFI_MQTT
   // WiFi settings
   preferences.putString("ssid", ssid);
@@ -96,7 +135,7 @@ void Config::saveSettings()
   preferences.putString("mpwd", mqttPassword);
   preferences.putString("mcid", mqttClientId);
   preferences.putString("mbt", mqttBaseTopic);
-#endif
+#endif // ESP_WIFI_MQTT
 
   preferences.end();
 

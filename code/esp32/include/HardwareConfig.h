@@ -1,3 +1,15 @@
+/**
+ * @file HardwareConfig.h
+ * @author Kevin Muller (@kevbcef.com)
+ * @brief Hardware configuration for the ESP32 board.
+ * This file contains the pin definitions and sensor addresses used in the project.
+ * @version 1.0
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
+
 #ifndef HARDWARE_CONFIG_H
 #define HARDWARE_CONFIG_H
 
@@ -70,4 +82,4 @@ namespace LedAdress
     constexpr uint8_t led18 = 47;
 }
 
-#endif
+#endif // HARDWARE_CONFIG_H

@@ -1,8 +1,20 @@
+/**
+ * @file LedController.h
+ * @author Kevin Muller (@kevbcef.com)
+ * @brief Header file for the LedController class.
+ * This class manages the LED states and patterns for the ESP32 board.
+ * It provides methods to set individual LEDs, toggle their states, and control all LEDs at once.
+ * @version 1.0
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
 
 #ifndef LedController_h
 #define LedController_h
 
-#include <Arduino.h> // TODO: remove this dependency
+#include <HardwareSerial.h>
 #include <Wire.h>
 #include "HardwareConfig.h"
 #include "GlobalConfig.h"
@@ -14,7 +26,7 @@ public:
     ~LedController();
     void begin();
 
-    void setLeds(byte port0, byte port1);
+    void setLeds(uint8_t port0, uint8_t port1);
     void runLedPattern(int patternNum);
 
     void setLed(int ledNum, bool state);
@@ -23,14 +35,14 @@ public:
     void setAllOn();
     void setAllOff();
 
-    byte getPort0State() const { return _port0State; };
-    byte getPort1State() const { return _port1State; };
+    uint8_t getPort0State() const { return _port0State; };
+    uint8_t getPort1State() const { return _port1State; };
 
 private:
-    bool getLedMaskAndPort(int ledNum, byte &ledmask, byte *&portState);
+    bool getLedMaskAndPort(int ledNum, uint8_t &ledmask, uint8_t *&portState);
 
-    byte _port0State;
-    byte _port1State;
+    uint8_t _port0State;
+    uint8_t _port1State;
 };
 
-#endif
+#endif // LedController_h

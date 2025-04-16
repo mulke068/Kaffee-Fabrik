@@ -1,20 +1,21 @@
-
+/**
+ * @file CommandProcessor.h
+ * @author Kevin Muller (@kevbchef.com)
+ * @brief CommandProcessor class for handling commands from the ESP32.
+ * @details This class processes commands for controlling motors, LEDs, and sensors.
+ * @version 1.0
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
 #ifndef CommandProcessor_h
 #define CommandProcessor_h
 
-// #define MONITORING_ENABLED
-
-#ifdef MONITORING_ENABLED
-#include <esp32-hal-adc.h>
-#include <freertos/FreeRTOS.h>
-#include <freertos/task.h>
-#endif
-// Test
 #include "MotorDriver.h"
 #include "LedController.h"
 #include "SensorController.h"
 #include "Config.h"
-// #include "HardwareConfig.h"
 #include "GlobalConfig.h"
 
 class CommandProcessor
@@ -48,7 +49,7 @@ private:
 
 #ifdef ESP_STOP_SWITCH
     void processStopSwitchCommand(const String &action, const String &value);
-#endif
+#endif // ESP_STOP_SWITCH
 };
 
-#endif
+#endif // CommandProcessor_h

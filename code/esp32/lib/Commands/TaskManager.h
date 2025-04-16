@@ -1,3 +1,13 @@
+/**
+ * @file TaskManager.h
+ * @author Kevin Muller (@kevbcef.com)
+ * @brief Task manager for handling various tasks in the system.
+ * @version 1.0
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
 
 #ifndef TaskManager_h
 #define TaskManager_h
@@ -12,11 +22,6 @@
 #include "HardwareConfig.h"
 #include "GlobalConfig.h"
 
-#ifdef ESP_WIFI_MQTT
-#include "WiFiManager.h"
-#include "MQTTManager.h"
-#endif
-
 class TaskManager
 {
 public:
@@ -29,33 +34,19 @@ public:
     void createSensorTask();
     void createCommandTask();
 
-#ifdef ESP_WIFI_MQTT
-    void createMqttWifiTask();
-#endif
+    TaskHandle_t _motorTaskHandle;
+    TaskHandle_t _sensorTaskHandle;
+    TaskHandle_t _commandTaskHandle;
 
 private:
     static void motorTaskFunction(void *pvParameters);
     static void sensorTaskFunction(void *pvParameters);
     static void commandTaskFunction(void *pvParameters);
 
-#ifdef ESP_WIFI_MQTT
-    static void mqttWifiTaskFunction(void *pvParameters);
-#endif
-
     SensorController *_sensorCtrl;
     LedController *_ledCtrl;
     Config *_cfg;
     CommandProcessor *_cmdProc;
-
-    TaskHandle_t _motorTaskHandle;
-    TaskHandle_t _sensorTaskHandle;
-    TaskHandle_t _commandTaskHandle;
-
-#ifdef ESP_WIFI_MQTT
-    TaskHandle_t _mqttWifiTaskHandle;
-    WiFiManager *_wifiManager;
-    MQTTManager *_mqttManager;
-#endif
 };
 
-#endif
+#endif // TaskManager_h

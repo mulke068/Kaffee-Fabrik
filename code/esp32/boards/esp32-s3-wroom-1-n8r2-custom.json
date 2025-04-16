@@ -16,8 +16,7 @@
         "flash_mode": "qio",
         "flash_size": "8MB",
         "psram": "2MB",
-        "psram_type": "qio",
-
+        "psram_type": "qspi",
         "variant": "esp32s3",
         "mcu": "esp32s3",
         "core": "esp32"

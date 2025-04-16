@@ -1,19 +1,38 @@
+/**
+ * @file LedController.cpp
+ * @author Kevin Muller (@kevbcef.com)
+ * @brief LED controller class for managing LED states and patterns using PCA9555 I2C GPIO expander.
+ * @version 1.0
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
 
 #include "LedController.h"
 
+/**
+ * @brief Construct a new LedController::LedController object
+ *
+ */
 LedController::LedController()
 {
   // Constructor implementation (if needed)
 }
 
+/**
+ * @brief Destroy the LedController::LedController object
+ *
+ */
 LedController::~LedController()
 {
   // Destructor implementation (if needed)
 }
 
 /**
- * @brief Initialize the LED controller
- **/
+ * @brief Initialize the LED controller and set initial states
+ *
+ */
 void LedController::begin()
 {
   Wire.beginTransmission(SensorAdress::PCA9555);
@@ -38,7 +57,7 @@ void LedController::begin()
  * @param newPort0State  New state for port 0 (first 8 LEDs)
  * @param newPort1State  New state for port 1 (last 8 LEDs)
  **/
-void LedController::setLeds(byte newPort0State, byte newPort1State)
+void LedController::setLeds(uint8_t newPort0State, uint8_t newPort1State)
 {
   _port0State = newPort0State;
   _port1State = newPort1State;
@@ -125,8 +144,8 @@ void LedController::setAllOff()
  **/
 void LedController::toggleLed(int ledNum)
 {
-  byte ledmask;
-  byte *portState = nullptr;
+  uint8_t ledmask;
+  uint8_t *portState = nullptr;
   if (getLedMaskAndPort(ledNum, ledmask, portState))
   {
     *portState ^= ledmask;
@@ -167,8 +186,8 @@ void LedController::toggleLed(int ledNum)
  **/
 void LedController::setLed(int ledNum, bool state)
 {
-  byte ledmask;
-  byte *portState = nullptr;
+  uint8_t ledmask;
+  uint8_t *portState = nullptr;
   if (getLedMaskAndPort(ledNum, ledmask, portState))
   {
     if (state)
@@ -218,7 +237,7 @@ void LedController::setLed(int ledNum, bool state)
  * @param portState  Reference to store the port state pointer
  * @return true if valid LED number, false otherwise
  **/
-bool LedController::getLedMaskAndPort(int ledNum, byte &ledmask, byte *&portState)
+bool LedController::getLedMaskAndPort(int ledNum, uint8_t &ledmask, uint8_t *&portState)
 {
   // ledNum is 1-12, state is true or false but also 18 and 17 are valid ledNum
   if (ledNum >= 1 && ledNum <= 12)

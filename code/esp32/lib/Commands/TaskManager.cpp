@@ -1,6 +1,20 @@
-
+/**
+ * @file TaskManager.cpp
+ * @author Kevin Muller (@kevbcef.com)
+ * @brief TaskManager class implementation for managing tasks in an ESP32 application.
+ * This class handles the creation and management of tasks for motor control, sensor reading, and command processing.
+ * @version 1.0
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
 #include "TaskManager.h"
 
+/**
+ * @brief Construct a new Task Manager:: Task Manager object
+ *
+ */
 TaskManager::TaskManager()
 {
   _sensorCtrl = nullptr;
@@ -12,11 +26,23 @@ TaskManager::TaskManager()
   _commandTaskHandle = nullptr;
 }
 
+/**
+ * @brief Destroy the Task Manager:: Task Manager object
+ *
+ */
 TaskManager::~TaskManager()
 {
   // Destructor implementation (if needed)
 }
 
+/**
+ * @brief Initializes the TaskManager with the provided controllers and configuration.
+ *
+ * @param sensorCtrl Pointer to the SensorController instance.
+ * @param ledCtrl Pointer to the LedController instance.
+ * @param cfg Pointer to the Config instance.
+ * @param cmdProc Pointer to the CommandProcessor instance.
+ */
 void TaskManager::begin(SensorController *sensorCtrl, LedController *ledCtrl, Config *cfg, CommandProcessor *cmdProc)
 {
   _sensorCtrl = sensorCtrl;
@@ -29,6 +55,14 @@ void TaskManager::begin(SensorController *sensorCtrl, LedController *ledCtrl, Co
   createCommandTask();
 }
 
+/**
+ * @brief Creates the command task for processing commands.
+ *
+ * This task is responsible for reading commands from the serial input and processing them.
+ *
+ * @details The command task continuously checks for available serial input and processes
+ * the commands received, allowing for dynamic control of the system.
+ */
 void TaskManager::createCommandTask()
 {
   xTaskCreate(
@@ -40,6 +74,14 @@ void TaskManager::createCommandTask()
       &_commandTaskHandle);
 }
 
+/**
+ * @brief Creates the motor task for controlling motors.
+ *
+ * This task is responsible for updating the motor states at regular intervals.
+ *
+ * @details The motor task continuously updates the motor states, allowing for smooth
+ * control of the motors in the system.
+ */
 void TaskManager::createMotorTask()
 {
   xTaskCreate(
@@ -51,6 +93,15 @@ void TaskManager::createMotorTask()
       &_motorTaskHandle);
 }
 
+/**
+ * @brief Creates the sensor task for reading sensor data.
+ *
+ * This task is responsible for reading data from sensors at regular intervals and
+ * printing it to the console if enabled in the configuration.
+ *
+ * @details The sensor task continuously reads data from the sensors and prints it to
+ * the console if the corresponding configuration option is enabled.
+ */
 void TaskManager::createSensorTask()
 {
   xTaskCreate(
@@ -62,6 +113,14 @@ void TaskManager::createSensorTask()
       &_sensorTaskHandle);
 }
 
+/**
+ * @brief Command task function for processing commands.
+ *
+ * This function is executed in the command task and continuously checks for available
+ * serial input to process commands.
+ *
+ * @param pvParameters Pointer to the TaskManager instance.
+ */
 void TaskManager::commandTaskFunction(void *pvParameters)
 {
   TaskManager *taskManager = static_cast<TaskManager *>(pvParameters);
@@ -83,9 +142,17 @@ void TaskManager::commandTaskFunction(void *pvParameters)
   }
 }
 
+/**
+ * @brief Motor task function for updating motor states.
+ *
+ * This function is executed in the motor task and continuously updates the states of
+ * the motors at regular intervals.
+ *
+ * @param pvParameters Pointer to the TaskManager instance.
+ */
 void TaskManager::motorTaskFunction(void *pvParameters)
 {
-  TaskManager *taskManager = static_cast<TaskManager *>(pvParameters);
+  // TaskManager *taskManager = static_cast<TaskManager *>(pvParameters);
 
   while (1)
   {
@@ -100,18 +167,37 @@ void TaskManager::motorTaskFunction(void *pvParameters)
   }
 }
 
+/**
+ * @brief Sensor task function for reading sensor data.
+ *
+ * This function is executed in the sensor task and continuously reads data from the
+ * sensors at regular intervals, printing it to the console if enabled in the configuration.
+ *
+ * @param pvParameters Pointer to the TaskManager instance.
+ */
 void TaskManager::sensorTaskFunction(void *pvParameters)
 {
   TaskManager *taskManager = static_cast<TaskManager *>(pvParameters);
+  uint32_t start_time = millis();
+  bool timerFinished = true;
 
   while (1)
   {
     if (taskManager->_cfg->sensorConsolePrintingEnabled)
     {
-      taskManager->_sensorCtrl->readINA219();
-      taskManager->_sensorCtrl->readTMP102();
-
-      vTaskDelay(pdMS_TO_TICKS(taskManager->_cfg->sensorConsolePrintingInterval));
+      if (!timerFinished)
+      {
+        uint32_t current_time = millis();
+        uint32_t elapsed = current_time - start_time;
+        timerFinished = elapsed > taskManager->_cfg->sensorConsolePrintingInterval;
+      }
+      else
+      {
+        timerFinished = false;
+        start_time = millis();
+        taskManager->_sensorCtrl->readINA219();
+        taskManager->_sensorCtrl->readTMP102();
+      }
     }
     if (!digitalRead(Hardware::BUTTON_PIN))
     {
@@ -121,40 +207,15 @@ void TaskManager::sensorTaskFunction(void *pvParameters)
     vTaskDelay(pdMS_TO_TICKS(500));
 #endif
 #ifdef ESP_STOP_SWITCH
-    if (digitalRead(46) || digitalRead(46))
+    if (digitalRead(taskManager->_cfg->stopPin1) || digitalRead(taskManager->_cfg->stopPin2))
+    // if (!digitalRead(taskManager->_cfg->stopPin1) || !digitalRead(taskManager->_cfg->stopPin2))
     {
       Serial.println("STOP SWITCH TRIGGERED!");
 
-      taskManager->_cmdProc->printStopSwitch();
-      // extern Motor motor4;
-      // motor4.stop();
+      extern Motor motor4;
+      motor4.stop();
     }
     vTaskDelay(pdMS_TO_TICKS(100));
 #endif
   }
 }
-
-// #ifdef ESP_WIFI_MQTT
-// void MQTTTask(void *pvParameters)
-// {
-//   (void)pvParameters;
-
-//   while (1)
-//   {
-//     if (!mqttClient.connected())
-//     {
-//       reconnectMQTT();
-//     }
-//     mqttClient.loop();
-
-//     static unsigned long lastPublish = 0;
-//     if (sensorReadingEnabled && millis() - lastPublish > sensorInterval)
-//     {
-//       publishStatus();
-//       lastPublish = millis();
-//     }
-
-//     vTaskDelay(pdMS_TO_TICKS(100));
-//   }
-// }
-// #endif

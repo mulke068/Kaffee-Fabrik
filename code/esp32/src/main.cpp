@@ -1,4 +1,17 @@
+/**
+ * @file main.cpp
+ * @author Kevin Muller (@kevbchef.com)
+ * @brief Main entry point for the ESP32-based integrated system controller.
+ * @version 1.0
+ * @date 2025-04-16
+ *
+ * @copyright Copyright (c) 2025
+ *
+ */
+
+// #include <sdkconfig.h>
 // #include <Arduino.h>
+#include <Adafruit_INA219.h>
 #include <Wire.h>
 #include "MotorDriver.h"
 #include "SensorController.h"
@@ -21,14 +34,19 @@ LedController ledController;
 CommandProcessor commandProcessor;
 TaskManager taskManager;
 
-void setup()
+extern "C" void app_main(void)
 {
-  Serial.begin(115200);
+  initArduino();
+
   delay(1000);
-  Wire.begin(Hardware::SDA, Hardware::SCL);
+  Serial.begin(115200);
+  Serial.setTimeout(10);
 
   Serial.write("Initializing...\n");
   Serial.printf("Version: %s\n", FIRMWARE_VERSION);
+
+  delay(1000);
+  Wire.begin(Hardware::SDA, Hardware::SCL);
 
   config.begin();
   config.loadSettings();
@@ -45,47 +63,44 @@ void setup()
   digitalWrite(Hardware::STBY, HIGH); // TODO MotorDrivers Standby Checking
   Serial.write("Motors initialized\n");
 
-  // Userbutton and ESP Lights
+  // Userbutton and stop switch pins
   pinMode(Hardware::BUTTON_PIN, INPUT_PULLUP);
-
 #ifdef ESP_STOP_SWITCH
   pinMode(config.stopPin1, INPUT_PULLUP);
   pinMode(config.stopPin2, INPUT_PULLUP);
 #endif
 
-// #if defined(BOARD_HAS_PSRAM)
-//   delay(1000);
+#if defined(BOARD_HAS_PSRAM)
+  if (psramFound())
+  {
+    Serial.write("PSRAM found\n");
+  }
+  else
+  {
+    Serial.write("No PSRAM found\n");
+  }
 
-//   if (esp_spiram_is_initialized())
-//   {
-//     Serial.write("PSRAM is initialized\n");
-//   }
-//   else
-//   {
-//     Serial.write("PSRAM failed to initialise\n");
-//   }
-// #endif
+  if (esp_spiram_is_initialized())
+  {
+    Serial.write("SPIRAM initialized\n");
+  }
+  else
+  {
+    Serial.write("SPIRAM not initialized\n");
+  }
+#endif
 
   commandProcessor.begin(&sensorController, &ledController, &config);
 
   Serial.write("\n\n===== Integrated System Controller (RTOS) =====\n");
   Serial.write("Type 'HELP' for available commands\n");
-  // commandProcessor.printHelp();
 
   taskManager.begin(&sensorController, &ledController, &config, &commandProcessor);
 
   Serial.write("Setup complete\n");
 
-  // #ifdef ESP_WIFI_MQTT
-  //   setupWiFi();
-
-  //   setupMQTT();
-
-  //   xTaskCreate(MQTTTask, "MQTTTask", 4096, NULL, 1, NULL);
-  // #endif
-}
-
-void loop()
-{
-  vTaskDelete(NULL);
+  while (1)
+  {
+    vTaskDelete(NULL);
+  }
 }
