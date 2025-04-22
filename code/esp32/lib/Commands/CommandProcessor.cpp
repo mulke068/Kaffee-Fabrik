@@ -223,8 +223,6 @@ void CommandProcessor::processStopSwitchCommand(const String &action, const Stri
     return;
   }
 }
-#endif // ESP_STOP_SWITCH
-
 /**
  * @brief Prints the status of the stop switch pins.
  * @details This function prints the current status of the stop switch pins to the serial console.
@@ -242,6 +240,7 @@ void CommandProcessor::printStopSwitch()
   Serial.println(digitalRead(_cfg->stopPin2) ? "YES" : "NO");
   return;
 }
+#endif // ESP_STOP_SWITCH
 /*
                       __  __       _                  _____ _   _
                      |  \/  | ___ | |_ ___  _ __     |  ___| \ | |
@@ -863,20 +862,22 @@ void CommandProcessor::printSystemMonitor()
   float cpuTotalPercent = (runtimeDelta / (float)(cpuFreqHz * timeDeltaSec)) * 100.0f;
 
   // Header
-  Serial.write("\n\033[1;36m=== System Monitor ===\033[0m\n");
-  Serial.printf("Temperature: \033[1;36m%.1f°C\033[0m\n", temp);
-  Serial.printf("Uptime: \033[1m%02d:%02d:%02d\033[0m\n", hrs, mins, secs);
-  Serial.printf("CPU Usage (Total): \033[1;33m%.1f%%\033[0m\n", cpuTotalPercent);
+  Serial.write("\n=== System Monitor ===\n");
+  Serial.printf("Temperature: %.1f°\n", temp);
+  Serial.printf("Uptime-Format: %02d:%02d:%02d\n", hrs, mins, secs);
+  Serial.print("Uptime:       ");
+  Serial.println(uptimeSec);
+  Serial.printf("CPU Usage (Total): %.1f%%\n", cpuTotalPercent);
 
-  Serial.printf("RAM:   Free: \033[32m%.1fkB\033[0m | Min: \033[33m%.1fkB\033[0m | Total: %.1fkB\n",
+  Serial.printf("RAM:   Free: %.1fkB | Min: %.1fkB | Total: %.1fkB\n",
                 freeHeap / 1024.0f, minFreeHeap / 1024.0f, totalHeap / 1024.0f);
 
 #ifdef BOARD_HAS_PSRAM
-  Serial.printf("PSRAM: Free: \033[32m%.1fkB\033[0m | Total: %.1fkB\n",
+  Serial.printf("PSRAM: Free: %.1fkB | Total: %.1fkB\n",
                 freePsram / 1024.0f, totalPsram / 1024.0f);
 #endif // BOARD_HAS_PSRAM
 
-  Serial.write("\n\033[1mTask Name           State   CPU%    Stack Free\033[0m\n");
+  Serial.write("\nTask Name           State   CPU%    Stack Free\n");
   Serial.write("------------------------------------------------------\n");
 
   for (UBaseType_t i = 0; i < capturedTasks; i++)
@@ -924,7 +925,7 @@ void CommandProcessor::printSystemMonitor()
   vPortFree(taskStatus);
 
   // Applications Section
-  Serial.write("\n\033[1;35m== Applications ==\033[0m\n");
+  Serial.write("\n== Applications ==\n");
   Serial.write("- Motor Controller\n");
   Serial.write("- Sensor Processor\n");
   Serial.write("- Command Processor\n");
