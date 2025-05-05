@@ -1,0 +1,3681 @@
+[
+    {
+        "id": "4963d064d65a4fbd",
+        "type": "tab",
+        "label": "1.ste Test",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5748526189eb6baa",
+        "type": "tab",
+        "label": "1.ste Test",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "986e388d2bd5e661",
+        "type": "group",
+        "z": "4963d064d65a4fbd",
+        "style": {
+            "stroke": "#c2bcb3",
+            "stroke-opacity": "1",
+            "fill": "#d4d0c8",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ededd9"
+        },
+        "nodes": [
+            "05ed6d0783eabd03",
+            "f8de647f6d5282aa"
+        ],
+        "x": 694,
+        "y": 639,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "3c05014765c64445",
+        "type": "group",
+        "z": "4963d064d65a4fbd",
+        "style": {
+            "stroke": "#c2bcb3",
+            "stroke-opacity": "1",
+            "fill": "#d4d0c8",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ededd9"
+        },
+        "nodes": [
+            "928eb6581c761630",
+            "c65688c042d6a70e",
+            "d72ad197e986667d",
+            "9ee011b04c6584dc",
+            "4472c7bed5a48b5c",
+            "7251e6484cb4e151",
+            "85a2bb0ce0447614"
+        ],
+        "x": 34,
+        "y": 219,
+        "w": 572,
+        "h": 202
+    },
+    {
+        "id": "0a0db7dcaeda38c8",
+        "type": "group",
+        "z": "4963d064d65a4fbd",
+        "style": {
+            "stroke": "#c2bcb3",
+            "stroke-opacity": "1",
+            "fill": "#d4d0c8",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ededd9"
+        },
+        "nodes": [
+            "ea782a74af9b5c35",
+            "85a3e1ea07d80102",
+            "d03b4c251f96c38e",
+            "193de556416ff5f8",
+            "22eec7c8d9f91c45",
+            "f3a515ed8c55cf4b",
+            "e4ef89dbd87597b1"
+        ],
+        "x": 34,
+        "y": 439,
+        "w": 572,
+        "h": 202
+    },
+    {
+        "id": "fd4335d14165a105",
+        "type": "group",
+        "z": "4963d064d65a4fbd",
+        "style": {
+            "stroke": "#c2bcb3",
+            "stroke-opacity": "1",
+            "fill": "#d4d0c8",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ededd9"
+        },
+        "nodes": [
+            "49984ef41e86c0c1",
+            "b40a80fcae93cf05",
+            "7797aece62df4871",
+            "82c4eeef7cdb0503",
+            "970ea64c930872ee",
+            "8f903bace05de505"
+        ],
+        "x": 34,
+        "y": 659,
+        "w": 572,
+        "h": 202
+    },
+    {
+        "id": "f335995f5a75eac3",
+        "type": "group",
+        "z": "5748526189eb6baa",
+        "style": {
+            "stroke": "#c2bcb3",
+            "stroke-opacity": "1",
+            "fill": "#d4d0c8",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ededd9"
+        },
+        "nodes": [
+            "6052c81188ed2fb5",
+            "ad9e8a90b59831b8"
+        ],
+        "x": 894,
+        "y": 2039,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "32fe862233966437",
+        "type": "group",
+        "z": "5748526189eb6baa",
+        "style": {
+            "stroke": "#3d3e46",
+            "stroke-opacity": "1",
+            "fill": "#21222c",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#f8f8f2"
+        },
+        "nodes": [
+            "2ce68eb5ab20800b",
+            "c1b489a0c179cee7",
+            "5d05e39be58c54be",
+            "0d9621c7eba04408",
+            "9623ee09b0ab6d51",
+            "4c6d1d011ab95c6d",
+            "368101962a7dc511",
+            "afe5f9553e99bca0",
+            "88cf863d1a9ecba2",
+            "2d2d77d0ca37d616",
+            "e04e99742247d5ab",
+            "e22cf5970ad351fb",
+            "ad2f32b52e0e6f59",
+            "e86f291719f1acc0",
+            "b111ce23261b491c",
+            "bce41a1f5a83037d"
+        ],
+        "x": 1054,
+        "y": 39,
+        "w": 1032,
+        "h": 402
+    },
+    {
+        "id": "6378aba9a11748a1",
+        "type": "group",
+        "z": "5748526189eb6baa",
+        "style": {
+            "stroke": "#3d3e46",
+            "stroke-opacity": "1",
+            "fill": "#21222c",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#f8f8f2"
+        },
+        "nodes": [
+            "f2f35b7472050dd1",
+            "24ca43a8ccac89f9",
+            "6edbe527810ee29d",
+            "2d71bf6197aad8fe"
+        ],
+        "x": 88,
+        "y": 1593,
+        "w": 624,
+        "h": 694
+    },
+    {
+        "id": "b12025e55febebe2",
+        "type": "group",
+        "z": "5748526189eb6baa",
+        "style": {
+            "stroke": "#d0cbc4",
+            "stroke-opacity": "1",
+            "fill": "#ddd8d2",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#999082"
+        },
+        "nodes": [
+            "63b2b806b21cb4e8",
+            "a84a04cda6c964e7",
+            "7ffffe4dbcf1346e",
+            "340e6961ba22a03a",
+            "4ae84909deac7081",
+            "565ea01901c309a3"
+        ],
+        "x": 734,
+        "y": 1559,
+        "w": 912,
+        "h": 202
+    },
+    {
+        "id": "afb0f3f5c180e761",
+        "type": "group",
+        "z": "5748526189eb6baa",
+        "style": {
+            "stroke": "#232433",
+            "stroke-opacity": "1",
+            "fill": "#16161e",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#787c99"
+        },
+        "nodes": [
+            "322693da08491f8e",
+            "8df3783ac9f10a5e",
+            "0979d5fc3ceda224",
+            "37a417ceda7fc523",
+            "c31daf85ee25a868",
+            "159298932071bc31"
+        ],
+        "x": 754,
+        "y": 1214,
+        "w": 712,
+        "h": 227
+    },
+    {
+        "id": "24ca43a8ccac89f9",
+        "type": "group",
+        "z": "5748526189eb6baa",
+        "g": "6378aba9a11748a1",
+        "style": {
+            "stroke": "#c2bcb3",
+            "stroke-opacity": "1",
+            "fill": "#d4d0c8",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ededd9"
+        },
+        "nodes": [
+            "88f7b1555bbcf13d",
+            "33fb835edd79fd54",
+            "a3ae0a8ccc64643f",
+            "3d225ee3d91b2ab5",
+            "24e97942d83156b8",
+            "06a2e5081782c0e9",
+            "81a7c84e64e3ee0a"
+        ],
+        "x": 114,
+        "y": 1619,
+        "w": 572,
+        "h": 202
+    },
+    {
+        "id": "6edbe527810ee29d",
+        "type": "group",
+        "z": "5748526189eb6baa",
+        "g": "6378aba9a11748a1",
+        "style": {
+            "stroke": "#c2bcb3",
+            "stroke-opacity": "1",
+            "fill": "#d4d0c8",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ededd9"
+        },
+        "nodes": [
+            "0404c319ba571427",
+            "da69338dcc74792f",
+            "27e18eb4d75b208f",
+            "5c967522663b30bb",
+            "98b46be36f6ccdcb",
+            "e7d9a450c682f9cd",
+            "65e1dc679d6d8e91"
+        ],
+        "x": 114,
+        "y": 1839,
+        "w": 572,
+        "h": 202
+    },
+    {
+        "id": "2d71bf6197aad8fe",
+        "type": "group",
+        "z": "5748526189eb6baa",
+        "g": "6378aba9a11748a1",
+        "style": {
+            "stroke": "#c2bcb3",
+            "stroke-opacity": "1",
+            "fill": "#d4d0c8",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ededd9"
+        },
+        "nodes": [
+            "c7c97310677b8a4c",
+            "d371bf20e06d5713",
+            "7612a30bb3ca4de7",
+            "04e5d7a1b2f1056b",
+            "4f48fab7cadaf27d",
+            "220e94d5d696c599"
+        ],
+        "x": 114,
+        "y": 2059,
+        "w": 572,
+        "h": 202
+    },
+    {
+        "id": "76696bd763e6d88c",
+        "type": "junction",
+        "z": "4963d064d65a4fbd",
+        "x": 660,
+        "y": 560,
+        "wires": [
+            [
+                "8e68dcd3c81cb6b7"
+            ]
+        ]
+    },
+    {
+        "id": "8e68dcd3c81cb6b7",
+        "type": "junction",
+        "z": "4963d064d65a4fbd",
+        "x": 1160,
+        "y": 560,
+        "wires": [
+            [
+                "41d448a67ff7ce91",
+                "4c2c1e547aca23b8"
+            ]
+        ]
+    },
+    {
+        "id": "f3a515ed8c55cf4b",
+        "type": "junction",
+        "z": "4963d064d65a4fbd",
+        "g": "0a0db7dcaeda38c8",
+        "x": 340,
+        "y": 560,
+        "wires": [
+            [
+                "e4ef89dbd87597b1"
+            ]
+        ]
+    },
+    {
+        "id": "85a2bb0ce0447614",
+        "type": "junction",
+        "z": "4963d064d65a4fbd",
+        "g": "3c05014765c64445",
+        "x": 340,
+        "y": 340,
+        "wires": [
+            [
+                "4472c7bed5a48b5c"
+            ]
+        ]
+    },
+    {
+        "id": "9c096c03aa5a99aa",
+        "type": "junction",
+        "z": "4963d064d65a4fbd",
+        "x": 340,
+        "y": 780,
+        "wires": [
+            [
+                "8f903bace05de505"
+            ]
+        ]
+    },
+    {
+        "id": "bc3c7630f5a58030",
+        "type": "junction",
+        "z": "5748526189eb6baa",
+        "x": 880,
+        "y": 1960,
+        "wires": [
+            [
+                "701ff00c3bf951cd"
+            ]
+        ]
+    },
+    {
+        "id": "701ff00c3bf951cd",
+        "type": "junction",
+        "z": "5748526189eb6baa",
+        "x": 1360,
+        "y": 1960,
+        "wires": [
+            [
+                "5695df738e060a9e",
+                "3cce1f0b9a03ced2"
+            ]
+        ]
+    },
+    {
+        "id": "e7d9a450c682f9cd",
+        "type": "junction",
+        "z": "5748526189eb6baa",
+        "g": "6edbe527810ee29d",
+        "x": 420,
+        "y": 1960,
+        "wires": [
+            [
+                "65e1dc679d6d8e91"
+            ]
+        ]
+    },
+    {
+        "id": "81a7c84e64e3ee0a",
+        "type": "junction",
+        "z": "5748526189eb6baa",
+        "g": "24ca43a8ccac89f9",
+        "x": 420,
+        "y": 1740,
+        "wires": [
+            [
+                "24e97942d83156b8"
+            ]
+        ]
+    },
+    {
+        "id": "f2f35b7472050dd1",
+        "type": "junction",
+        "z": "5748526189eb6baa",
+        "g": "6378aba9a11748a1",
+        "x": 420,
+        "y": 2180,
+        "wires": [
+            [
+                "220e94d5d696c599"
+            ]
+        ]
+    },
+    {
+        "id": "ad2f32b52e0e6f59",
+        "type": "junction",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "x": 1660,
+        "y": 400,
+        "wires": [
+            [
+                "2ce68eb5ab20800b"
+            ]
+        ]
+    },
+    {
+        "id": "3cce1f0b9a03ced2",
+        "type": "junction",
+        "z": "5748526189eb6baa",
+        "x": 1860,
+        "y": 1960,
+        "wires": [
+            [
+                "5f63883bf52f4985",
+                "615204356006edd9"
+            ]
+        ]
+    },
+    {
+        "id": "9b354f37af08c6d8",
+        "type": "junction",
+        "z": "5748526189eb6baa",
+        "x": 220,
+        "y": 140,
+        "wires": [
+            [
+                "298a63be5515ac7e",
+                "6832fa1c683fa6b9"
+            ]
+        ]
+    },
+    {
+        "id": "37a417ceda7fc523",
+        "type": "junction",
+        "z": "5748526189eb6baa",
+        "g": "afb0f3f5c180e761",
+        "x": 1380,
+        "y": 1240,
+        "wires": [
+            [
+                "1db416a339a6a4a1"
+            ]
+        ]
+    },
+    {
+        "id": "6832fa1c683fa6b9",
+        "type": "junction",
+        "z": "5748526189eb6baa",
+        "x": 880,
+        "y": 140,
+        "wires": [
+            [
+                "5d05e39be58c54be",
+                "b111ce23261b491c"
+            ]
+        ]
+    },
+    {
+        "id": "1db416a339a6a4a1",
+        "type": "junction",
+        "z": "5748526189eb6baa",
+        "x": 1580,
+        "y": 1400,
+        "wires": [
+            [
+                "3cce1f0b9a03ced2"
+            ]
+        ]
+    },
+    {
+        "id": "298a63be5515ac7e",
+        "type": "junction",
+        "z": "5748526189eb6baa",
+        "x": 440,
+        "y": 740,
+        "wires": [
+            [
+                "7e7e7bf7918d58ce",
+                "63b2b806b21cb4e8"
+            ]
+        ]
+    },
+    {
+        "id": "d6196a54f11d39e0",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#8000ff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#8000ff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#8000ff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#8000ff",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#a64dff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#8000ff",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD.MM.YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4a526a2e50544937",
+        "type": "ui_tab",
+        "name": "Main Control Panel",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "840a1d041e3dd48d",
+        "type": "ui_group",
+        "name": "Motors",
+        "tab": "4a526a2e50544937",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3b6da19da6f23286",
+        "type": "ui_group",
+        "name": "Auslesung",
+        "tab": "4a526a2e50544937",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b0dca42869a7c055",
+        "type": "ui_group",
+        "name": "",
+        "tab": "4a526a2e50544937",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "63b2f7db16f84e07",
+        "type": "serial-port",
+        "name": "pcb_esp32_serial",
+        "serialport": "/dev/ttyS0",
+        "serialbaud": "115200",
+        "databits": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": 10000
+    },
+    {
+        "id": "07fe8df05be2d6a4",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": 8086,
+        "protocol": "http",
+        "database": "database",
+        "name": "IndluxDB",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://127.0.0.1:8086",
+        "timeout": 10,
+        "rejectUnauthorized": false
+    },
+    {
+        "id": "2f5c17fc00a05617",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.178.90",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": "250",
+        "timeout": "100",
+        "name": "Home",
+        "rewritetimes": "0",
+        "rewriteinterval": "100",
+        "vartable": [
+            {
+                "addr": "DB50,X0.0",
+                "name": "notAus"
+            },
+            {
+                "addr": "DB50,X2.0",
+                "name": "M1 Lauft"
+            },
+            {
+                "addr": "DB50,X2.1",
+                "name": "M1 Bereitschaft"
+            },
+            {
+                "addr": "DB50,X2.2",
+                "name": "M1 Storung"
+            },
+            {
+                "addr": "DB50,X2.3",
+                "name": "M1 RL"
+            },
+            {
+                "addr": "DB50,X2.4",
+                "name": "M1 Stop"
+            },
+            {
+                "addr": "DB50,X2.5",
+                "name": "M1 LL"
+            },
+            {
+                "addr": "DB50,INT4",
+                "name": "M1 Speed"
+            },
+            {
+                "addr": "DB50,X6.0",
+                "name": "M2 Lauft"
+            },
+            {
+                "addr": "DB50,X6.1",
+                "name": "M2 Bereitschaft"
+            },
+            {
+                "addr": "DB50,X6.2",
+                "name": "M2 Storung"
+            },
+            {
+                "addr": "DB50,X6.3",
+                "name": "M2 RL"
+            },
+            {
+                "addr": "DB50,X6.4",
+                "name": "M2 Stop"
+            },
+            {
+                "addr": "DB50,X6.5",
+                "name": "M2 LL"
+            },
+            {
+                "addr": "DB50,INT8",
+                "name": "M2 Speed"
+            },
+            {
+                "addr": "DB50,X10.0",
+                "name": "M3 Lauft"
+            },
+            {
+                "addr": "DB50,X10.1",
+                "name": "M3 Bereitschaft"
+            },
+            {
+                "addr": "DB50,X10.2",
+                "name": "M3 Storung"
+            },
+            {
+                "addr": "DB50,X10.3",
+                "name": "M3 RL"
+            },
+            {
+                "addr": "DB50,X10.4",
+                "name": "M3 Stop"
+            },
+            {
+                "addr": "DB50,X10.5",
+                "name": "M3 LL"
+            },
+            {
+                "addr": "DB50,INT12",
+                "name": "M3 Speed"
+            },
+            {
+                "addr": "DB50,REAL14",
+                "name": "voltage"
+            },
+            {
+                "addr": "DB50,REAL18",
+                "name": "current"
+            },
+            {
+                "addr": "DB50,REAL22",
+                "name": "motorTemp"
+            },
+            {
+                "addr": "DB50,X26.0",
+                "name": "motorTempAlert"
+            },
+            {
+                "addr": "DB50,REAL28",
+                "name": "powerTemp"
+            },
+            {
+                "addr": "DB50,X32.0",
+                "name": "powerTempAlert"
+            },
+            {
+                "addr": "DB50,INT34",
+                "name": "aliveCounter"
+            },
+            {
+                "addr": "DB50,INT36",
+                "name": "sendAlive"
+            }
+        ]
+    },
+    {
+        "id": "a2a5ab13055f3e7f",
+        "type": "split",
+        "z": "4963d064d65a4fbd",
+        "name": "Split by Newline",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 600,
+        "y": 120,
+        "wires": [
+            [
+                "a7aa9f0538206b6a"
+            ]
+        ]
+    },
+    {
+        "id": "a7aa9f0538206b6a",
+        "type": "function",
+        "z": "4963d064d65a4fbd",
+        "name": "Parse Sensor Data",
+        "func": "var line = msg.payload.trim();\n\n\n\nif (line.indexOf(\"Bus Voltage:\") === 0) {\n    var value = line.split(\"Bus Voltage:\")[1].replace(\"V\", \" \").trim();\n    msg.topic = \"voltage\";\n    msg.payload = Number(value);\n    return msg;\n} else if (line.includes(\"Current:\")) {\n    const tempRegx = /Current: \\s+([\\d]+).*/;\n    const matches = line.match(tempRegx);\n    if (matches) {\n        msg.topic = \"current\";\n        msg.payload = parseFloat(matches[1]);\n        return msg;\n    }\n} else if (line.includes(\"Motor Driver Temp:\")) {\n\n    const tempRegex = /Motor Driver Temp:\\s+([\\d.]+).*Alert:\\s+(YES|No)/;\n    const matches = line.match(tempRegex);\n    \n    if (matches && matches.length >= 3) {\n\n        const messages = [];\n        \n        messages.push({\n            topic: \"motorTemp\",\n            payload: parseFloat(matches[1])\n        });\n        \n        messages.push({\n            topic: \"motorTempAlert\",\n            payload: matches[2] === \"YES\" ? true : false\n        });\n        \n        return [messages];\n    }\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 120,
+        "wires": [
+            [
+                "33769be0f31ff862"
+            ]
+        ]
+    },
+    {
+        "id": "33769be0f31ff862",
+        "type": "switch",
+        "z": "4963d064d65a4fbd",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "voltage",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "current",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "motorTemp",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1030,
+        "y": 120,
+        "wires": [
+            [
+                "9c81dc3ce860ef15",
+                "97cac88318d86303"
+            ],
+            [
+                "682c3c1b9f5d77fc",
+                "97cac88318d86303"
+            ],
+            [
+                "f55c0ba975d259ed",
+                "97cac88318d86303"
+            ]
+        ]
+    },
+    {
+        "id": "97cac88318d86303",
+        "type": "debug",
+        "z": "4963d064d65a4fbd",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "f8de647f6d5282aa",
+        "type": "function",
+        "z": "4963d064d65a4fbd",
+        "g": "986e388d2bd5e661",
+        "name": "function 4",
+        "func": "if (msg.payload == 0) {\n    msg.payload = \"SENSOR:AUTO:OFF\"; \n} else {\n    msg.payload = `SENSOR:AUTO:ON:${msg.payload}`;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 680,
+        "wires": [
+            [
+                "8e68dcd3c81cb6b7"
+            ]
+        ]
+    },
+    {
+        "id": "c1f7810979c5dd1f",
+        "type": "debug",
+        "z": "4963d064d65a4fbd",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "4472c7bed5a48b5c",
+        "type": "function",
+        "z": "4963d064d65a4fbd",
+        "g": "3c05014765c64445",
+        "name": "func-M1_Auswertung",
+        "func": "// Hole gespeicherte Werte\nlet richtung = flow.get(\"richtung\") || \"LL\";\nlet geschwindigkeit = flow.get(\"geschwindigkeit\") || 0;\n\n// Prüfe auf Stop-Befehl\nif (msg.payload === \"STOP\") {\n    msg.payload = \"M1:STOP\";\n    return msg;\n}\n\n// Prüfe auf Richtungsbefehl\nif (msg.payload === \"LL\" || msg.payload === \"RL\") {\n    richtung = msg.payload;\n    flow.set(\"richtung\", richtung);\n}\n\n// Prüfe auf Geschwindigkeitswert (Slider)\nif (typeof msg.payload === \"number\") {\n    geschwindigkeit = msg.payload;\n    flow.set(\"geschwindigkeit\", geschwindigkeit);\n}\n\n// Kombiniere alles zum finalen Befehl\nmsg.payload = `M1:${richtung}:${geschwindigkeit}`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 340,
+        "wires": [
+            [
+                "76696bd763e6d88c"
+            ]
+        ]
+    },
+    {
+        "id": "41d448a67ff7ce91",
+        "type": "debug",
+        "z": "4963d064d65a4fbd",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1320,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7251e6484cb4e151",
+        "type": "comment",
+        "z": "4963d064d65a4fbd",
+        "g": "3c05014765c64445",
+        "name": "Motor 1 - Control ",
+        "info": "",
+        "x": 140,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "22eec7c8d9f91c45",
+        "type": "comment",
+        "z": "4963d064d65a4fbd",
+        "g": "0a0db7dcaeda38c8",
+        "name": "Motor 2 - Control ",
+        "info": "",
+        "x": 140,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "970ea64c930872ee",
+        "type": "comment",
+        "z": "4963d064d65a4fbd",
+        "g": "fd4335d14165a105",
+        "name": "Motor 3 - Control ",
+        "info": "",
+        "x": 140,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e4ef89dbd87597b1",
+        "type": "function",
+        "z": "4963d064d65a4fbd",
+        "g": "0a0db7dcaeda38c8",
+        "name": "func-M2_Auswertung",
+        "func": "// Hole gespeicherte Werte\nlet richtung = flow.get(\"richtung\") || \"LL\";\nlet geschwindigkeit = flow.get(\"geschwindigkeit\") || 0;\n\n// Prüfe auf Stop-Befehl\nif (msg.payload === \"STOP\") {\n    msg.payload = \"M2:STOP\";\n    return msg;\n}\n\n// Prüfe auf Richtungsbefehl\nif (msg.payload === \"LL\" || msg.payload === \"RL\") {\n    richtung = msg.payload;\n    flow.set(\"richtung\", richtung);\n}\n\n// Prüfe auf Geschwindigkeitswert (Slider)\nif (typeof msg.payload === \"number\") {\n    geschwindigkeit = msg.payload;\n    flow.set(\"geschwindigkeit\", geschwindigkeit);\n}\n\n// Kombiniere alles zum finalen Befehl\nmsg.payload = `M2:${richtung}:${geschwindigkeit}`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 560,
+        "wires": [
+            [
+                "76696bd763e6d88c"
+            ]
+        ]
+    },
+    {
+        "id": "8f903bace05de505",
+        "type": "function",
+        "z": "4963d064d65a4fbd",
+        "g": "fd4335d14165a105",
+        "name": "func-M3_Auswertung",
+        "func": "// Hole gespeicherte Werte\nlet richtung = flow.get(\"richtung\") || \"LL\";\nlet geschwindigkeit = flow.get(\"geschwindigkeit\") || 0;\n\n// Prüfe auf Stop-Befehl\nif (msg.payload === \"STOP\") {\n    msg.payload = \"M4:STOP\";\n    return msg;\n}\n\n// Prüfe auf Richtungsbefehl\nif (msg.payload === \"LL\" || msg.payload === \"RL\") {\n    richtung = msg.payload;\n    flow.set(\"richtung\", richtung);\n}\n\n// Prüfe auf Geschwindigkeitswert (Slider)\nif (typeof msg.payload === \"number\") {\n    geschwindigkeit = msg.payload;\n    flow.set(\"geschwindigkeit\", geschwindigkeit);\n}\n\n// Kombiniere alles zum finalen Befehl\nmsg.payload = `M4:${richtung}:${geschwindigkeit}`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 780,
+        "wires": [
+            [
+                "76696bd763e6d88c"
+            ]
+        ]
+    },
+    {
+        "id": "928eb6581c761630",
+        "type": "ui_button",
+        "z": "4963d064d65a4fbd",
+        "g": "3c05014765c64445",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M1 LL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "LL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "85a2bb0ce0447614"
+            ]
+        ]
+    },
+    {
+        "id": "c65688c042d6a70e",
+        "type": "ui_button",
+        "z": "4963d064d65a4fbd",
+        "g": "3c05014765c64445",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M1 RL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "RL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "85a2bb0ce0447614"
+            ]
+        ]
+    },
+    {
+        "id": "9ee011b04c6584dc",
+        "type": "ui_button",
+        "z": "4963d064d65a4fbd",
+        "g": "3c05014765c64445",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "M1 STOP",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "STOP",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 300,
+        "wires": [
+            [
+                "85a2bb0ce0447614"
+            ]
+        ]
+    },
+    {
+        "id": "ea782a74af9b5c35",
+        "type": "ui_button",
+        "z": "4963d064d65a4fbd",
+        "g": "0a0db7dcaeda38c8",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 13,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M2 LL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "LL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 540,
+        "wires": [
+            [
+                "f3a515ed8c55cf4b"
+            ]
+        ]
+    },
+    {
+        "id": "85a3e1ea07d80102",
+        "type": "ui_button",
+        "z": "4963d064d65a4fbd",
+        "g": "0a0db7dcaeda38c8",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 12,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M2 RL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "RL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 580,
+        "wires": [
+            [
+                "f3a515ed8c55cf4b"
+            ]
+        ]
+    },
+    {
+        "id": "193de556416ff5f8",
+        "type": "ui_button",
+        "z": "4963d064d65a4fbd",
+        "g": "0a0db7dcaeda38c8",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "M2 STOP",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "STOP",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 520,
+        "wires": [
+            [
+                "f3a515ed8c55cf4b"
+            ]
+        ]
+    },
+    {
+        "id": "49984ef41e86c0c1",
+        "type": "ui_button",
+        "z": "4963d064d65a4fbd",
+        "g": "fd4335d14165a105",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 21,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M3 LL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "LL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 760,
+        "wires": [
+            [
+                "9c096c03aa5a99aa"
+            ]
+        ]
+    },
+    {
+        "id": "b40a80fcae93cf05",
+        "type": "ui_button",
+        "z": "4963d064d65a4fbd",
+        "g": "fd4335d14165a105",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 20,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M3 RL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "RL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 800,
+        "wires": [
+            [
+                "9c096c03aa5a99aa"
+            ]
+        ]
+    },
+    {
+        "id": "82c4eeef7cdb0503",
+        "type": "ui_button",
+        "z": "4963d064d65a4fbd",
+        "g": "fd4335d14165a105",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 17,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "M3 STOP",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "STOP",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 740,
+        "wires": [
+            [
+                "9c096c03aa5a99aa"
+            ]
+        ]
+    },
+    {
+        "id": "05ed6d0783eabd03",
+        "type": "ui_slider",
+        "z": "4963d064d65a4fbd",
+        "g": "986e388d2bd5e661",
+        "name": "",
+        "label": "AUTO auslesung",
+        "tooltip": "",
+        "group": "3b6da19da6f23286",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 810,
+        "y": 680,
+        "wires": [
+            [
+                "f8de647f6d5282aa"
+            ]
+        ]
+    },
+    {
+        "id": "d72ad197e986667d",
+        "type": "ui_slider",
+        "z": "4963d064d65a4fbd",
+        "g": "3c05014765c64445",
+        "name": "",
+        "label": "M1 speed",
+        "tooltip": "",
+        "group": "840a1d041e3dd48d",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "20",
+        "step": 1,
+        "className": "",
+        "x": 240,
+        "y": 380,
+        "wires": [
+            [
+                "85a2bb0ce0447614"
+            ]
+        ]
+    },
+    {
+        "id": "d03b4c251f96c38e",
+        "type": "ui_slider",
+        "z": "4963d064d65a4fbd",
+        "g": "0a0db7dcaeda38c8",
+        "name": "",
+        "label": "M2 speed",
+        "tooltip": "",
+        "group": "840a1d041e3dd48d",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "20",
+        "step": 1,
+        "className": "",
+        "x": 240,
+        "y": 600,
+        "wires": [
+            [
+                "f3a515ed8c55cf4b"
+            ]
+        ]
+    },
+    {
+        "id": "7797aece62df4871",
+        "type": "ui_slider",
+        "z": "4963d064d65a4fbd",
+        "g": "fd4335d14165a105",
+        "name": "",
+        "label": "M3 speed",
+        "tooltip": "",
+        "group": "840a1d041e3dd48d",
+        "order": 24,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "20",
+        "step": 1,
+        "className": "",
+        "x": 240,
+        "y": 820,
+        "wires": [
+            [
+                "9c096c03aa5a99aa"
+            ]
+        ]
+    },
+    {
+        "id": "9c81dc3ce860ef15",
+        "type": "ui_text",
+        "z": "4963d064d65a4fbd",
+        "group": "3b6da19da6f23286",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Spannung",
+        "format": "{{msg.payload}} V",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1250,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "682c3c1b9f5d77fc",
+        "type": "ui_text",
+        "z": "4963d064d65a4fbd",
+        "group": "3b6da19da6f23286",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Strom ",
+        "format": "{{msg.payload}} mA",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1230,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "f55c0ba975d259ed",
+        "type": "ui_text",
+        "z": "4963d064d65a4fbd",
+        "group": "3b6da19da6f23286",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Motor Treiber Temperatur ",
+        "format": "{{msg.payload}} °C",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1290,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "dceace183514c4ee",
+        "type": "ui_text_input",
+        "z": "4963d064d65a4fbd",
+        "name": "test",
+        "label": "Commandline",
+        "tooltip": "",
+        "group": "3b6da19da6f23286",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": false,
+        "className": "",
+        "topicType": "msg",
+        "x": 790,
+        "y": 980,
+        "wires": [
+            [
+                "8e68dcd3c81cb6b7"
+            ]
+        ]
+    },
+    {
+        "id": "0ada9838818eec19",
+        "type": "serial in",
+        "z": "4963d064d65a4fbd",
+        "name": "ESP32 Ser.In",
+        "serial": "63b2f7db16f84e07",
+        "x": 290,
+        "y": 120,
+        "wires": [
+            [
+                "a2a5ab13055f3e7f",
+                "c1f7810979c5dd1f"
+            ]
+        ]
+    },
+    {
+        "id": "4c2c1e547aca23b8",
+        "type": "serial out",
+        "z": "4963d064d65a4fbd",
+        "name": "ESP32 Ser.Out",
+        "serial": "63b2f7db16f84e07",
+        "x": 1320,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "5d05e39be58c54be",
+        "type": "split",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "name": "Split by Newline",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 1160,
+        "y": 140,
+        "wires": [
+            [
+                "368101962a7dc511"
+            ]
+        ]
+    },
+    {
+        "id": "0d9621c7eba04408",
+        "type": "switch",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "busvoltage",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "loadvoltage",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "shuntvoltage",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "current",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "power",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "motorTemp",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "powerUnitTemp",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 7,
+        "x": 1550,
+        "y": 140,
+        "wires": [
+            [
+                "ad2f32b52e0e6f59",
+                "c1b489a0c179cee7"
+            ],
+            [
+                "ad2f32b52e0e6f59",
+                "88cf863d1a9ecba2"
+            ],
+            [
+                "ad2f32b52e0e6f59",
+                "afe5f9553e99bca0"
+            ],
+            [
+                "ad2f32b52e0e6f59",
+                "9623ee09b0ab6d51"
+            ],
+            [
+                "ad2f32b52e0e6f59",
+                "2d2d77d0ca37d616"
+            ],
+            [
+                "ad2f32b52e0e6f59",
+                "4c6d1d011ab95c6d",
+                "e22cf5970ad351fb"
+            ],
+            [
+                "ad2f32b52e0e6f59",
+                "e04e99742247d5ab",
+                "e22cf5970ad351fb"
+            ]
+        ]
+    },
+    {
+        "id": "2ce68eb5ab20800b",
+        "type": "debug",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "name": "Sensor Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1900,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ad9e8a90b59831b8",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "g": "f335995f5a75eac3",
+        "name": "function 4",
+        "func": "if (msg.payload == 0) {\n    msg.payload = \"SENSOR:AUTO:OFF\"; \n} else {\n    msg.payload = `SENSOR:AUTO:ON:${msg.payload}`;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 2080,
+        "wires": [
+            [
+                "701ff00c3bf951cd"
+            ]
+        ]
+    },
+    {
+        "id": "e86f291719f1acc0",
+        "type": "debug",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "name": "Generell IN Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1360,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "24e97942d83156b8",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "g": "24ca43a8ccac89f9",
+        "name": "func-M1_Auswertung",
+        "func": "// Hole gespeicherte Werte\nlet richtung = flow.get(\"richtung\") || \"LL\";\nlet geschwindigkeit = flow.get(\"geschwindigkeit\") || 0;\n\n// Prüfe auf Stop-Befehl\nif (msg.payload === \"STOP\") {\n    msg.payload = \"M1:STOP\";\n    return msg;\n}\n\n// Prüfe auf Richtungsbefehl\nif (msg.payload === \"LL\" || msg.payload === \"RL\") {\n    richtung = msg.payload;\n    flow.set(\"richtung\", richtung);\n}\n\n// Prüfe auf Geschwindigkeitswert (Slider)\nif (typeof msg.payload === \"number\") {\n    geschwindigkeit = msg.payload;\n    flow.set(\"geschwindigkeit\", geschwindigkeit);\n}\n\n// Kombiniere alles zum finalen Befehl\nmsg.payload = `M1:${richtung}:${geschwindigkeit}`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1740,
+        "wires": [
+            [
+                "bc3c7630f5a58030"
+            ]
+        ]
+    },
+    {
+        "id": "5695df738e060a9e",
+        "type": "debug",
+        "z": "5748526189eb6baa",
+        "name": "Commands Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1530,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "06a2e5081782c0e9",
+        "type": "comment",
+        "z": "5748526189eb6baa",
+        "g": "24ca43a8ccac89f9",
+        "name": "Motor 1 - Control ",
+        "info": "",
+        "x": 220,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "98b46be36f6ccdcb",
+        "type": "comment",
+        "z": "5748526189eb6baa",
+        "g": "6edbe527810ee29d",
+        "name": "Motor 2 - Control ",
+        "info": "",
+        "x": 220,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "4f48fab7cadaf27d",
+        "type": "comment",
+        "z": "5748526189eb6baa",
+        "g": "2d71bf6197aad8fe",
+        "name": "Motor 3 - Control ",
+        "info": "",
+        "x": 220,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "65e1dc679d6d8e91",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "g": "6edbe527810ee29d",
+        "name": "func-M2_Auswertung",
+        "func": "// Hole gespeicherte Werte\nlet richtung = flow.get(\"richtung\") || \"LL\";\nlet geschwindigkeit = flow.get(\"geschwindigkeit\") || 0;\n\n// Prüfe auf Stop-Befehl\nif (msg.payload === \"STOP\") {\n    msg.payload = \"M2:STOP\";\n    return msg;\n}\n\n// Prüfe auf Richtungsbefehl\nif (msg.payload === \"LL\" || msg.payload === \"RL\") {\n    richtung = msg.payload;\n    flow.set(\"richtung\", richtung);\n}\n\n// Prüfe auf Geschwindigkeitswert (Slider)\nif (typeof msg.payload === \"number\") {\n    geschwindigkeit = msg.payload;\n    flow.set(\"geschwindigkeit\", geschwindigkeit);\n}\n\n// Kombiniere alles zum finalen Befehl\nmsg.payload = `M2:${richtung}:${geschwindigkeit}`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1960,
+        "wires": [
+            [
+                "bc3c7630f5a58030"
+            ]
+        ]
+    },
+    {
+        "id": "220e94d5d696c599",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "g": "2d71bf6197aad8fe",
+        "name": "func-M3_Auswertung",
+        "func": "// Hole gespeicherte Werte\nlet richtung = flow.get(\"richtung\") || \"LL\";\nlet geschwindigkeit = flow.get(\"geschwindigkeit\") || 0;\n\n// Prüfe auf Stop-Befehl\nif (msg.payload === \"STOP\") {\n    msg.payload = \"M4:STOP\";\n    return msg;\n}\n\n// Prüfe auf Richtungsbefehl\nif (msg.payload === \"LL\" || msg.payload === \"RL\") {\n    richtung = msg.payload;\n    flow.set(\"richtung\", richtung);\n}\n\n// Prüfe auf Geschwindigkeitswert (Slider)\nif (typeof msg.payload === \"number\") {\n    geschwindigkeit = msg.payload;\n    flow.set(\"geschwindigkeit\", geschwindigkeit);\n}\n\n// Kombiniere alles zum finalen Befehl\nmsg.payload = `M4:${richtung}:${geschwindigkeit}`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 2180,
+        "wires": [
+            [
+                "bc3c7630f5a58030"
+            ]
+        ]
+    },
+    {
+        "id": "368101962a7dc511",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "name": "Sensor Werte trennung",
+        "func": "var line = msg.payload.trim();\n\n\n\nif (line.indexOf(\"Bus Voltage:\") === 0) {\n    var value = line.split(\"Bus Voltage:\")[1].replace(\"V\", \" \").trim();\n    msg.topic = \"busvoltage\";\n    msg.payload = Number(value);\n    return msg;\n} else if (line.indexOf(\"Load Voltage:\") === 0) {\n    var value = line.split(\"Load Voltage:\")[1].replace(\"V\", \" \").trim();\n    msg.topic = \"loadvoltage\";\n    msg.payload = Number(value);\n    return msg;\n} else if (line.indexOf(\"Shunt Voltage:\") === 0) {\n    var value = line.split(\"Shunt Voltage:\")[1].replace(\"mV\", \" \").trim();\n    msg.topic = \"shuntvoltage\";\n    msg.payload = Number(value);\n    return msg;\n} else if (line.indexOf(\"Current:\") === 0) {\n    var value = line.split(\"Current:\")[1].replace(\"mA\", \" \").trim();\n    msg.topic = \"current\";\n    msg.payload = Number(value);\n    return msg;\n} else if (line.indexOf(\"Power:\") === 0) {\n    var value = line.split(\"Power:\")[1].replace(\"mW\", \" \").trim();\n    msg.topic = \"power\";\n    msg.payload = Number(value);\n    return msg;\n} else if (line.includes(\"Motor Driver Temp:\")) {\n\n    const tempRegex = /Motor Driver Temp:\\s+([\\d.]+).*Alert:\\s+(YES|NO)/;\n    const matches = line.match(tempRegex);\n\n    if (matches && matches.length >= 3) {\n\n        const messages = [];\n\n        messages.push({\n            topic: \"motorTemp\",\n            payload: parseFloat(matches[1])\n        });\n\n        messages.push({\n            topic: \"motorTempAlert\",\n            payload: matches[2] === \"YES\" ? true : false\n        });\n\n        return [messages];\n    }\n} else if (line.includes(\"Power Unit Temp:\")) {\n\n    const tempRegex = /Power Unit Temp:\\s+([\\d.]+).*Alert:\\s+(YES|NO)/;\n    const matches = line.match(tempRegex);\n\n    if (matches && matches.length >= 3) {\n\n        const messages = [];\n\n        messages.push({\n            topic: \"powerUnitTemp\",\n            payload: parseFloat(matches[1])\n        });\n\n        messages.push({\n            topic: \"powerUnitTempAlert\",\n            payload: matches[2] === \"YES\" ? true : false\n        });\n\n        return [messages];\n    }\n} ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 140,
+        "wires": [
+            [
+                "0d9621c7eba04408"
+            ]
+        ]
+    },
+    {
+        "id": "b111ce23261b491c",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "name": "Sensor filterung",
+        "func": "const ignoreList = [\n    \"===== Power Readings =====\",\n    \"Bus Voltage:\",\n    \"Shunt Voltage:\",\n    \"Load Voltage:\",\n    \"Current:\",\n    \"Power:\",\n    \"===== Temperature Readings =====\",\n    \"Motor Driver Temp:\",\n    \"Power Unit Temp:\",\n    \"M1 set to BACKWARD at speed 0%\",\n    \"M1 set to FORWARD at speed 0%\",\n    \"M2 set to BACKWARD at speed 0%\",\n    \"M2 set to FORWARD at speed 0%\",\n    \"M4 set to BACKWARD at speed 0%\",\n    \"M4 set to FORWARD at speed 0%\",\n\n];\n\nlet payload = msg.payload.trim();\n\nfor (let i = 0; i < ignoreList.length; i++) {\n    if (payload.startsWith(ignoreList[i])) {\n        return null;\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 180,
+        "wires": [
+            [
+                "e86f291719f1acc0",
+                "bce41a1f5a83037d"
+            ]
+        ]
+    },
+    {
+        "id": "bce41a1f5a83037d",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "name": "function 1",
+        "func": "const timeoutDuration = 2000;\n\nmsg.payload = \"LED:17:ON\";\n\nif (context.timeout) {\n    clearTimeout(context.timeout);\n}\n\ncontext.timeout = setTimeout(() => {\n    let offMsg = { payload: \"LED:17:OFF\" };\n    node.send(offMsg);\n}, timeoutDuration);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "615204356006edd9",
+        "type": "debug",
+        "z": "5748526189eb6baa",
+        "name": "Serial Out Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2090,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "63b2b806b21cb4e8",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "g": "b12025e55febebe2",
+        "name": "Process Serial Data",
+        "func": "// Get the current time for timestamping\nconst now = new Date();\nconst timestamp = now.toLocaleTimeString();\n\n// Get incoming payload and convert to string if needed\nlet data = msg.payload;\nif (Buffer.isBuffer(data)) {\n    data = data.toString();\n}\n\n// Create formatted message with timestamp\nmsg.payload = timestamp + \": \" + data;\n\n// Store to a flow context array for history\nlet history = flow.get(\"serialHistory\") || [];\nhistory.push(msg.payload);\n\n// Keep only last 100 messages\nif (history.length > 100) {\n    history.shift();\n}\nflow.set(\"serialHistory\", history);\n\n// Send full history to the UI\nmsg.history = history;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1600,
+        "wires": [
+            [
+                "a84a04cda6c964e7"
+            ]
+        ]
+    },
+    {
+        "id": "7ffffe4dbcf1346e",
+        "type": "switch",
+        "z": "5748526189eb6baa",
+        "g": "b12025e55febebe2",
+        "name": "Route Commands",
+        "property": "sendToSerial",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1170,
+        "y": 1600,
+        "wires": [
+            [
+                "340e6961ba22a03a",
+                "4ae84909deac7081"
+            ],
+            [
+                "565ea01901c309a3"
+            ]
+        ]
+    },
+    {
+        "id": "340e6961ba22a03a",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "g": "b12025e55febebe2",
+        "name": "Format Outgoing Command",
+        "func": "// Format the outgoing command\nlet command = msg.payload;\n\n// If the command doesn't end with a newline, add one\nif (!command.endsWith('\\n')) {\n    command += '\\n';\n}\n\n// Prepare the message for the serial output node\nmsg.payload = command;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 1600,
+        "wires": [
+            [
+                "3cce1f0b9a03ced2"
+            ]
+        ]
+    },
+    {
+        "id": "4ae84909deac7081",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "g": "b12025e55febebe2",
+        "name": "Log Command to Console",
+        "func": "// Get the current time for timestamping\nconst now = new Date();\nconst timestamp = now.toLocaleTimeString();\n\n// Format the command with a special indicator\nconst formattedCommand = timestamp + \": [SENT] \" + msg.payload;\n\n// Add to history\nlet history = flow.get(\"serialHistory\") || [];\nhistory.push(formattedCommand);\n\n// Keep only last 100 messages\nif (history.length > 100) {\n    history.shift();\n}\nflow.set(\"serialHistory\", history);\n\n// Return the updated history\nreturn { history: history };",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 1660,
+        "wires": [
+            [
+                "a84a04cda6c964e7"
+            ]
+        ]
+    },
+    {
+        "id": "565ea01901c309a3",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "g": "b12025e55febebe2",
+        "name": "Clear Console Handler",
+        "func": "if (msg.clear) {\n    // Clear the history\n    flow.set(\"serialHistory\", []);\n    \n    // Reset the UI\n    return {history: []};\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 1720,
+        "wires": [
+            [
+                "a84a04cda6c964e7"
+            ]
+        ]
+    },
+    {
+        "id": "322693da08491f8e",
+        "type": "debug",
+        "z": "5748526189eb6baa",
+        "g": "afb0f3f5c180e761",
+        "name": "PLC Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1350,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "cdb9316edac1b5a6",
+        "type": "inject",
+        "z": "5748526189eb6baa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1080,
+        "y": 560,
+        "wires": [
+            [
+                "596c739fa23f8395"
+            ]
+        ]
+    },
+    {
+        "id": "70e532c96feea614",
+        "type": "debug",
+        "z": "5748526189eb6baa",
+        "name": "InfluxDB Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1600,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "d8bdd203900388eb",
+        "type": "inject",
+        "z": "5748526189eb6baa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 1390,
+        "y": 500,
+        "wires": [
+            [
+                "dc799dd2c0971510"
+            ]
+        ]
+    },
+    {
+        "id": "a450820813619832",
+        "type": "inject",
+        "z": "5748526189eb6baa",
+        "name": "Test Data",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"motor1\":{\"lauft\":true,\"bereitschaft\":false,\"storung\":false,\"stop\":false,\"rl\":true,\"ll\":false,\"geschwindigkeit\":1700},\"motor2\":{\"lauft\":false,\"bereitschaft\":true,\"storung\":false,\"stop\":true,\"rl\":false,\"ll\":false,\"geschwindigkeit\":100},\"motor3\":{\"lauft\":false,\"bereitschaft\":false,\"storung\":true,\"stop\":true,\"rl\":false,\"ll\":false,\"geschwindigkeit\":0},\"notAus\":false,\"aliveCounter\":25,\"getAlive\":25}",
+        "payloadType": "json",
+        "x": 1300,
+        "y": 840,
+        "wires": [
+            [
+                "d9fbadc52eae00fb",
+                "c3aeea65bd073855",
+                "6ccd07f2b4664937",
+                "60b241307e2375c6"
+            ]
+        ]
+    },
+    {
+        "id": "d9fbadc52eae00fb",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "name": "PLC Parsing Motor2",
+        "func": "let plcData = msg.payload.motor2\n\n\nmsg.payload = {\n    measurement: \"plc_data\",\n    fields: {\n\n        lauft: plcData.lauft,\n        bereitschaft: plcData.bereitschaft,\n        storung: plcData.dtorung,\n        rl: plcData.rl,\n        stop: plcData.stop,\n        ll: plcData.ll,\n        geschwindigkeit: plcData.geschwindigkeit,\n\n    },\n    tags: {\n        motor: \"motor2\",\n        system: \"plc\"\n    }\n};\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 920,
+        "wires": [
+            [
+                "70e532c96feea614"
+            ]
+        ]
+    },
+    {
+        "id": "6ccd07f2b4664937",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "name": "PLC Parsing Motor1",
+        "func": "let plcData = msg.payload.motor1\n\n\nmsg.payload = {\n    measurement: \"plc_data\",\n    fields: {\n\n        lauft: plcData.lauft,\n        bereitschaft: plcData.bereitschaft,\n        storung: plcData.storung,\n        rl: plcData.rl,\n        stop: plcData.stop,\n        ll: plcData.ll,\n        geschwindigkeit: plcData.geschwindigkeit,\n\n    },\n    tags: {\n        motor: \"motor1\",\n        system: \"plc\"\n    }\n};\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 960,
+        "wires": [
+            [
+                "70e532c96feea614"
+            ]
+        ]
+    },
+    {
+        "id": "c3aeea65bd073855",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "name": "PLC Parsing Motor3",
+        "func": "let plcData = msg.payload.motor3\n\n\nmsg.payload = {\n    measurement: \"plc_data\",\n    fields: {\n\n        lauft: plcData.lauft,\n        bereitschaft: plcData.bereitschaft,\n        storung: plcData.dtorung,\n        rl: plcData.rl,\n        stop: plcData.stop,\n        ll: plcData.ll,\n        geschwindigkeit: plcData.geschwindigkeit,\n\n    },\n    tags: {\n        motor: \"motor3\",\n        system: \"plc\"\n    }\n};\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 880,
+        "wires": [
+            [
+                "70e532c96feea614"
+            ]
+        ]
+    },
+    {
+        "id": "60b241307e2375c6",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "name": "PLC Parsing Others",
+        "func": "let plcData = msg.payload\n\n\nmsg.payload = {\n    measurement: \"plc_data\",\n    fields: {\n\n        notAus: plcData.notAus,\n        aliveCounter: plcData.aliveCounter,\n        getAlive: plcData.getAlive,\n\n    },\n    tags: {\n        system: \"plc\"\n    }\n};\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 1000,
+        "wires": [
+            [
+                "70e532c96feea614"
+            ]
+        ]
+    },
+    {
+        "id": "15ce148f51baaed1",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "name": "PCB Parsing powerInfo",
+        "func": "var pcbData = msg.payload.power;\n\nmsg.payload = [{\n    measurement: \"pcb_data\",\n    fields: {\n\n        busVoltage: pcbData.busVoltage,\n        loadVoltage: pcbData.loadVoltage,\n        shuntVoltage: pcbData.shuntVoltage,\n        current: pcbData.current,\n        power: pcbData.power\n\n    },\n    tags: {\n        sensor: \"power\",\n        system: \"pcb\"\n    }\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 660,
+        "wires": [
+            [
+                "93e62a2b36811bb5"
+            ]
+        ]
+    },
+    {
+        "id": "64f2e2d1a25f8ed4",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "name": "PCB Parsing tempInfo",
+        "func": "var pcbData = msg.payload.temperature; \n\nmsg.payload = [{\n    measurement: \"pcb_data\",\n    fields: {\n\n        motorTemp: pcbData.motorDriverTemp,\n        motorTempAlert: pcbData.motorDriverTempAlert,\n        powerTemp: pcbData.powerUnitTemp,\n        powerTempAlert: pcbData.powerUnitTempAlert\n\n    },\n    tags: {\n        sensor: \"temp\",\n        system: \"pcb\"\n    }\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 700,
+        "wires": [
+            [
+                "93e62a2b36811bb5"
+            ]
+        ]
+    },
+    {
+        "id": "665ec5e386815694",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "name": "PCB Parsing systemInfo",
+        "func": "var pcbData = msg.payload.systemMonitor; \n\nmsg.payload = [{\n    measurement: \"pcb_data\",\n    fields: {\n\n        cpuTemp: pcbData.cpuTemp,\n        uptime: pcbData.uptime,\n        uptime_format: pcbData.uptime_format,\n        cpuUsage: pcbData.cpuUsage,\n        ramFree: pcbData.ramFree,\n        ramTotal: pcbData.ramTotal,\n        psramFree: pcbData.psramFree,\n        psramTotal: pcbData.psramTotal,\n\n    },\n    tags: {\n        sensor: \"cpu\",\n        system: \"pcb\"\n    }\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 740,
+        "wires": [
+            [
+                "93e62a2b36811bb5"
+            ]
+        ]
+    },
+    {
+        "id": "c8d4430d2b39c93c",
+        "type": "inject",
+        "z": "5748526189eb6baa",
+        "name": "Test Data",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"systemInfo\":{\"cpuTemp\":55.2,\"uptime\":12345,\"uptime_format\":\"00:10:00\",\"cpuUsage\":35.7,\"ramFree\":156789,\"ramTotal\":2097152,\"psramFree\":456789,\"psramTotal\":8388608},\"powerInfo\":{\"busVoltage\":12.15,\"loadVoltage\":11.98,\"shuntVoltage\":0.05,\"current\":1.23,\"power\":14.73},\"tempInfo\":{\"powerTemp\":48.1,\"powerTempAlert\":false,\"motorTemp\":42.5,\"motorTempAlert\":false}}",
+        "payloadType": "json",
+        "x": 1300,
+        "y": 620,
+        "wires": [
+            [
+                "15ce148f51baaed1",
+                "64f2e2d1a25f8ed4",
+                "665ec5e386815694"
+            ]
+        ]
+    },
+    {
+        "id": "797f83a356d65190",
+        "type": "inject",
+        "z": "5748526189eb6baa",
+        "name": "All Data",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"motors\":{\"motor1\":{\"direction\":\"STOPPED\",\"speed\":0},\"motor2\":{\"direction\":\"STOPPED\",\"speed\":0},\"motor3\":{\"direction\":\"STOPPED\",\"speed\":0},\"motor4\":{\"direction\":\"STOPPED\",\"speed\":0}},\"leds\":{\"port0\":\"0b0\",\"port1\":\"0b0\"},\"temperature\":{\"motorDriverTemp\":25.81,\"motorDriverTempAlert\":false,\"powerUnitTemp\":26.44,\"powerUnitTempAlert\":false},\"power\":{\"busVoltage\":0.82,\"shuntVoltage\":-0.01,\"loadVoltage\":0.82,\"current\":0.1,\"power\":0},\"sensorConfig\":{\"autoSensorReadings\":false,\"sensorUpdate\":true,\"sensorUpdateInterval\":5},\"systemMonitor\":{\"cpuTemp\":26.2,\"uptime\":\"00:00:19\",\"cpuUsage\":12163.4,\"ramFree\":2366.3,\"ramTotal\":413.8,\"psramFree\":2045.8,\"psramTotal\":2046},\"taskMonitor\":[{\"taskName\":\"CommandTask\",\"state\":\"Run\",\"cpuUsage\":0.1,\"stackFree\":1704},{\"taskName\":\"IDLE1\",\"state\":\"Rdy\",\"cpuUsage\":48.2,\"stackFree\":788},{\"taskName\":\"IDLE0\",\"state\":\"Rdy\",\"cpuUsage\":47.7,\"stackFree\":688}],\"stopSwitch\":{\"pin1Triggered\":false,\"pin2Triggered\":true}}",
+        "payloadType": "json",
+        "x": 630,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c543e4e3a8846607",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "name": "Sensor Werte trennung",
+        "func": "let state = context.get('state') || {\n  motors: {\n    motor1: {}, motor2: {}, motor3: {}, motor4: {}\n  },\n  leds: {},\n  temperature: {},\n  power: {},\n  sensorConfig: {},\n  stopSwitch: {}\n};\n\nlet line = msg.payload.trim();\n\nfunction isComplete(data) {\n  return (\n    Object.keys(data.motors.motor1).length &&\n    Object.keys(data.motors.motor2).length &&\n    Object.keys(data.motors.motor3).length &&\n    Object.keys(data.motors.motor4).length &&\n    data.temperature.motorDriverTemp !== undefined &&\n    data.temperature.powerUnitTemp !== undefined &&\n    data.power.busVoltage !== undefined &&\n    data.power.current !== undefined &&\n    data.power.power !== undefined &&\n    data.sensorConfig.autoSensorReadings !== undefined &&\n    data.sensorConfig.sensorUpdate !== undefined\n  );\n}\n\n\nif (/^M\\d: Direction:/.test(line)) {\n  const match = line.match(/^M(\\d): Direction: (\\w+)\\s+Speed: (\\d+)%/);\n  if (match) {\n    const motorIndex = `motor${match[1]}`;\n    const direction = match[2];\n    const speed = parseInt(match[3]);\n\n    if (!state.motors) state.motors = {};\n    state.motors[motorIndex] = { direction, speed };\n  }\n} else if (/^Port \\d:/.test(line)) {\n  const match = line.match(/^Port (\\d): (0b[01]+)/);\n  if (match) {\n    const portKey = `port${match[1]}`;\n    const value = match[2];\n\n    if (!state.leds) state.leds = {};\n    state.leds[portKey] = value;\n  }\n} else if (line.includes(\"Motor Driver Temp:\")) {\n  const m = line.match(/([\\d.]+).*Alert:\\s+(YES|NO)/);\n  if (m) {\n    state.temperature.motorDriverTemp = parseFloat(m[1]);\n    state.temperature.motorDriverTempAlert = m[2] === \"YES\";\n  }\n} else if (line.includes(\"Power Unit Temp:\")) {\n  const m = line.match(/([\\d.]+).*Alert:\\s+(YES|NO)/);\n  if (m) {\n    state.temperature.powerUnitTemp = parseFloat(m[1]);\n    state.temperature.powerUnitTempAlert = m[2] === \"YES\";\n  }\n} else if (/^Motor Driver Temp:/.test(line)) {\n  const match = line.match(/^Motor Driver Temp:\\s+([\\d.]+)\\s+°C \\(Alert: (YES|NO)\\)/);\n  if (match) {\n    if (!state.temperature) state.temperature = {};\n    state.temperature.motorDriverTemp = parseFloat(match[1]);\n    state.temperature.motorDriverTempAlert = match[2] === \"YES\";\n  }\n} else if (/^Power Unit Temp:/.test(line)) {\n  const match = line.match(/^Power Unit Temp:\\s+([\\d.]+)\\s+°C \\(Alert: (YES|NO)\\)/);\n  if (match) {\n    if (!state.temperature) state.temperature = {};\n    state.temperature.powerUnitTemp = parseFloat(match[1]);\n    state.temperature.powerUnitTempAlert = match[2] === \"YES\";\n  }\n} else if (/^Bus Voltage:/.test(line)) {\n  const match = line.match(/^Bus Voltage:\\s+(-?[\\d.]+)\\s+V/);\n  if (match) {\n    if (!state.power) state.power = {};\n    state.power.busVoltage = parseFloat(match[1]);\n  }\n} else if (/^Shunt Voltage:/.test(line)) {\n  const match = line.match(/^Shunt Voltage:\\s+(-?[\\d.]+)\\s+mV/);\n  if (match) {\n    if (!state.power) state.power = {};\n    state.power.shuntVoltage = parseFloat(match[1]);\n  }\n} else if (/^Load Voltage:/.test(line)) {\n  const match = line.match(/^Load Voltage:\\s+(-?[\\d.]+)\\s+V/);\n  if (match) {\n    if (!state.power) state.power = {};\n    state.power.loadVoltage = parseFloat(match[1]);\n  }\n} else if (/^Current:/.test(line)) {\n  const match = line.match(/^Current:\\s+(-?[\\d.]+)\\s+mA/);\n  if (match) {\n    if (!state.power) state.power = {};\n    state.power.current = parseFloat(match[1]);\n  }\n} else if (/^Power:/.test(line)) {\n  const match = line.match(/^Power:\\s+(-?[\\d.]+)\\s+mW/);\n  if (match) {\n    if (!state.power) state.power = {};\n    state.power.power = parseFloat(match[1]);\n  }\n} else if (/^AUTO SENSOR READINGS:/.test(line)) {\n  const match = line.match(/^AUTO SENSOR READINGS:\\s+(Enabled|Disabled)/);\n  if (match) {\n    if (!state.sensorConfig) state.sensorConfig = {};\n    state.sensorConfig.autoSensorReadings = match[1] === \"Enabled\";\n  }\n} else if (/^\\s*Interval:\\s+(\\d+)\\s+seconds/.test(line) && state.sensorConfig?.autoSensorReadings === true && !state.sensorConfig.autoSensorReadingsInterval) {\n  const match = line.match(/^\\s*Interval:\\s+(\\d+)\\s+seconds/);\n  if (match) {\n    state.sensorConfig.autoSensorReadingsInterval = parseInt(match[1]);\n  }\n} else if (/^SENSOR UPDATE:/.test(line)) {\n  const match = line.match(/^SENSOR UPDATE:\\s+(Enabled|Disabled)/);\n  if (match) {\n    if (!state.sensorConfig) state.sensorConfig = {};\n    state.sensorConfig.sensorUpdate = match[1] === \"Enabled\";\n  }\n} else if (/^\\s*Interval:\\s+(\\d+)\\s+seconds/.test(line) && state.sensorConfig?.sensorUpdate === true) {\n  const match = line.match(/^\\s*Interval:\\s+(\\d+)\\s+seconds/);\n  if (match) {\n    state.sensorConfig.sensorUpdateInterval = parseInt(match[1]);\n  }\n} else if (/^Pin 1 Triggered:/.test(line)) {\n  const match = line.match(/^Pin 1 Triggered:\\s+(Yes|No)/);\n  if (match) {\n    if (!state.stopSwitch) state.stopSwitch = {};\n    state.stopSwitch.pin1Triggered = match[1] === \"Yes\";\n  }\n} else if (/^Pin 2 Triggered:/.test(line)) {\n  const match = line.match(/^Pin 2 Triggered:\\s+(Yes|No)/);\n  if (match) {\n    if (!state.stopSwitch) state.stopSwitch = {};\n    state.stopSwitch.pin2Triggered = match[1] === \"Yes\";\n  }\n}\n\nif (isComplete(state)) {\n  context.set('state', null);\n  msg.payload = state;\n  return msg;\n}\n\ncontext.set('state', state);\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 700,
+        "wires": [
+            [
+                "15ce148f51baaed1",
+                "64f2e2d1a25f8ed4"
+            ]
+        ]
+    },
+    {
+        "id": "7e7e7bf7918d58ce",
+        "type": "split",
+        "z": "5748526189eb6baa",
+        "name": "Split by Newline",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 700,
+        "y": 740,
+        "wires": [
+            [
+                "4c62f52750729348",
+                "c543e4e3a8846607"
+            ]
+        ]
+    },
+    {
+        "id": "4c62f52750729348",
+        "type": "function",
+        "z": "5748526189eb6baa",
+        "name": "Sensor Werte trennung SystemInfo",
+        "func": "\nlet state = context.get('state') || {\n  systemMonitor: {},\n  taskMonitor: []\n};\n\nlet line = msg.payload.trim();\n\n\nfunction isComplete(data) {\n  return (\n    data.systemMonitor.cpuTemp !== undefined &&\n    data.systemMonitor.uptime_format !== undefined &&\n    data.systemMonitor.uptime !== undefined &&\n    data.systemMonitor.cpuUsage !== undefined &&\n    data.systemMonitor.ramTotal !== undefined &&\n    data.systemMonitor.psramTotal !== undefined &&\n    data.taskMonitor.length >= 1\n  );\n}\n\nif (/^Temperature:\\s+([\\d.]+)°/.test(line)) {\n  const match = line.match(/^Temperature:\\s+([\\d.]+)°/);\n  if (match) {\n    state.systemMonitor.cpuTemp = parseFloat(match[1]);\n  }\n} else if (/^Uptime-Format:\\s+(\\d{2}:\\d{2}:\\d{2})/.test(line)) {\n  const match = line.match(/^Uptime-Format:\\s+(\\d{2}:\\d{2}:\\d{2})/);\n  if (match) {\n    state.systemMonitor.uptime_format = match[1];\n  }\n} else if (/^Uptime:\\s+(\\d+)/.test(line)) {\n  const match = line.match(/^Uptime:\\s+(\\d+)/);\n  if (match) {\n    state.systemMonitor.uptime = parseInt(match[1]);\n  }\n} else if (/^CPU Usage.*:\\s+([\\d.]+)%/.test(line)) {\n  const match = line.match(/^CPU Usage.*:\\s+([\\d.]+)%/);\n  if (match) {\n    state.systemMonitor.cpuUsage = parseFloat(match[1]);\n  }\n} else if (/^RAM:\\s+Free:\\s+([\\d.]+)kB\\s+\\|\\s+Min:\\s+([\\d.]+)kB\\s+\\|\\s+Total:\\s+([\\d.]+)kB/.test(line)) {\n  const match = line.match(/^RAM:\\s+Free:\\s+([\\d.]+)kB\\s+\\|\\s+Min:\\s+([\\d.]+)kB\\s+\\|\\s+Total:\\s+([\\d.]+)kB/);\n  if (match) {\n    state.systemMonitor.ramFree = parseFloat(match[1]);\n    state.systemMonitor.ramTotal = parseFloat(match[3]);\n  }\n} else if (/^PSRAM:\\s+Free:\\s+([\\d.]+)kB\\s+\\|\\s+Total:\\s+([\\d.]+)kB/.test(line)) {\n  const match = line.match(/^PSRAM:\\s+Free:\\s+([\\d.]+)kB\\s+\\|\\s+Total:\\s+([\\d.]+)kB/);\n  if (match) {\n    state.systemMonitor.psramFree = parseFloat(match[1]);\n    state.systemMonitor.psramTotal = parseFloat(match[2]);\n  }\n} else if (/^\\s*(\\S.*?)\\s{2,}(\\w{3})\\s+([\\d.]+)%\\s+(\\d+)\\s*B/.test(line)) {\n  const match = line.match(/^\\s*(\\S.*?)\\s{2,}(\\w{3})\\s+([\\d.]+)%\\s+(\\d+)\\s*B/);\n  if (match) {\n    const task = {\n      taskName: match[1].trim(),\n      state: match[2],\n      cpuUsage: parseFloat(match[3]),\n      stackFree: parseInt(match[4])\n    };\n\n    if (!state.taskMonitor) state.taskMonitor = [];\n\n    // Prevent duplicates on every line by checking if it's already added\n    const exists = state.taskMonitor.some(t => t.taskName === task.taskName);\n    if (!exists) state.taskMonitor.push(task);\n  }\n}\n\nif (isComplete(state)) {\n  context.set('state', null);\n  msg.payload = state;\n  return msg;\n}\n\n\ncontext.set('state', state);\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 740,
+        "wires": [
+            [
+                "665ec5e386815694"
+            ]
+        ]
+    },
+    {
+        "id": "159298932071bc31",
+        "type": "inject",
+        "z": "5748526189eb6baa",
+        "g": "afb0f3f5c180e761",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "6",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "MONITOR",
+        "payloadType": "str",
+        "x": 1310,
+        "y": 1400,
+        "wires": [
+            [
+                "1db416a339a6a4a1"
+            ]
+        ]
+    },
+    {
+        "id": "c31daf85ee25a868",
+        "type": "inject",
+        "z": "5748526189eb6baa",
+        "g": "afb0f3f5c180e761",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "STATUS",
+        "payloadType": "str",
+        "x": 1320,
+        "y": 1360,
+        "wires": [
+            [
+                "1db416a339a6a4a1"
+            ]
+        ]
+    },
+    {
+        "id": "88f7b1555bbcf13d",
+        "type": "ui_button",
+        "z": "5748526189eb6baa",
+        "g": "24ca43a8ccac89f9",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M1 LL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "LL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 1720,
+        "wires": [
+            [
+                "81a7c84e64e3ee0a"
+            ]
+        ]
+    },
+    {
+        "id": "33fb835edd79fd54",
+        "type": "ui_button",
+        "z": "5748526189eb6baa",
+        "g": "24ca43a8ccac89f9",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M1 RL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "RL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 1760,
+        "wires": [
+            [
+                "81a7c84e64e3ee0a"
+            ]
+        ]
+    },
+    {
+        "id": "3d225ee3d91b2ab5",
+        "type": "ui_button",
+        "z": "5748526189eb6baa",
+        "g": "24ca43a8ccac89f9",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "M1 STOP",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "STOP",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 320,
+        "y": 1700,
+        "wires": [
+            [
+                "81a7c84e64e3ee0a"
+            ]
+        ]
+    },
+    {
+        "id": "0404c319ba571427",
+        "type": "ui_button",
+        "z": "5748526189eb6baa",
+        "g": "6edbe527810ee29d",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 11,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M2 LL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "LL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 1940,
+        "wires": [
+            [
+                "e7d9a450c682f9cd"
+            ]
+        ]
+    },
+    {
+        "id": "da69338dcc74792f",
+        "type": "ui_button",
+        "z": "5748526189eb6baa",
+        "g": "6edbe527810ee29d",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 14,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M2 RL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "RL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 1980,
+        "wires": [
+            [
+                "e7d9a450c682f9cd"
+            ]
+        ]
+    },
+    {
+        "id": "5c967522663b30bb",
+        "type": "ui_button",
+        "z": "5748526189eb6baa",
+        "g": "6edbe527810ee29d",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "M2 STOP",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "STOP",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 320,
+        "y": 1920,
+        "wires": [
+            [
+                "e7d9a450c682f9cd"
+            ]
+        ]
+    },
+    {
+        "id": "c7c97310677b8a4c",
+        "type": "ui_button",
+        "z": "5748526189eb6baa",
+        "g": "2d71bf6197aad8fe",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 19,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M3 LL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "LL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 2160,
+        "wires": [
+            [
+                "f2f35b7472050dd1"
+            ]
+        ]
+    },
+    {
+        "id": "d371bf20e06d5713",
+        "type": "ui_button",
+        "z": "5748526189eb6baa",
+        "g": "2d71bf6197aad8fe",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 22,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M3 RL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "RL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 2200,
+        "wires": [
+            [
+                "f2f35b7472050dd1"
+            ]
+        ]
+    },
+    {
+        "id": "04e5d7a1b2f1056b",
+        "type": "ui_button",
+        "z": "5748526189eb6baa",
+        "g": "2d71bf6197aad8fe",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 18,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "M3 STOP",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "STOP",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 320,
+        "y": 2140,
+        "wires": [
+            [
+                "f2f35b7472050dd1"
+            ]
+        ]
+    },
+    {
+        "id": "6052c81188ed2fb5",
+        "type": "ui_slider",
+        "z": "5748526189eb6baa",
+        "g": "f335995f5a75eac3",
+        "name": "",
+        "label": "AUTO auslesung",
+        "tooltip": "",
+        "group": "3b6da19da6f23286",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 1010,
+        "y": 2080,
+        "wires": [
+            [
+                "ad9e8a90b59831b8"
+            ]
+        ]
+    },
+    {
+        "id": "a3ae0a8ccc64643f",
+        "type": "ui_slider",
+        "z": "5748526189eb6baa",
+        "g": "24ca43a8ccac89f9",
+        "name": "",
+        "label": "M1 speed",
+        "tooltip": "",
+        "group": "840a1d041e3dd48d",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "40",
+        "step": 1,
+        "className": "",
+        "x": 320,
+        "y": 1780,
+        "wires": [
+            [
+                "81a7c84e64e3ee0a"
+            ]
+        ]
+    },
+    {
+        "id": "27e18eb4d75b208f",
+        "type": "ui_slider",
+        "z": "5748526189eb6baa",
+        "g": "6edbe527810ee29d",
+        "name": "",
+        "label": "M2 speed",
+        "tooltip": "",
+        "group": "840a1d041e3dd48d",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "35",
+        "step": 1,
+        "className": "",
+        "x": 320,
+        "y": 2000,
+        "wires": [
+            [
+                "e7d9a450c682f9cd"
+            ]
+        ]
+    },
+    {
+        "id": "7612a30bb3ca4de7",
+        "type": "ui_slider",
+        "z": "5748526189eb6baa",
+        "g": "2d71bf6197aad8fe",
+        "name": "",
+        "label": "M3 speed",
+        "tooltip": "",
+        "group": "840a1d041e3dd48d",
+        "order": 23,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "50",
+        "step": 1,
+        "className": "",
+        "x": 320,
+        "y": 2220,
+        "wires": [
+            [
+                "f2f35b7472050dd1"
+            ]
+        ]
+    },
+    {
+        "id": "c1b489a0c179cee7",
+        "type": "ui_text",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "group": "3b6da19da6f23286",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "BUS Spannung:",
+        "format": "{{msg.payload}} V",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1900,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "9623ee09b0ab6d51",
+        "type": "ui_text",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "group": "3b6da19da6f23286",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Strom ",
+        "format": "{{msg.payload}} mA",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1870,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "4c6d1d011ab95c6d",
+        "type": "ui_text",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "group": "3b6da19da6f23286",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Motor Treiber Temp:",
+        "format": "{{msg.payload}} °C",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1920,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "afe5f9553e99bca0",
+        "type": "ui_text",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "group": "3b6da19da6f23286",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Shunt Spannung:",
+        "format": "{{msg.payload}} mV",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1910,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "88cf863d1a9ecba2",
+        "type": "ui_text",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "group": "3b6da19da6f23286",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Last Spannung:",
+        "format": "{{msg.payload}} V",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1900,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2d2d77d0ca37d616",
+        "type": "ui_text",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "group": "3b6da19da6f23286",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Leistung:",
+        "format": "{{msg.payload}} mW",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1880,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "e04e99742247d5ab",
+        "type": "ui_text",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "group": "3b6da19da6f23286",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Power Unit Temp:",
+        "format": "{{msg.payload}} °C",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1910,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e22cf5970ad351fb",
+        "type": "ui_chart",
+        "z": "5748526189eb6baa",
+        "g": "32fe862233966437",
+        "name": "",
+        "group": "3b6da19da6f23286",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatur Evolution in °C",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1940,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a84a04cda6c964e7",
+        "type": "ui_template",
+        "z": "5748526189eb6baa",
+        "g": "b12025e55febebe2",
+        "group": "b0dca42869a7c055",
+        "name": "Serial Console",
+        "order": 1,
+        "width": 12,
+        "height": 8,
+        "format": "<div class=\"serial-console\">\n    <div class=\"console-header\">\n        <h3>Serial Console</h3>\n        <button ng-click=\"send({clear: true})\" class=\"md-button md-raised\">Clear Console</button>\n    </div>\n    <div class=\"console-output\" id=\"console-output\">\n        <div ng-repeat=\"line in msg.history track by $index\" class=\"console-line\">{{line}}</div>\n    </div>\n    <div class=\"console-input-container\">\n        <form ng-submit=\"sendCommand()\">\n            <div class=\"input-wrapper\">\n                <input type=\"text\" ng-model=\"command\" placeholder=\"Type command and press Enter\" class=\"console-input\" />\n                <button type=\"submit\" class=\"send-button md-button md-raised\">Send</button>\n            </div>\n        </form>\n    </div>\n</div>\n\n<style>\n    .serial-console {\n        display: flex;\n        flex-direction: column;\n        height: 100%;\n        font-family: monospace;\n        background-color: #1e1e1e;\n        color: #f0f0f0;\n        border-radius: 4px;\n        overflow: hidden;\n    }\n    \n    .console-header {\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        padding: 8px 12px;\n        background-color: #333;\n        border-bottom: 1px solid #555;\n    }\n    \n    .console-header h3 {\n        margin: 0;\n        color: #fff;\n    }\n    \n    .console-output {\n        flex-grow: 1;\n        padding: 10px;\n        overflow-y: auto;\n        max-height: calc(100% - 110px);\n    }\n    \n    .console-line {\n        padding: 2px 0;\n        border-bottom: 1px solid rgba(255, 255, 255, 0.05);\n        white-space: pre-wrap;\n        word-break: break-all;\n    }\n    \n    .console-input-container {\n        padding: 10px;\n        background-color: #2a2a2a;\n        border-top: 1px solid #444;\n    }\n    \n    .input-wrapper {\n        display: flex;\n        width: 100%;\n    }\n    \n    .console-input {\n        flex-grow: 1;\n        padding: 8px 12px;\n        background-color: #333;\n        color: white;\n        border: 1px solid #555;\n        border-radius: 4px;\n        font-family: monospace;\n        font-size: 14px;\n    }\n    \n    .send-button {\n        margin-left: 8px;\n        background-color: #2196F3;\n        color: white;\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.command = '';\n        \n        scope.sendCommand = function() {\n            if (scope.command.trim() !== '') {\n                scope.send({payload: scope.command, sendToSerial: true});\n                scope.command = '';\n            }\n        };\n        \n        scope.$watch('msg', function(msg) {\n            if (msg && msg.clear) {\n                scope.send({payload: 'clear', clear: true});\n                return;\n            }\n            \n            // Auto scroll to bottom when new data arrives\n            if (msg && msg.history) {\n                setTimeout(function() {\n                    var consoleOutput = document.getElementById('console-output');\n                    if (consoleOutput) {\n                        consoleOutput.scrollTop = consoleOutput.scrollHeight;\n                    }\n                }, 10);\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1020,
+        "y": 1680,
+        "wires": [
+            [
+                "7ffffe4dbcf1346e"
+            ]
+        ]
+    },
+    {
+        "id": "ae27b1c58e99ba07",
+        "type": "serial in",
+        "z": "5748526189eb6baa",
+        "name": "ESP32 Ser.In",
+        "serial": "63b2f7db16f84e07",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "9b354f37af08c6d8"
+            ]
+        ]
+    },
+    {
+        "id": "5f63883bf52f4985",
+        "type": "serial out",
+        "z": "5748526189eb6baa",
+        "name": "ESP32 Ser.Out",
+        "serial": "63b2f7db16f84e07",
+        "x": 2080,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "dc799dd2c0971510",
+        "type": "influxdb out",
+        "z": "5748526189eb6baa",
+        "influxdb": "07fe8df05be2d6a4",
+        "name": "Test",
+        "measurement": "test",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "Kaffe-Fabrik",
+        "bucket": "Rösterei-Packstation",
+        "x": 1530,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "93e62a2b36811bb5",
+        "type": "influxdb batch",
+        "z": "5748526189eb6baa",
+        "influxdb": "07fe8df05be2d6a4",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "Kaffe-Fabrik",
+        "bucket": "Rösterei-Packstation",
+        "x": 1600,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "596c739fa23f8395",
+        "type": "influxdb in",
+        "z": "5748526189eb6baa",
+        "influxdb": "07fe8df05be2d6a4",
+        "name": "",
+        "query": "from(bucket: \"rasp-pi\")\n    |> range(start: -1000s)\n    |> filter(fn: (r) => r[\"_measurement\"] == \"temp\")\n    |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n    |> yield(name: \"mean\")",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "Kaffe-Fabrik",
+        "x": 1260,
+        "y": 560,
+        "wires": [
+            [
+                "70e532c96feea614"
+            ]
+        ]
+    },
+    {
+        "id": "8df3783ac9f10a5e",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "g": "afb0f3f5c180e761",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "aliveCounter",
+        "diff": true,
+        "name": "",
+        "x": 850,
+        "y": 1320,
+        "wires": [
+            [
+                "0979d5fc3ceda224"
+            ]
+        ]
+    },
+    {
+        "id": "0979d5fc3ceda224",
+        "type": "s7 out",
+        "z": "5748526189eb6baa",
+        "g": "afb0f3f5c180e761",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "sendAlive",
+        "name": "",
+        "x": 1320,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b157e92c2c9a72b8",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 Lauft",
+        "diff": false,
+        "name": "",
+        "x": 1660,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "364ec0100143275b",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 Bereitschaft",
+        "diff": false,
+        "name": "",
+        "x": 1640,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "93721c2eaef429aa",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 Storung",
+        "diff": false,
+        "name": "",
+        "x": 1650,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ea4ca8f5bd3abbd",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 RL",
+        "diff": false,
+        "name": "",
+        "x": 1670,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd68cf475c12ec77",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 Stop",
+        "diff": false,
+        "name": "",
+        "x": 1660,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "03fcea3fb04e1309",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 LL",
+        "diff": false,
+        "name": "",
+        "x": 1670,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d10a0676f7e1e3fe",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 Lauft",
+        "diff": false,
+        "name": "",
+        "x": 2020,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f3f13bf9abc55a5",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 Bereitschaft",
+        "diff": false,
+        "name": "",
+        "x": 2000,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "158d953dd3e26bc3",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 Storung",
+        "diff": false,
+        "name": "",
+        "x": 2010,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f21576202ccd9b1a",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 RL",
+        "diff": false,
+        "name": "",
+        "x": 2030,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "614a1f4269630742",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 Stop",
+        "diff": false,
+        "name": "",
+        "x": 2020,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82a683d8da550710",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 LL",
+        "diff": false,
+        "name": "",
+        "x": 2030,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6fa5cb627cfe314c",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 Lauft",
+        "diff": false,
+        "name": "",
+        "x": 2280,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9ed377aa8019024",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 Bereitschaft",
+        "diff": false,
+        "name": "",
+        "x": 2260,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98fc6b5a1373a94c",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 Storung",
+        "diff": false,
+        "name": "",
+        "x": 2270,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c4db6902a2d491cb",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 RL",
+        "diff": false,
+        "name": "",
+        "x": 2290,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe3f93d154829220",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 Stop",
+        "diff": false,
+        "name": "",
+        "x": 2280,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35d0c54b9713dc57",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 LL",
+        "diff": false,
+        "name": "",
+        "x": 2290,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "07968bdb189b680f",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 Speed",
+        "diff": false,
+        "name": "",
+        "x": 1660,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7963c171456c561",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 Speed",
+        "diff": false,
+        "name": "",
+        "x": 2020,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf6c927b41db6c9b",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 Speed",
+        "diff": false,
+        "name": "",
+        "x": 2280,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c64cfe91d323489",
+        "type": "s7 out",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "voltage",
+        "name": "",
+        "x": 2600,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18cbf50ae23af00e",
+        "type": "s7 out",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "current",
+        "name": "",
+        "x": 2600,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cab89d4fd91b2727",
+        "type": "s7 out",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "motorTemp",
+        "name": "",
+        "x": 2590,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "33ad60936fd491aa",
+        "type": "s7 out",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "motorTempAlert",
+        "name": "",
+        "x": 2580,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3631502c7fbcae8a",
+        "type": "s7 out",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "powerTemp",
+        "name": "",
+        "x": 2590,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3db124d34ef6ea72",
+        "type": "s7 out",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "powerTempAlert",
+        "name": "",
+        "x": 2600,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "567c2e7b717ebffb",
+        "type": "s7 in",
+        "z": "5748526189eb6baa",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "notAus",
+        "diff": true,
+        "name": "",
+        "x": 2030,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "449cdac8caebb916",
+        "type": "change",
+        "z": "5748526189eb6baa",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1840,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bd23b0d751f5a06a",
+        "type": "inject",
+        "z": "5748526189eb6baa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 2400,
+        "y": 820,
+        "wires": [
+            [
+                "6c64cfe91d323489"
+            ]
+        ]
+    }
+]

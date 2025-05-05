@@ -180,6 +180,9 @@ void TaskManager::sensorTaskFunction(void *pvParameters)
   TaskManager *taskManager = static_cast<TaskManager *>(pvParameters);
   uint32_t start_time = millis();
   bool timerFinished = true;
+#ifdef ESP_STOP_SWITCH
+  bool motorStopped = false;
+#endif
 
   while (1)
   {
@@ -210,10 +213,15 @@ void TaskManager::sensorTaskFunction(void *pvParameters)
     if (digitalRead(taskManager->_cfg->stopPin1) || digitalRead(taskManager->_cfg->stopPin2))
     // if (!digitalRead(taskManager->_cfg->stopPin1) || !digitalRead(taskManager->_cfg->stopPin2))
     {
-      Serial.println("STOP SWITCH TRIGGERED!");
-
       extern Motor motor4;
-      motor4.stop();
+      if (!motorStopped) {
+        Serial.println("STOP SWITCH TRIGGERED!");
+        motor4.stop();
+        motorStopped = true;
+      }
+      
+    } else {
+      motorStopped = false;
     }
     vTaskDelay(pdMS_TO_TICKS(100));
 #endif

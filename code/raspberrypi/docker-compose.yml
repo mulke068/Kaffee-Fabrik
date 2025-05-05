@@ -1,0 +1,59 @@
+# version: '3.8'
+services:
+  nodered:
+    image: nodered/node-red:latest
+    container_name: nodered
+    restart: always
+    ports:
+      - "1880:1880"
+    volumes:
+      - nodered_data:/data
+    networks:
+      - monitor-net
+
+
+  influxdb:
+    image: influxdb:latest
+    container_name: influxdb
+    restart: always
+    ports:
+      - "8086:8086"
+    volumes:
+      - influxdb_data:/var/lib/influxdb2
+    environment:
+      DOCKER_INFLUXDB_INIT_MODE: setup
+      DOCKER_INFLUXDB_INIT_USERNAME: admin
+      DOCKER_INFLUXDB_INIT_PASSWORD: admin1234
+      DOCKER_INFLUXDB_INIT_ORG: ser
+      DOCKER_INFLUXDB_INIT_BUCKET: db
+      DOCKER_INFLUXDB_INIT_RETENTION: 0
+    networks:
+      - monitor-net
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin1234
+      # GF_SERVER_ROOT_URL: "%(protocol)s://%(domain)s:%(http_port)s/grafana/"
+      GF_SERVER_ROOT_URL: "/grafana/"
+      GF_SERVER_SERVE_FROM_SUB_PATH: "true"
+    networks:
+      - monitor-net
+    depends_on:
+      - influxdb
+
+volumes:
+  influxdb_data:
+  grafana_data:
+  nodered_data:
+
+networks:
+  monitor-net:
+    driver: bridge
