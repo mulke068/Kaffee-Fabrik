@@ -1,0 +1,11 @@
+creatre a cirquit with a externel power of 24v that is able to power 2x "TB6612FNG,C,8,EL" where 4 motors are connected make sure that there are fuses in case of over amperage and for each motor 3 leds use as microcontroller "ESP32-S3-WROOM-1(N8R8)" you also need to find out how to get more pins because there are not enough pins
+
+
+
+i need 28pins 4pins need pwm 8pins for driver controlls 2 pins for standby 12 pins for leds and 1 for esp32 led 1 for esp32 when there is a usbconnecotr problem   i use ESP32-S3-WROOM-1(N8R8) would it work if yes liste me the pinout if no search for a alternative and list me the pinout
+
+
+
+
+
+in the end i used LM2575HVS-12_C347430 for 24V to 12V LM2576-5.0WU for 24V to 5V AMS1117-3.3_C347222 for 5to 3.3V TYPE-C 16PIN 2MD(073) as usb-c CP2102N-A02-GQFN28R for usb to urat PCA9555PW,118 as GPIO Expander  INA219AIDR as current and voltage sensor and tow from the TMP102AIDRLR temperature sensors and for motor-drivers TB6612FNG,C,8,EL tow of them FC-D1608UGK-520D10 as green NCD0603W1 for white and FC-DA1608HRK-620D as red for the statueses for the motors 

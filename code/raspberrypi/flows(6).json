@@ -1,0 +1,3201 @@
+[
+    {
+        "id": "e94c626482ce1678",
+        "type": "tab",
+        "label": "1.ste Test",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d34e4063979e3cb4",
+        "type": "group",
+        "z": "e94c626482ce1678",
+        "style": {
+            "stroke": "#c2bcb3",
+            "stroke-opacity": "1",
+            "fill": "#d4d0c8",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ededd9"
+        },
+        "nodes": [
+            "541312dad5f73fb7",
+            "d26cd9090233f711"
+        ],
+        "x": 874,
+        "y": 2359,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "79cad7884d421845",
+        "type": "group",
+        "z": "e94c626482ce1678",
+        "style": {
+            "stroke": "#3d3e46",
+            "stroke-opacity": "1",
+            "fill": "#21222c",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#f8f8f2"
+        },
+        "nodes": [
+            "b4f08a2f26dc1664",
+            "d9d82170a127ce2a",
+            "3cdc8405669845dd",
+            "9a0b81196fc8ff17",
+            "aa65840aa05528ce",
+            "742783c3ae06c30d",
+            "1ff00413766edc3e",
+            "a21cd30028cb382d",
+            "825adc27f8543950",
+            "296977e619771522",
+            "14c0a6d51a9f2ba0",
+            "269a187aed5fc2f2",
+            "a323d4e3c315ca1a",
+            "643b93885cdd80ec",
+            "03a4eadc68349984",
+            "446b7e96ab14ed14"
+        ],
+        "x": 1054,
+        "y": 39,
+        "w": 1032,
+        "h": 402
+    },
+    {
+        "id": "a5882bf9c3855c1c",
+        "type": "group",
+        "z": "e94c626482ce1678",
+        "style": {
+            "stroke": "#3d3e46",
+            "stroke-opacity": "1",
+            "fill": "#21222c",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#f8f8f2"
+        },
+        "nodes": [
+            "f0e2753bfbd1fea1",
+            "129ba6b7aac4eaaa",
+            "dfad3e1a5b3918ac",
+            "a9f3ecd4a89ea0b9"
+        ],
+        "x": 68,
+        "y": 1913,
+        "w": 624,
+        "h": 694
+    },
+    {
+        "id": "41bdcbcd7ebcea36",
+        "type": "group",
+        "z": "e94c626482ce1678",
+        "style": {
+            "stroke": "#d0cbc4",
+            "stroke-opacity": "1",
+            "fill": "#ddd8d2",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#999082"
+        },
+        "nodes": [
+            "4da17ac8f7529ffe",
+            "e325316be2be59b9",
+            "02d22987781d2a3e",
+            "a49b1c8e619264c6",
+            "715587307afdb2f8",
+            "6616a007982dec59"
+        ],
+        "x": 1074,
+        "y": 1959,
+        "w": 912,
+        "h": 202
+    },
+    {
+        "id": "ffe1c5040894ce28",
+        "type": "group",
+        "z": "e94c626482ce1678",
+        "style": {
+            "stroke": "#232433",
+            "stroke-opacity": "1",
+            "fill": "#16161e",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#787c99"
+        },
+        "nodes": [
+            "a79f8550fdce34d8",
+            "4e404ccb3080d9f5",
+            "bc8bce6a39324187",
+            "2cba5b353949752a",
+            "b41b6c2716e400a5",
+            "0b76fa54693c5429",
+            "e82d54b5e64d8788",
+            "defe036b1f74c005"
+        ],
+        "x": 1254,
+        "y": 1559,
+        "w": 692,
+        "h": 322
+    },
+    {
+        "id": "bbf139d1b1cc1513",
+        "type": "group",
+        "z": "e94c626482ce1678",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e8b27d5c40eaa8a8",
+            "55421aa772d03dcc",
+            "5978323b632272e4",
+            "1dcd5d8149ec491a",
+            "f544996107e94275",
+            "341871a9c2438201",
+            "b73d0058626f5564",
+            "4472f06bd66cce5e",
+            "f9912b95cfad2bf7",
+            "cc1d0d5af608cc54",
+            "c17a243ae2c4f9c3",
+            "7317ea420c408ebb",
+            "7a61a2c41132e156",
+            "b78920241658a51f",
+            "d5bc89343b7ba1ae",
+            "aaf16f339ea164b6",
+            "71969fed7044d1fd",
+            "19bfca5a78fc3272",
+            "a859c92bdf1b7e31",
+            "6420a562175e8a9d",
+            "12d3d11361e8c272"
+        ],
+        "x": 1874,
+        "y": 559,
+        "w": 572,
+        "h": 462
+    },
+    {
+        "id": "129ba6b7aac4eaaa",
+        "type": "group",
+        "z": "e94c626482ce1678",
+        "g": "a5882bf9c3855c1c",
+        "style": {
+            "stroke": "#c2bcb3",
+            "stroke-opacity": "1",
+            "fill": "#d4d0c8",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ededd9"
+        },
+        "nodes": [
+            "1504988edb5c3e6d",
+            "02a65bc86cb73522",
+            "938279345ddd8ce9",
+            "466ae1f8d6b5703e",
+            "2de2b64c9b5ea5f9",
+            "74ed313628a64b96",
+            "9a4291056b6f71ef"
+        ],
+        "x": 94,
+        "y": 1939,
+        "w": 572,
+        "h": 202
+    },
+    {
+        "id": "dfad3e1a5b3918ac",
+        "type": "group",
+        "z": "e94c626482ce1678",
+        "g": "a5882bf9c3855c1c",
+        "style": {
+            "stroke": "#c2bcb3",
+            "stroke-opacity": "1",
+            "fill": "#d4d0c8",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ededd9"
+        },
+        "nodes": [
+            "a0051877da1f325d",
+            "e5c0a7854870da46",
+            "fe969f786d088bf9",
+            "59b8120a6c66fca0",
+            "9763c0298322aa42",
+            "92c9790fa507dd5e",
+            "601da61c19c15b5f"
+        ],
+        "x": 94,
+        "y": 2159,
+        "w": 572,
+        "h": 202
+    },
+    {
+        "id": "a9f3ecd4a89ea0b9",
+        "type": "group",
+        "z": "e94c626482ce1678",
+        "g": "a5882bf9c3855c1c",
+        "style": {
+            "stroke": "#c2bcb3",
+            "stroke-opacity": "1",
+            "fill": "#d4d0c8",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#ededd9"
+        },
+        "nodes": [
+            "946d6fd4870ef883",
+            "33428859915cc1e6",
+            "7301f97258551e8b",
+            "697d9de7a4a3492a",
+            "9b284d636c0301e2",
+            "74ddb62a82633822"
+        ],
+        "x": 94,
+        "y": 2379,
+        "w": 572,
+        "h": 202
+    },
+    {
+        "id": "361c26f9061c5364",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "x": 860,
+        "y": 2280,
+        "wires": [
+            [
+                "e845063991d3992c"
+            ]
+        ]
+    },
+    {
+        "id": "e845063991d3992c",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "x": 1340,
+        "y": 2280,
+        "wires": [
+            [
+                "93d87f8260a9bb44",
+                "426e4b7fe86a20e6"
+            ]
+        ]
+    },
+    {
+        "id": "92c9790fa507dd5e",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "g": "dfad3e1a5b3918ac",
+        "x": 400,
+        "y": 2280,
+        "wires": [
+            [
+                "601da61c19c15b5f"
+            ]
+        ]
+    },
+    {
+        "id": "9a4291056b6f71ef",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "g": "129ba6b7aac4eaaa",
+        "x": 400,
+        "y": 2060,
+        "wires": [
+            [
+                "2de2b64c9b5ea5f9"
+            ]
+        ]
+    },
+    {
+        "id": "f0e2753bfbd1fea1",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "g": "a5882bf9c3855c1c",
+        "x": 400,
+        "y": 2500,
+        "wires": [
+            [
+                "74ddb62a82633822"
+            ]
+        ]
+    },
+    {
+        "id": "a323d4e3c315ca1a",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "x": 1660,
+        "y": 400,
+        "wires": [
+            [
+                "b4f08a2f26dc1664"
+            ]
+        ]
+    },
+    {
+        "id": "426e4b7fe86a20e6",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "x": 2480,
+        "y": 2280,
+        "wires": [
+            [
+                "2e92504fa20a880c"
+            ]
+        ]
+    },
+    {
+        "id": "153623f00e636540",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "x": 220,
+        "y": 140,
+        "wires": [
+            [
+                "e14b92bb4e12e07b",
+                "dd0da1a49ca2903d"
+            ]
+        ]
+    },
+    {
+        "id": "dd0da1a49ca2903d",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "x": 880,
+        "y": 140,
+        "wires": [
+            [
+                "3cdc8405669845dd",
+                "03a4eadc68349984"
+            ]
+        ]
+    },
+    {
+        "id": "29b1f32476af0d08",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "x": 2320,
+        "y": 1840,
+        "wires": [
+            [
+                "426e4b7fe86a20e6"
+            ]
+        ]
+    },
+    {
+        "id": "e14b92bb4e12e07b",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "x": 320,
+        "y": 740,
+        "wires": [
+            [
+                "580291f246f47313",
+                "17487e988c543919"
+            ]
+        ]
+    },
+    {
+        "id": "17487e988c543919",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "x": 420,
+        "y": 1820,
+        "wires": [
+            [
+                "68eae965a440010d"
+            ]
+        ]
+    },
+    {
+        "id": "68eae965a440010d",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "x": 820,
+        "y": 1820,
+        "wires": [
+            [
+                "4da17ac8f7529ffe"
+            ]
+        ]
+    },
+    {
+        "id": "6d356f94afe4426a",
+        "type": "junction",
+        "z": "e94c626482ce1678",
+        "x": 2260,
+        "y": 1380,
+        "wires": [
+            [
+                "5be5017ebb057eb3",
+                "29b1f32476af0d08"
+            ]
+        ]
+    },
+    {
+        "id": "07fe8df05be2d6a4",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": 8086,
+        "protocol": "http",
+        "database": "database",
+        "name": "IndluxDB-LOCAL",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://127.0.0.1:8086",
+        "timeout": 10,
+        "rejectUnauthorized": false
+    },
+    {
+        "id": "63b2f7db16f84e07",
+        "type": "serial-port",
+        "d": true,
+        "name": "pcb_esp32_serial",
+        "serialport": "/dev/ttyS0",
+        "serialbaud": "115200",
+        "databits": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": 10000
+    },
+    {
+        "id": "2f5c17fc00a05617",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.178.90",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": "50",
+        "timeout": "0",
+        "name": "Home-PLC",
+        "rewritetimes": 0,
+        "rewriteinterval": "500",
+        "vartable": [
+            {
+                "addr": "DB50,X0.0",
+                "name": "notAus"
+            },
+            {
+                "addr": "DB50,X2.0",
+                "name": "M1 Lauft"
+            },
+            {
+                "addr": "DB50,X2.1",
+                "name": "M1 Bereitschaft"
+            },
+            {
+                "addr": "DB50,X2.2",
+                "name": "M1 Storung"
+            },
+            {
+                "addr": "DB50,X2.3",
+                "name": "M1 RL"
+            },
+            {
+                "addr": "DB50,X2.4",
+                "name": "M1 Stop"
+            },
+            {
+                "addr": "DB50,X2.5",
+                "name": "M1 LL"
+            },
+            {
+                "addr": "DB50,INT4",
+                "name": "M1 Speed"
+            },
+            {
+                "addr": "DB50,X6.0",
+                "name": "M2 Lauft"
+            },
+            {
+                "addr": "DB50,X6.1",
+                "name": "M2 Bereitschaft"
+            },
+            {
+                "addr": "DB50,X6.2",
+                "name": "M2 Storung"
+            },
+            {
+                "addr": "DB50,X6.3",
+                "name": "M2 RL"
+            },
+            {
+                "addr": "DB50,X6.4",
+                "name": "M2 Stop"
+            },
+            {
+                "addr": "DB50,X6.5",
+                "name": "M2 LL"
+            },
+            {
+                "addr": "DB50,INT8",
+                "name": "M2 Speed"
+            },
+            {
+                "addr": "DB50,X10.0",
+                "name": "M3 Lauft"
+            },
+            {
+                "addr": "DB50,X10.1",
+                "name": "M3 Bereitschaft"
+            },
+            {
+                "addr": "DB50,X10.2",
+                "name": "M3 Storung"
+            },
+            {
+                "addr": "DB50,X10.3",
+                "name": "M3 RL"
+            },
+            {
+                "addr": "DB50,X10.4",
+                "name": "M3 Stop"
+            },
+            {
+                "addr": "DB50,X10.5",
+                "name": "M3 LL"
+            },
+            {
+                "addr": "DB50,INT12",
+                "name": "M3 Speed"
+            },
+            {
+                "addr": "DB50,REAL14",
+                "name": "voltage"
+            },
+            {
+                "addr": "DB50,REAL18",
+                "name": "current"
+            },
+            {
+                "addr": "DB50,REAL22",
+                "name": "motorTemp"
+            },
+            {
+                "addr": "DB50,X26.0",
+                "name": "motorTempAlert"
+            },
+            {
+                "addr": "DB50,REAL28",
+                "name": "powerTemp"
+            },
+            {
+                "addr": "DB50,X32.0",
+                "name": "powerTempAlert"
+            },
+            {
+                "addr": "DB50,INT34",
+                "name": "aliveCounter"
+            },
+            {
+                "addr": "DB50,INT36",
+                "name": "sendAlive"
+            }
+        ]
+    },
+    {
+        "id": "d6196a54f11d39e0",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#8000ff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#8000ff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#8000ff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#8000ff",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#a64dff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#8000ff",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD.MM.YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4a526a2e50544937",
+        "type": "ui_tab",
+        "name": "Main Control Panel",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "840a1d041e3dd48d",
+        "type": "ui_group",
+        "name": "Motors",
+        "tab": "4a526a2e50544937",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3b6da19da6f23286",
+        "type": "ui_group",
+        "name": "Auslesung",
+        "tab": "4a526a2e50544937",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b0dca42869a7c055",
+        "type": "ui_group",
+        "name": "",
+        "tab": "4a526a2e50544937",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2f62cbdf545d77b0",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": 8086,
+        "protocol": "http",
+        "database": "database",
+        "name": "InfluxDB-Cloud",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "https://influxdb.kevbchef.com",
+        "timeout": 10,
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "944fd3a1b7d004b6",
+        "type": "s7 endpoint",
+        "d": true,
+        "transport": "iso-on-tcp",
+        "address": "192.168.8.200",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": "50",
+        "timeout": "0",
+        "name": "School-PLC",
+        "rewritetimes": 0,
+        "rewriteinterval": "0",
+        "vartable": [
+            {
+                "addr": "",
+                "name": ""
+            }
+        ]
+    },
+    {
+        "id": "3cdc8405669845dd",
+        "type": "split",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "name": "Split by Newline",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 1160,
+        "y": 140,
+        "wires": [
+            [
+                "1ff00413766edc3e"
+            ]
+        ]
+    },
+    {
+        "id": "9a0b81196fc8ff17",
+        "type": "switch",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "busvoltage",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "loadvoltage",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "shuntvoltage",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "current",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "power",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "motorTemp",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "motorTempAlert",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "powerUnitTemp",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "powerUnitTempAlert",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 9,
+        "x": 1550,
+        "y": 140,
+        "wires": [
+            [
+                "a323d4e3c315ca1a",
+                "d9d82170a127ce2a",
+                "4b4435e574db45ed"
+            ],
+            [
+                "a323d4e3c315ca1a",
+                "825adc27f8543950"
+            ],
+            [
+                "a323d4e3c315ca1a",
+                "a21cd30028cb382d"
+            ],
+            [
+                "a323d4e3c315ca1a",
+                "aa65840aa05528ce",
+                "c49b999f835b8472"
+            ],
+            [
+                "a323d4e3c315ca1a",
+                "296977e619771522"
+            ],
+            [
+                "a323d4e3c315ca1a",
+                "742783c3ae06c30d",
+                "269a187aed5fc2f2",
+                "69abbd1907c049b4"
+            ],
+            [
+                "4299c3fabdc86cde"
+            ],
+            [
+                "a323d4e3c315ca1a",
+                "14c0a6d51a9f2ba0",
+                "269a187aed5fc2f2",
+                "44df3bb16370b337"
+            ],
+            [
+                "1a9360e8fe756951"
+            ]
+        ]
+    },
+    {
+        "id": "b4f08a2f26dc1664",
+        "type": "debug",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "name": "Sensor Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1900,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d26cd9090233f711",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "d": true,
+        "g": "d34e4063979e3cb4",
+        "name": "function 4",
+        "func": "if (msg.payload == 0) {\n    msg.payload = \"SENSOR:AUTO:OFF\"; \n} else {\n    msg.payload = `SENSOR:AUTO:ON:${msg.payload}`;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 2400,
+        "wires": [
+            [
+                "e845063991d3992c"
+            ]
+        ]
+    },
+    {
+        "id": "643b93885cdd80ec",
+        "type": "debug",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "name": "Generell IN Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1360,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "2de2b64c9b5ea5f9",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "g": "129ba6b7aac4eaaa",
+        "name": "func-M1_Auswertung",
+        "func": "// Hole gespeicherte Werte\nlet richtung = flow.get(\"richtung\") || \"LL\";\nlet geschwindigkeit = flow.get(\"geschwindigkeit\") || 0;\n\n// Prüfe auf Stop-Befehl\nif (msg.payload === \"STOP\") {\n    msg.payload = \"M1:STOP\";\n    return msg;\n}\n\n// Prüfe auf Richtungsbefehl\nif (msg.payload === \"LL\" || msg.payload === \"RL\") {\n    richtung = msg.payload;\n    flow.set(\"richtung\", richtung);\n}\n\n// Prüfe auf Geschwindigkeitswert (Slider)\nif (typeof msg.payload === \"number\") {\n    geschwindigkeit = msg.payload;\n    flow.set(\"geschwindigkeit\", geschwindigkeit);\n}\n\n// Kombiniere alles zum finalen Befehl\nmsg.payload = `M1:${richtung}:${geschwindigkeit}`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 2060,
+        "wires": [
+            [
+                "361c26f9061c5364"
+            ]
+        ]
+    },
+    {
+        "id": "93d87f8260a9bb44",
+        "type": "debug",
+        "z": "e94c626482ce1678",
+        "name": "Commands Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1510,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "74ed313628a64b96",
+        "type": "comment",
+        "z": "e94c626482ce1678",
+        "g": "129ba6b7aac4eaaa",
+        "name": "Motor 1 - Control ",
+        "info": "",
+        "x": 200,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "9763c0298322aa42",
+        "type": "comment",
+        "z": "e94c626482ce1678",
+        "g": "dfad3e1a5b3918ac",
+        "name": "Motor 2 - Control ",
+        "info": "",
+        "x": 200,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "9b284d636c0301e2",
+        "type": "comment",
+        "z": "e94c626482ce1678",
+        "g": "a9f3ecd4a89ea0b9",
+        "name": "Motor 3 - Control ",
+        "info": "",
+        "x": 200,
+        "y": 2420,
+        "wires": []
+    },
+    {
+        "id": "601da61c19c15b5f",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "g": "dfad3e1a5b3918ac",
+        "name": "func-M2_Auswertung",
+        "func": "// Hole gespeicherte Werte\nlet richtung = flow.get(\"richtung\") || \"LL\";\nlet geschwindigkeit = flow.get(\"geschwindigkeit\") || 0;\n\n// Prüfe auf Stop-Befehl\nif (msg.payload === \"STOP\") {\n    msg.payload = \"M2:STOP\";\n    return msg;\n}\n\n// Prüfe auf Richtungsbefehl\nif (msg.payload === \"LL\" || msg.payload === \"RL\") {\n    richtung = msg.payload;\n    flow.set(\"richtung\", richtung);\n}\n\n// Prüfe auf Geschwindigkeitswert (Slider)\nif (typeof msg.payload === \"number\") {\n    geschwindigkeit = msg.payload;\n    flow.set(\"geschwindigkeit\", geschwindigkeit);\n}\n\n// Kombiniere alles zum finalen Befehl\nmsg.payload = `M2:${richtung}:${geschwindigkeit}`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 2280,
+        "wires": [
+            [
+                "361c26f9061c5364"
+            ]
+        ]
+    },
+    {
+        "id": "74ddb62a82633822",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "g": "a9f3ecd4a89ea0b9",
+        "name": "func-M3_Auswertung",
+        "func": "// Hole gespeicherte Werte\nlet richtung = flow.get(\"richtung\") || \"LL\";\nlet geschwindigkeit = flow.get(\"geschwindigkeit\") || 0;\n\n// Prüfe auf Stop-Befehl\nif (msg.payload === \"STOP\") {\n    msg.payload = \"M4:STOP\";\n    return msg;\n}\n\n// Prüfe auf Richtungsbefehl\nif (msg.payload === \"LL\" || msg.payload === \"RL\") {\n    richtung = msg.payload;\n    flow.set(\"richtung\", richtung);\n}\n\n// Prüfe auf Geschwindigkeitswert (Slider)\nif (typeof msg.payload === \"number\") {\n    geschwindigkeit = msg.payload;\n    flow.set(\"geschwindigkeit\", geschwindigkeit);\n}\n\n// Kombiniere alles zum finalen Befehl\nmsg.payload = `M4:${richtung}:${geschwindigkeit}`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 2500,
+        "wires": [
+            [
+                "361c26f9061c5364"
+            ]
+        ]
+    },
+    {
+        "id": "1ff00413766edc3e",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "name": "Sensor Werte trennung",
+        "func": "var line = msg.payload.trim();\n\n\n\nif (line.indexOf(\"Bus Voltage:\") === 0) {\n    var value = line.split(\"Bus Voltage:\")[1].replace(\"V\", \" \").trim();\n    msg.topic = \"busvoltage\";\n    msg.payload = Number(value);\n    return msg;\n} else if (line.indexOf(\"Load Voltage:\") === 0) {\n    var value = line.split(\"Load Voltage:\")[1].replace(\"V\", \" \").trim();\n    msg.topic = \"loadvoltage\";\n    msg.payload = Number(value);\n    return msg;\n} else if (line.indexOf(\"Shunt Voltage:\") === 0) {\n    var value = line.split(\"Shunt Voltage:\")[1].replace(\"mV\", \" \").trim();\n    msg.topic = \"shuntvoltage\";\n    msg.payload = Number(value);\n    return msg;\n} else if (line.indexOf(\"Current:\") === 0) {\n    var value = line.split(\"Current:\")[1].replace(\"mA\", \" \").trim();\n    msg.topic = \"current\";\n    msg.payload = Number(value);\n    return msg;\n} else if (line.indexOf(\"Power:\") === 0) {\n    var value = line.split(\"Power:\")[1].replace(\"mW\", \" \").trim();\n    msg.topic = \"power\";\n    msg.payload = Number(value);\n    return msg;\n} else if (line.includes(\"Motor Driver Temp:\")) {\n\n    const tempRegex = /Motor Driver Temp:\\s+([\\d.]+).*Alert:\\s+(YES|NO)/;\n    const matches = line.match(tempRegex);\n\n    if (matches && matches.length >= 3) {\n\n        const messages = [];\n\n        messages.push({\n            topic: \"motorTemp\",\n            payload: parseFloat(matches[1])\n        });\n\n        messages.push({\n            topic: \"motorTempAlert\",\n            payload: matches[2] === \"YES\" ? true : false\n        });\n\n        return [messages];\n    }\n} else if (line.includes(\"Power Unit Temp:\")) {\n\n    const tempRegex = /Power Unit Temp:\\s+([\\d.]+).*Alert:\\s+(YES|NO)/;\n    const matches = line.match(tempRegex);\n\n    if (matches && matches.length >= 3) {\n\n        const messages = [];\n\n        messages.push({\n            topic: \"powerUnitTemp\",\n            payload: parseFloat(matches[1])\n        });\n\n        messages.push({\n            topic: \"powerUnitTempAlert\",\n            payload: matches[2] === \"YES\" ? true : false\n        });\n\n        return [messages];\n    }\n} ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 140,
+        "wires": [
+            [
+                "9a0b81196fc8ff17"
+            ]
+        ]
+    },
+    {
+        "id": "03a4eadc68349984",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "name": "Sensor filterung",
+        "func": "const ignoreList = [\n    \"===== Power Readings =====\",\n    \"Bus Voltage:\",\n    \"Shunt Voltage:\",\n    \"Load Voltage:\",\n    \"Current:\",\n    \"Power:\",\n    \"===== Temperature Readings =====\",\n    \"Motor Driver Temp:\",\n    \"Power Unit Temp:\",\n    \"M1 set to BACKWARD at speed 0%\",\n    \"M1 set to FORWARD at speed 0%\",\n    \"M2 set to BACKWARD at speed 0%\",\n    \"M2 set to FORWARD at speed 0%\",\n    \"M4 set to BACKWARD at speed 0%\",\n    \"M4 set to FORWARD at speed 0%\",\n\n];\n\nlet payload = msg.payload.trim();\n\nfor (let i = 0; i < ignoreList.length; i++) {\n    if (payload.startsWith(ignoreList[i])) {\n        return null;\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 180,
+        "wires": [
+            [
+                "643b93885cdd80ec",
+                "446b7e96ab14ed14"
+            ]
+        ]
+    },
+    {
+        "id": "446b7e96ab14ed14",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "name": "function 1",
+        "func": "const timeoutDuration = 2000;\n\nmsg.payload = \"LED:17:ON\";\n\nif (context.timeout) {\n    clearTimeout(context.timeout);\n}\n\ncontext.timeout = setTimeout(() => {\n    let offMsg = { payload: \"LED:17:OFF\" };\n    node.send(offMsg);\n}, timeoutDuration);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bbed7b85e7ac9654",
+        "type": "debug",
+        "z": "e94c626482ce1678",
+        "name": "Serial Out Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2830,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "4da17ac8f7529ffe",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "g": "41bdcbcd7ebcea36",
+        "name": "Process Serial Data",
+        "func": "// Get the current time for timestamping\nconst now = new Date();\nconst timestamp = now.toLocaleTimeString();\n\n// Get incoming payload and convert to string if needed\nlet data = msg.payload;\nif (Buffer.isBuffer(data)) {\n    data = data.toString();\n}\n\n// Create formatted message with timestamp\nmsg.payload = timestamp + \": \" + data;\n\n// Store to a flow context array for history\nlet history = flow.get(\"serialHistory\") || [];\nhistory.push(msg.payload);\n\n// Keep only last 100 messages\nif (history.length > 100) {\n    history.shift();\n}\nflow.set(\"serialHistory\", history);\n\n// Send full history to the UI\nmsg.history = history;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 2000,
+        "wires": [
+            [
+                "e325316be2be59b9"
+            ]
+        ]
+    },
+    {
+        "id": "02d22987781d2a3e",
+        "type": "switch",
+        "z": "e94c626482ce1678",
+        "g": "41bdcbcd7ebcea36",
+        "name": "Route Commands",
+        "property": "sendToSerial",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1510,
+        "y": 2000,
+        "wires": [
+            [
+                "a49b1c8e619264c6",
+                "715587307afdb2f8"
+            ],
+            [
+                "6616a007982dec59"
+            ]
+        ]
+    },
+    {
+        "id": "a49b1c8e619264c6",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "g": "41bdcbcd7ebcea36",
+        "name": "Format Outgoing Command",
+        "func": "// Format the outgoing command\nlet command = msg.payload;\n\n// If the command doesn't end with a newline, add one\nif (!command.endsWith('\\n')) {\n    command += '\\n';\n}\n\n// Prepare the message for the serial output node\nmsg.payload = command;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1840,
+        "y": 2000,
+        "wires": [
+            [
+                "426e4b7fe86a20e6"
+            ]
+        ]
+    },
+    {
+        "id": "715587307afdb2f8",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "g": "41bdcbcd7ebcea36",
+        "name": "Log Command to Console",
+        "func": "// Get the current time for timestamping\nconst now = new Date();\nconst timestamp = now.toLocaleTimeString();\n\n// Format the command with a special indicator\nconst formattedCommand = timestamp + \": [SENT] \" + msg.payload;\n\n// Add to history\nlet history = flow.get(\"serialHistory\") || [];\nhistory.push(formattedCommand);\n\n// Keep only last 100 messages\nif (history.length > 100) {\n    history.shift();\n}\nflow.set(\"serialHistory\", history);\n\n// Return the updated history\nreturn { history: history };",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1840,
+        "y": 2060,
+        "wires": [
+            [
+                "e325316be2be59b9"
+            ]
+        ]
+    },
+    {
+        "id": "6616a007982dec59",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "g": "41bdcbcd7ebcea36",
+        "name": "Clear Console Handler",
+        "func": "if (msg.clear) {\n    // Clear the history\n    flow.set(\"serialHistory\", []);\n    \n    // Reset the UI\n    return {history: []};\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1840,
+        "y": 2120,
+        "wires": [
+            [
+                "e325316be2be59b9"
+            ]
+        ]
+    },
+    {
+        "id": "a79f8550fdce34d8",
+        "type": "debug",
+        "z": "e94c626482ce1678",
+        "g": "ffe1c5040894ce28",
+        "name": "PLC Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1810,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "103b0c8543b09e0a",
+        "type": "inject",
+        "z": "e94c626482ce1678",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1080,
+        "y": 560,
+        "wires": [
+            [
+                "28e1f513cc81028a"
+            ]
+        ]
+    },
+    {
+        "id": "0723ef8adff56e5e",
+        "type": "debug",
+        "z": "e94c626482ce1678",
+        "name": "InfluxDB Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1600,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7b436b774e831fac",
+        "type": "inject",
+        "z": "e94c626482ce1678",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 1390,
+        "y": 500,
+        "wires": [
+            [
+                "e51b1eff212022c4"
+            ]
+        ]
+    },
+    {
+        "id": "e09dbbed3e35a482",
+        "type": "inject",
+        "z": "e94c626482ce1678",
+        "name": "Test Data",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"motor1\":{\"lauft\":true,\"bereitschaft\":false,\"storung\":false,\"stop\":false,\"rl\":true,\"ll\":false,\"geschwindigkeit\":1700},\"motor2\":{\"lauft\":false,\"bereitschaft\":true,\"storung\":false,\"stop\":true,\"rl\":false,\"ll\":false,\"geschwindigkeit\":100},\"motor3\":{\"lauft\":false,\"bereitschaft\":false,\"storung\":true,\"stop\":true,\"rl\":false,\"ll\":false,\"geschwindigkeit\":0},\"notAus\":false,\"aliveCounter\":25,\"getAlive\":25}",
+        "payloadType": "json",
+        "x": 1300,
+        "y": 840,
+        "wires": [
+            [
+                "f943764a2b6e1138",
+                "b7cfdca4c8a076ae",
+                "4ab510f1055e302c",
+                "a56eede99d6970de"
+            ]
+        ]
+    },
+    {
+        "id": "f943764a2b6e1138",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "PLC Parsing Motor2",
+        "func": "let plcData = msg.payload.motor2\n\n\nmsg.payload = {\n    measurement: \"plc_data\",\n    fields: {\n\n        lauft: plcData.lauft,\n        bereitschaft: plcData.bereitschaft,\n        storung: plcData.dtorung,\n        rl: plcData.rl,\n        stop: plcData.stop,\n        ll: plcData.ll,\n        geschwindigkeit: plcData.geschwindigkeit,\n\n    },\n    tags: {\n        motor: \"motor2\",\n        system: \"plc\"\n    }\n};\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 920,
+        "wires": [
+            [
+                "0723ef8adff56e5e"
+            ]
+        ]
+    },
+    {
+        "id": "4ab510f1055e302c",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "PLC Parsing Motor1",
+        "func": "let plcData = msg.payload.motor1\n\n\nmsg.payload = {\n    measurement: \"plc_data\",\n    fields: {\n\n        lauft: plcData.lauft,\n        bereitschaft: plcData.bereitschaft,\n        storung: plcData.storung,\n        rl: plcData.rl,\n        stop: plcData.stop,\n        ll: plcData.ll,\n        geschwindigkeit: plcData.geschwindigkeit,\n\n    },\n    tags: {\n        motor: \"motor1\",\n        system: \"plc\"\n    }\n};\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 960,
+        "wires": [
+            [
+                "0723ef8adff56e5e"
+            ]
+        ]
+    },
+    {
+        "id": "b7cfdca4c8a076ae",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "PLC Parsing Motor3",
+        "func": "let plcData = msg.payload.motor3\n\n\nmsg.payload = {\n    measurement: \"plc_data\",\n    fields: {\n\n        lauft: plcData.lauft,\n        bereitschaft: plcData.bereitschaft,\n        storung: plcData.dtorung,\n        rl: plcData.rl,\n        stop: plcData.stop,\n        ll: plcData.ll,\n        geschwindigkeit: plcData.geschwindigkeit,\n\n    },\n    tags: {\n        motor: \"motor3\",\n        system: \"plc\"\n    }\n};\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 880,
+        "wires": [
+            [
+                "0723ef8adff56e5e"
+            ]
+        ]
+    },
+    {
+        "id": "a56eede99d6970de",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "PLC Parsing Others",
+        "func": "let plcData = msg.payload\n\n\nmsg.payload = {\n    measurement: \"plc_data\",\n    fields: {\n\n        notAus: plcData.notAus,\n        aliveCounter: plcData.aliveCounter,\n        getAlive: plcData.getAlive,\n\n    },\n    tags: {\n        system: \"plc\"\n    }\n};\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 1000,
+        "wires": [
+            [
+                "0723ef8adff56e5e"
+            ]
+        ]
+    },
+    {
+        "id": "34b2d84544be0f08",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "PCB Parsing powerInfo",
+        "func": "var pcbData = msg.payload.power;\n\nmsg.payload = [{\n    measurement: \"pcb_data\",\n    fields: {\n\n        busVoltage: pcbData.busVoltage,\n        loadVoltage: pcbData.loadVoltage,\n        shuntVoltage: pcbData.shuntVoltage,\n        current: pcbData.current,\n        power: pcbData.power\n\n    },\n    tags: {\n        sensor: \"power\",\n        system: \"pcb\"\n    }\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 660,
+        "wires": [
+            [
+                "d68bb17f7d5d37c5"
+            ]
+        ]
+    },
+    {
+        "id": "d542d0b32d62cddb",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "PCB Parsing tempInfo",
+        "func": "var pcbData = msg.payload.temperature; \n\nmsg.payload = [{\n    measurement: \"pcb_data\",\n    fields: {\n\n        motorTemp: pcbData.motorDriverTemp,\n        motorTempAlert: pcbData.motorDriverTempAlert,\n        powerTemp: pcbData.powerUnitTemp,\n        powerTempAlert: pcbData.powerUnitTempAlert\n\n    },\n    tags: {\n        sensor: \"temp\",\n        system: \"pcb\"\n    }\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 700,
+        "wires": [
+            [
+                "d68bb17f7d5d37c5"
+            ]
+        ]
+    },
+    {
+        "id": "dd4b54bab3253a4f",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "PCB Parsing systemInfo",
+        "func": "var pcbData = msg.payload.systemMonitor; \n\nmsg.payload = [{\n    measurement: \"pcb_data\",\n    fields: {\n\n        cpuTemp: pcbData.cpuTemp,\n        uptime: pcbData.uptime,\n        uptime_format: pcbData.uptime_format,\n        cpuUsage: pcbData.cpuUsage,\n        ramFree: pcbData.ramFree,\n        ramTotal: pcbData.ramTotal,\n        psramFree: pcbData.psramFree,\n        psramTotal: pcbData.psramTotal,\n\n    },\n    tags: {\n        sensor: \"cpu\",\n        system: \"pcb\"\n    }\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 740,
+        "wires": [
+            [
+                "d68bb17f7d5d37c5"
+            ]
+        ]
+    },
+    {
+        "id": "fd2597e51342596c",
+        "type": "inject",
+        "z": "e94c626482ce1678",
+        "name": "Test Data",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"systemMonitor\":{\"cpuTemp\":55.2,\"uptime\":12345,\"uptime_format\":\"00:10:00\",\"cpuUsage\":35.7,\"ramFree\":156789,\"ramTotal\":2097152,\"psramFree\":456789,\"psramTotal\":8388608},\"power\":{\"busVoltage\":12.15,\"loadVoltage\":11.98,\"shuntVoltage\":0.05,\"current\":1.23,\"power\":14.73},\"temperature\":{\"powerTemp\":48.1,\"powerTempAlert\":false,\"motorTemp\":42.5,\"motorTempAlert\":false}}",
+        "payloadType": "json",
+        "x": 1300,
+        "y": 620,
+        "wires": [
+            [
+                "34b2d84544be0f08",
+                "d542d0b32d62cddb",
+                "dd4b54bab3253a4f"
+            ]
+        ]
+    },
+    {
+        "id": "3e57dd8dc13eb3f0",
+        "type": "inject",
+        "z": "e94c626482ce1678",
+        "name": "All Data",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"motors\":{\"motor1\":{\"direction\":\"STOPPED\",\"speed\":0},\"motor2\":{\"direction\":\"STOPPED\",\"speed\":0},\"motor3\":{\"direction\":\"STOPPED\",\"speed\":0},\"motor4\":{\"direction\":\"STOPPED\",\"speed\":0}},\"leds\":{\"port0\":\"0b0\",\"port1\":\"0b0\"},\"temperature\":{\"motorDriverTemp\":25.81,\"motorDriverTempAlert\":false,\"powerUnitTemp\":26.44,\"powerUnitTempAlert\":false},\"power\":{\"busVoltage\":0.82,\"shuntVoltage\":-0.01,\"loadVoltage\":0.82,\"current\":0.1,\"power\":0},\"sensorConfig\":{\"autoSensorReadings\":false,\"sensorUpdate\":true,\"sensorUpdateInterval\":5},\"systemMonitor\":{\"cpuTemp\":26.2,\"uptime\":\"00:00:19\",\"cpuUsage\":12163.4,\"ramFree\":2366.3,\"ramTotal\":413.8,\"psramFree\":2045.8,\"psramTotal\":2046},\"taskMonitor\":[{\"taskName\":\"CommandTask\",\"state\":\"Run\",\"cpuUsage\":0.1,\"stackFree\":1704},{\"taskName\":\"IDLE1\",\"state\":\"Rdy\",\"cpuUsage\":48.2,\"stackFree\":788},{\"taskName\":\"IDLE0\",\"state\":\"Rdy\",\"cpuUsage\":47.7,\"stackFree\":688}],\"stopSwitch\":{\"pin1Triggered\":false,\"pin2Triggered\":true}}",
+        "payloadType": "json",
+        "x": 630,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be5af525ff7137d0",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "Sensor Werte trennung",
+        "func": "let state = context.get('state') || {\n  motors: {\n    motor1: {}, motor2: {}, motor3: {}, motor4: {}\n  },\n  leds: {},\n  temperature: {},\n  power: {},\n  sensorConfig: {},\n  stopSwitch: {}\n};\n\nlet line = msg.payload.trim();\n\nfunction isComplete(data) {\n  return (\n    Object.keys(data.motors.motor1).length &&\n    Object.keys(data.motors.motor2).length &&\n    Object.keys(data.motors.motor3).length &&\n    Object.keys(data.motors.motor4).length &&\n    data.temperature.motorDriverTemp !== undefined &&\n    data.temperature.powerUnitTemp !== undefined &&\n    data.power.busVoltage !== undefined &&\n    data.power.current !== undefined &&\n    data.power.power !== undefined &&\n    data.sensorConfig.autoSensorReadings !== undefined &&\n    data.sensorConfig.sensorUpdate !== undefined\n  );\n}\n\n\nif (/^M\\d: Direction:/.test(line)) {\n  const match = line.match(/^M(\\d): Direction: (\\w+)\\s+Speed: (\\d+)%/);\n  if (match) {\n    const motorIndex = `motor${match[1]}`;\n    const direction = match[2];\n    const speed = parseInt(match[3]);\n\n    if (!state.motors) state.motors = {};\n    state.motors[motorIndex] = { direction, speed };\n  }\n} else if (/^Port \\d:/.test(line)) {\n  const match = line.match(/^Port (\\d): (0b[01]+)/);\n  if (match) {\n    const portKey = `port${match[1]}`;\n    const value = match[2];\n\n    if (!state.leds) state.leds = {};\n    state.leds[portKey] = value;\n  }\n} else if (line.includes(\"Motor Driver Temp:\")) {\n  const m = line.match(/([\\d.]+).*Alert:\\s+(YES|NO)/);\n  if (m) {\n    state.temperature.motorDriverTemp = parseFloat(m[1]);\n    state.temperature.motorDriverTempAlert = m[2] === \"YES\";\n  }\n} else if (line.includes(\"Power Unit Temp:\")) {\n  const m = line.match(/([\\d.]+).*Alert:\\s+(YES|NO)/);\n  if (m) {\n    state.temperature.powerUnitTemp = parseFloat(m[1]);\n    state.temperature.powerUnitTempAlert = m[2] === \"YES\";\n  }\n} else if (/^Motor Driver Temp:/.test(line)) {\n  const match = line.match(/^Motor Driver Temp:\\s+([\\d.]+)\\s+°C \\(Alert: (YES|NO)\\)/);\n  if (match) {\n    if (!state.temperature) state.temperature = {};\n    state.temperature.motorDriverTemp = parseFloat(match[1]);\n    state.temperature.motorDriverTempAlert = match[2] === \"YES\";\n  }\n} else if (/^Power Unit Temp:/.test(line)) {\n  const match = line.match(/^Power Unit Temp:\\s+([\\d.]+)\\s+°C \\(Alert: (YES|NO)\\)/);\n  if (match) {\n    if (!state.temperature) state.temperature = {};\n    state.temperature.powerUnitTemp = parseFloat(match[1]);\n    state.temperature.powerUnitTempAlert = match[2] === \"YES\";\n  }\n} else if (/^Bus Voltage:/.test(line)) {\n  const match = line.match(/^Bus Voltage:\\s+(-?[\\d.]+)\\s+V/);\n  if (match) {\n    if (!state.power) state.power = {};\n    state.power.busVoltage = parseFloat(match[1]);\n  }\n} else if (/^Shunt Voltage:/.test(line)) {\n  const match = line.match(/^Shunt Voltage:\\s+(-?[\\d.]+)\\s+mV/);\n  if (match) {\n    if (!state.power) state.power = {};\n    state.power.shuntVoltage = parseFloat(match[1]);\n  }\n} else if (/^Load Voltage:/.test(line)) {\n  const match = line.match(/^Load Voltage:\\s+(-?[\\d.]+)\\s+V/);\n  if (match) {\n    if (!state.power) state.power = {};\n    state.power.loadVoltage = parseFloat(match[1]);\n  }\n} else if (/^Current:/.test(line)) {\n  const match = line.match(/^Current:\\s+(-?[\\d.]+)\\s+mA/);\n  if (match) {\n    if (!state.power) state.power = {};\n    state.power.current = parseFloat(match[1]);\n  }\n} else if (/^Power:/.test(line)) {\n  const match = line.match(/^Power:\\s+(-?[\\d.]+)\\s+mW/);\n  if (match) {\n    if (!state.power) state.power = {};\n    state.power.power = parseFloat(match[1]);\n  }\n} else if (/^AUTO SENSOR READINGS:/.test(line)) {\n  const match = line.match(/^AUTO SENSOR READINGS:\\s+(Enabled|Disabled)/);\n  if (match) {\n    if (!state.sensorConfig) state.sensorConfig = {};\n    state.sensorConfig.autoSensorReadings = match[1] === \"Enabled\";\n  }\n} else if (/^\\s*Interval:\\s+(\\d+)\\s+seconds/.test(line) && state.sensorConfig?.autoSensorReadings === true && !state.sensorConfig.autoSensorReadingsInterval) {\n  const match = line.match(/^\\s*Interval:\\s+(\\d+)\\s+seconds/);\n  if (match) {\n    state.sensorConfig.autoSensorReadingsInterval = parseInt(match[1]);\n  }\n} else if (/^SENSOR UPDATE:/.test(line)) {\n  const match = line.match(/^SENSOR UPDATE:\\s+(Enabled|Disabled)/);\n  if (match) {\n    if (!state.sensorConfig) state.sensorConfig = {};\n    state.sensorConfig.sensorUpdate = match[1] === \"Enabled\";\n  }\n} else if (/^\\s*Interval:\\s+(\\d+)\\s+seconds/.test(line) && state.sensorConfig?.sensorUpdate === true) {\n  const match = line.match(/^\\s*Interval:\\s+(\\d+)\\s+seconds/);\n  if (match) {\n    state.sensorConfig.sensorUpdateInterval = parseInt(match[1]);\n  }\n} else if (/^Pin 1 Triggered:/.test(line)) {\n  const match = line.match(/^Pin 1 Triggered:\\s+(Yes|No)/);\n  if (match) {\n    if (!state.stopSwitch) state.stopSwitch = {};\n    state.stopSwitch.pin1Triggered = match[1] === \"Yes\";\n  }\n} else if (/^Pin 2 Triggered:/.test(line)) {\n  const match = line.match(/^Pin 2 Triggered:\\s+(Yes|No)/);\n  if (match) {\n    if (!state.stopSwitch) state.stopSwitch = {};\n    state.stopSwitch.pin2Triggered = match[1] === \"Yes\";\n  }\n}\n\nif (isComplete(state)) {\n  context.set('state', null);\n  msg.payload = state;\n  return msg;\n}\n\ncontext.set('state', state);\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 700,
+        "wires": [
+            [
+                "34b2d84544be0f08",
+                "d542d0b32d62cddb"
+            ]
+        ]
+    },
+    {
+        "id": "580291f246f47313",
+        "type": "split",
+        "z": "e94c626482ce1678",
+        "name": "Split by Newline",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 700,
+        "y": 740,
+        "wires": [
+            [
+                "684102f263c7809b",
+                "be5af525ff7137d0"
+            ]
+        ]
+    },
+    {
+        "id": "684102f263c7809b",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "Sensor Werte trennung SystemInfo",
+        "func": "\nlet state = context.get('state') || {\n  systemMonitor: {},\n  taskMonitor: []\n};\n\nlet line = msg.payload.trim();\n\n\nfunction isComplete(data) {\n  return (\n    data.systemMonitor.cpuTemp !== undefined &&\n    data.systemMonitor.uptime_format !== undefined &&\n    data.systemMonitor.uptime !== undefined &&\n    data.systemMonitor.cpuUsage !== undefined &&\n    data.systemMonitor.ramTotal !== undefined &&\n    data.systemMonitor.psramTotal !== undefined &&\n    data.taskMonitor.length >= 1\n  );\n}\n\nif (/^Temperature:\\s+([\\d.]+)°/.test(line)) {\n  const match = line.match(/^Temperature:\\s+([\\d.]+)°/);\n  if (match) {\n    state.systemMonitor.cpuTemp = parseFloat(match[1]);\n  }\n} else if (/^Uptime-Format:\\s+(\\d{2}:\\d{2}:\\d{2})/.test(line)) {\n  const match = line.match(/^Uptime-Format:\\s+(\\d{2}:\\d{2}:\\d{2})/);\n  if (match) {\n    state.systemMonitor.uptime_format = match[1];\n  }\n} else if (/^Uptime:\\s+(\\d+)/.test(line)) {\n  const match = line.match(/^Uptime:\\s+(\\d+)/);\n  if (match) {\n    state.systemMonitor.uptime = parseInt(match[1]);\n  }\n} else if (/^CPU Usage.*:\\s+([\\d.]+)%/.test(line)) {\n  const match = line.match(/^CPU Usage.*:\\s+([\\d.]+)%/);\n  if (match) {\n    state.systemMonitor.cpuUsage = parseFloat(match[1]);\n  }\n} else if (/^RAM:\\s+Free:\\s+([\\d.]+)kB\\s+\\|\\s+Min:\\s+([\\d.]+)kB\\s+\\|\\s+Total:\\s+([\\d.]+)kB/.test(line)) {\n  const match = line.match(/^RAM:\\s+Free:\\s+([\\d.]+)kB\\s+\\|\\s+Min:\\s+([\\d.]+)kB\\s+\\|\\s+Total:\\s+([\\d.]+)kB/);\n  if (match) {\n    state.systemMonitor.ramFree = parseFloat(match[1]);\n    state.systemMonitor.ramTotal = parseFloat(match[3]);\n  }\n} else if (/^PSRAM:\\s+Free:\\s+([\\d.]+)kB\\s+\\|\\s+Total:\\s+([\\d.]+)kB/.test(line)) {\n  const match = line.match(/^PSRAM:\\s+Free:\\s+([\\d.]+)kB\\s+\\|\\s+Total:\\s+([\\d.]+)kB/);\n  if (match) {\n    state.systemMonitor.psramFree = parseFloat(match[1]);\n    state.systemMonitor.psramTotal = parseFloat(match[2]);\n  }\n} else if (/^\\s*(\\S.*?)\\s{2,}(\\w{3})\\s+([\\d.]+)%\\s+(\\d+)\\s*B/.test(line)) {\n  const match = line.match(/^\\s*(\\S.*?)\\s{2,}(\\w{3})\\s+([\\d.]+)%\\s+(\\d+)\\s*B/);\n  if (match) {\n    const task = {\n      taskName: match[1].trim(),\n      state: match[2],\n      cpuUsage: parseFloat(match[3]),\n      stackFree: parseInt(match[4])\n    };\n\n    if (!state.taskMonitor) state.taskMonitor = [];\n\n    // Prevent duplicates on every line by checking if it's already added\n    const exists = state.taskMonitor.some(t => t.taskName === task.taskName);\n    if (!exists) state.taskMonitor.push(task);\n  }\n}\n\nif (isComplete(state)) {\n  context.set('state', null);\n  msg.payload = state;\n  return msg;\n}\n\n\ncontext.set('state', state);\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 740,
+        "wires": [
+            [
+                "dd4b54bab3253a4f"
+            ]
+        ]
+    },
+    {
+        "id": "b41b6c2716e400a5",
+        "type": "inject",
+        "z": "e94c626482ce1678",
+        "g": "ffe1c5040894ce28",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "6",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "MONITOR",
+        "payloadType": "str",
+        "x": 1810,
+        "y": 1840,
+        "wires": [
+            [
+                "29b1f32476af0d08"
+            ]
+        ]
+    },
+    {
+        "id": "2cba5b353949752a",
+        "type": "inject",
+        "z": "e94c626482ce1678",
+        "g": "ffe1c5040894ce28",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "STATUS",
+        "payloadType": "str",
+        "x": 1820,
+        "y": 1800,
+        "wires": [
+            [
+                "29b1f32476af0d08"
+            ]
+        ]
+    },
+    {
+        "id": "1504988edb5c3e6d",
+        "type": "ui_button",
+        "z": "e94c626482ce1678",
+        "g": "129ba6b7aac4eaaa",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M1 LL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "LL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 2040,
+        "wires": [
+            [
+                "9a4291056b6f71ef"
+            ]
+        ]
+    },
+    {
+        "id": "02a65bc86cb73522",
+        "type": "ui_button",
+        "z": "e94c626482ce1678",
+        "g": "129ba6b7aac4eaaa",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M1 RL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "RL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 2080,
+        "wires": [
+            [
+                "9a4291056b6f71ef"
+            ]
+        ]
+    },
+    {
+        "id": "466ae1f8d6b5703e",
+        "type": "ui_button",
+        "z": "e94c626482ce1678",
+        "g": "129ba6b7aac4eaaa",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "M1 STOP",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "STOP",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 300,
+        "y": 2020,
+        "wires": [
+            [
+                "9a4291056b6f71ef"
+            ]
+        ]
+    },
+    {
+        "id": "a0051877da1f325d",
+        "type": "ui_button",
+        "z": "e94c626482ce1678",
+        "g": "dfad3e1a5b3918ac",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 11,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M2 LL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "LL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 2260,
+        "wires": [
+            [
+                "92c9790fa507dd5e"
+            ]
+        ]
+    },
+    {
+        "id": "e5c0a7854870da46",
+        "type": "ui_button",
+        "z": "e94c626482ce1678",
+        "g": "dfad3e1a5b3918ac",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 14,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M2 RL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "RL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 2300,
+        "wires": [
+            [
+                "92c9790fa507dd5e"
+            ]
+        ]
+    },
+    {
+        "id": "59b8120a6c66fca0",
+        "type": "ui_button",
+        "z": "e94c626482ce1678",
+        "g": "dfad3e1a5b3918ac",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "M2 STOP",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "STOP",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 300,
+        "y": 2240,
+        "wires": [
+            [
+                "92c9790fa507dd5e"
+            ]
+        ]
+    },
+    {
+        "id": "946d6fd4870ef883",
+        "type": "ui_button",
+        "z": "e94c626482ce1678",
+        "g": "a9f3ecd4a89ea0b9",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 19,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M3 LL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "LL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 2480,
+        "wires": [
+            [
+                "f0e2753bfbd1fea1"
+            ]
+        ]
+    },
+    {
+        "id": "33428859915cc1e6",
+        "type": "ui_button",
+        "z": "e94c626482ce1678",
+        "g": "a9f3ecd4a89ea0b9",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 22,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "M3 RL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "RL",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 2520,
+        "wires": [
+            [
+                "f0e2753bfbd1fea1"
+            ]
+        ]
+    },
+    {
+        "id": "697d9de7a4a3492a",
+        "type": "ui_button",
+        "z": "e94c626482ce1678",
+        "g": "a9f3ecd4a89ea0b9",
+        "name": "",
+        "group": "840a1d041e3dd48d",
+        "order": 18,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "M3 STOP",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "STOP",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 300,
+        "y": 2460,
+        "wires": [
+            [
+                "f0e2753bfbd1fea1"
+            ]
+        ]
+    },
+    {
+        "id": "541312dad5f73fb7",
+        "type": "ui_slider",
+        "z": "e94c626482ce1678",
+        "d": true,
+        "g": "d34e4063979e3cb4",
+        "name": "",
+        "label": "AUTO auslesung",
+        "tooltip": "",
+        "group": "3b6da19da6f23286",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 990,
+        "y": 2400,
+        "wires": [
+            [
+                "d26cd9090233f711"
+            ]
+        ]
+    },
+    {
+        "id": "938279345ddd8ce9",
+        "type": "ui_slider",
+        "z": "e94c626482ce1678",
+        "g": "129ba6b7aac4eaaa",
+        "name": "",
+        "label": "M1 speed",
+        "tooltip": "",
+        "group": "840a1d041e3dd48d",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "40",
+        "step": 1,
+        "className": "",
+        "x": 300,
+        "y": 2100,
+        "wires": [
+            [
+                "9a4291056b6f71ef"
+            ]
+        ]
+    },
+    {
+        "id": "fe969f786d088bf9",
+        "type": "ui_slider",
+        "z": "e94c626482ce1678",
+        "g": "dfad3e1a5b3918ac",
+        "name": "",
+        "label": "M2 speed",
+        "tooltip": "",
+        "group": "840a1d041e3dd48d",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "35",
+        "step": 1,
+        "className": "",
+        "x": 300,
+        "y": 2320,
+        "wires": [
+            [
+                "92c9790fa507dd5e"
+            ]
+        ]
+    },
+    {
+        "id": "7301f97258551e8b",
+        "type": "ui_slider",
+        "z": "e94c626482ce1678",
+        "g": "a9f3ecd4a89ea0b9",
+        "name": "",
+        "label": "M3 speed",
+        "tooltip": "",
+        "group": "840a1d041e3dd48d",
+        "order": 23,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "50",
+        "step": 1,
+        "className": "",
+        "x": 300,
+        "y": 2540,
+        "wires": [
+            [
+                "f0e2753bfbd1fea1"
+            ]
+        ]
+    },
+    {
+        "id": "d9d82170a127ce2a",
+        "type": "ui_text",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "group": "3b6da19da6f23286",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "BUS Spannung:",
+        "format": "{{msg.payload}} V",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1900,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "aa65840aa05528ce",
+        "type": "ui_text",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "group": "3b6da19da6f23286",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Strom ",
+        "format": "{{msg.payload}} mA",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1870,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "742783c3ae06c30d",
+        "type": "ui_text",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "group": "3b6da19da6f23286",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Motor Treiber Temp:",
+        "format": "{{msg.payload}} °C",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1920,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a21cd30028cb382d",
+        "type": "ui_text",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "group": "3b6da19da6f23286",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Shunt Spannung:",
+        "format": "{{msg.payload}} mV",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1910,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "825adc27f8543950",
+        "type": "ui_text",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "group": "3b6da19da6f23286",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Last Spannung:",
+        "format": "{{msg.payload}} V",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1900,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "296977e619771522",
+        "type": "ui_text",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "group": "3b6da19da6f23286",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Leistung:",
+        "format": "{{msg.payload}} mW",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1880,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "14c0a6d51a9f2ba0",
+        "type": "ui_text",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "group": "3b6da19da6f23286",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Power Unit Temp:",
+        "format": "{{msg.payload}} °C",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1910,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "269a187aed5fc2f2",
+        "type": "ui_chart",
+        "z": "e94c626482ce1678",
+        "g": "79cad7884d421845",
+        "name": "",
+        "group": "3b6da19da6f23286",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatur Evolution in °C",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1940,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e325316be2be59b9",
+        "type": "ui_template",
+        "z": "e94c626482ce1678",
+        "g": "41bdcbcd7ebcea36",
+        "group": "b0dca42869a7c055",
+        "name": "Serial Console",
+        "order": 1,
+        "width": 12,
+        "height": 8,
+        "format": "<div class=\"serial-console\">\n    <div class=\"console-header\">\n        <h3>Serial Console</h3>\n        <button ng-click=\"send({clear: true})\" class=\"md-button md-raised\">Clear Console</button>\n    </div>\n    <div class=\"console-output\" id=\"console-output\">\n        <div ng-repeat=\"line in msg.history track by $index\" class=\"console-line\">{{line}}</div>\n    </div>\n    <div class=\"console-input-container\">\n        <form ng-submit=\"sendCommand()\">\n            <div class=\"input-wrapper\">\n                <input type=\"text\" ng-model=\"command\" placeholder=\"Type command and press Enter\" class=\"console-input\" />\n                <button type=\"submit\" class=\"send-button md-button md-raised\">Send</button>\n            </div>\n        </form>\n    </div>\n</div>\n\n<style>\n    .serial-console {\n        display: flex;\n        flex-direction: column;\n        height: 100%;\n        font-family: monospace;\n        background-color: #1e1e1e;\n        color: #f0f0f0;\n        border-radius: 4px;\n        overflow: hidden;\n    }\n    \n    .console-header {\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        padding: 8px 12px;\n        background-color: #333;\n        border-bottom: 1px solid #555;\n    }\n    \n    .console-header h3 {\n        margin: 0;\n        color: #fff;\n    }\n    \n    .console-output {\n        flex-grow: 1;\n        padding: 10px;\n        overflow-y: auto;\n        max-height: calc(100% - 110px);\n    }\n    \n    .console-line {\n        padding: 2px 0;\n        border-bottom: 1px solid rgba(255, 255, 255, 0.05);\n        white-space: pre-wrap;\n        word-break: break-all;\n    }\n    \n    .console-input-container {\n        padding: 10px;\n        background-color: #2a2a2a;\n        border-top: 1px solid #444;\n    }\n    \n    .input-wrapper {\n        display: flex;\n        width: 100%;\n    }\n    \n    .console-input {\n        flex-grow: 1;\n        padding: 8px 12px;\n        background-color: #333;\n        color: white;\n        border: 1px solid #555;\n        border-radius: 4px;\n        font-family: monospace;\n        font-size: 14px;\n    }\n    \n    .send-button {\n        margin-left: 8px;\n        background-color: #2196F3;\n        color: white;\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.command = '';\n        \n        scope.sendCommand = function() {\n            if (scope.command.trim() !== '') {\n                scope.send({payload: scope.command, sendToSerial: true});\n                scope.command = '';\n            }\n        };\n        \n        scope.$watch('msg', function(msg) {\n            if (msg && msg.clear) {\n                scope.send({payload: 'clear', clear: true});\n                return;\n            }\n            \n            // Auto scroll to bottom when new data arrives\n            if (msg && msg.history) {\n                setTimeout(function() {\n                    var consoleOutput = document.getElementById('console-output');\n                    if (consoleOutput) {\n                        consoleOutput.scrollTop = consoleOutput.scrollHeight;\n                    }\n                }, 10);\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1360,
+        "y": 2080,
+        "wires": [
+            [
+                "02d22987781d2a3e"
+            ]
+        ]
+    },
+    {
+        "id": "2cc5ea5a0f5839f8",
+        "type": "serial in",
+        "z": "e94c626482ce1678",
+        "name": "ESP32 Ser.In",
+        "serial": "63b2f7db16f84e07",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "153623f00e636540"
+            ]
+        ]
+    },
+    {
+        "id": "84e0c14e128294d4",
+        "type": "serial out",
+        "z": "e94c626482ce1678",
+        "name": "ESP32 Ser.Out",
+        "serial": "63b2f7db16f84e07",
+        "x": 2820,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "e51b1eff212022c4",
+        "type": "influxdb out",
+        "z": "e94c626482ce1678",
+        "influxdb": "2f62cbdf545d77b0",
+        "name": "Test",
+        "measurement": "test",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "main",
+        "bucket": "test",
+        "x": 1530,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "d68bb17f7d5d37c5",
+        "type": "influxdb batch",
+        "z": "e94c626482ce1678",
+        "influxdb": "2f62cbdf545d77b0",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "main",
+        "bucket": "Rosterei-Packstation",
+        "x": 1590,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "28e1f513cc81028a",
+        "type": "influxdb in",
+        "z": "e94c626482ce1678",
+        "influxdb": "2f62cbdf545d77b0",
+        "name": "",
+        "query": "from(bucket: \"rasp-pi\")\n    |> range(start: -1000s)\n    |> filter(fn: (r) => r[\"_measurement\"] == \"temp\")\n    |> aggregateWindow(every: 10s, fn: mean, createEmpty: false)\n    |> yield(name: \"mean\")",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "main",
+        "x": 1250,
+        "y": 560,
+        "wires": [
+            [
+                "0723ef8adff56e5e"
+            ]
+        ]
+    },
+    {
+        "id": "4e404ccb3080d9f5",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "ffe1c5040894ce28",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "aliveCounter",
+        "diff": true,
+        "name": "",
+        "x": 1390,
+        "y": 1720,
+        "wires": [
+            [
+                "0b76fa54693c5429",
+                "bc8bce6a39324187"
+            ]
+        ]
+    },
+    {
+        "id": "bc8bce6a39324187",
+        "type": "s7 out",
+        "z": "e94c626482ce1678",
+        "g": "ffe1c5040894ce28",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "sendAlive",
+        "name": "",
+        "x": 1820,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8b27d5c40eaa8a8",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 Lauft",
+        "diff": false,
+        "name": "",
+        "x": 2000,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55421aa772d03dcc",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 Bereitschaft",
+        "diff": false,
+        "name": "",
+        "x": 1980,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5978323b632272e4",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 Storung",
+        "diff": false,
+        "name": "",
+        "x": 1990,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1dcd5d8149ec491a",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 RL",
+        "diff": false,
+        "name": "",
+        "x": 2010,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f544996107e94275",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 Stop",
+        "diff": false,
+        "name": "",
+        "x": 2000,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "341871a9c2438201",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 LL",
+        "diff": false,
+        "name": "",
+        "x": 2010,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b73d0058626f5564",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 Lauft",
+        "diff": false,
+        "name": "",
+        "x": 2180,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4472f06bd66cce5e",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 Bereitschaft",
+        "diff": false,
+        "name": "",
+        "x": 2160,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9912b95cfad2bf7",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 Storung",
+        "diff": false,
+        "name": "",
+        "x": 2170,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cc1d0d5af608cc54",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 RL",
+        "diff": false,
+        "name": "",
+        "x": 2190,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c17a243ae2c4f9c3",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 Stop",
+        "diff": false,
+        "name": "",
+        "x": 2180,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7317ea420c408ebb",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 LL",
+        "diff": false,
+        "name": "",
+        "x": 2210,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a61a2c41132e156",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 Lauft",
+        "diff": false,
+        "name": "",
+        "x": 2360,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b78920241658a51f",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 Bereitschaft",
+        "diff": false,
+        "name": "",
+        "x": 2340,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5bc89343b7ba1ae",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 Storung",
+        "diff": false,
+        "name": "",
+        "x": 2350,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aaf16f339ea164b6",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 RL",
+        "diff": false,
+        "name": "",
+        "x": 2370,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "71969fed7044d1fd",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 Stop",
+        "diff": false,
+        "name": "",
+        "x": 2360,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19bfca5a78fc3272",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 LL",
+        "diff": false,
+        "name": "",
+        "x": 2370,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a859c92bdf1b7e31",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M1 Speed",
+        "diff": false,
+        "name": "",
+        "x": 2000,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6420a562175e8a9d",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M2 Speed",
+        "diff": false,
+        "name": "",
+        "x": 2180,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12d3d11361e8c272",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "g": "bbf139d1b1cc1513",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "M3 Speed",
+        "diff": false,
+        "name": "",
+        "x": 2360,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b4435e574db45ed",
+        "type": "s7 out",
+        "z": "e94c626482ce1678",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "voltage",
+        "name": "",
+        "x": 2340,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c49b999f835b8472",
+        "type": "s7 out",
+        "z": "e94c626482ce1678",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "current",
+        "name": "",
+        "x": 2340,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69abbd1907c049b4",
+        "type": "s7 out",
+        "z": "e94c626482ce1678",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "motorTemp",
+        "name": "",
+        "x": 2350,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4299c3fabdc86cde",
+        "type": "s7 out",
+        "z": "e94c626482ce1678",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "motorTempAlert",
+        "name": "",
+        "x": 2360,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "44df3bb16370b337",
+        "type": "s7 out",
+        "z": "e94c626482ce1678",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "powerTemp",
+        "name": "",
+        "x": 2350,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a9360e8fe756951",
+        "type": "s7 out",
+        "z": "e94c626482ce1678",
+        "endpoint": "2f5c17fc00a05617",
+        "variable": "powerTempAlert",
+        "name": "",
+        "x": 2360,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e94bfa3dff02dc7e",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "single",
+        "variable": "notAus",
+        "diff": true,
+        "name": "",
+        "x": 1670,
+        "y": 1340,
+        "wires": [
+            [
+                "72dd2ac371d7b2d8"
+            ]
+        ]
+    },
+    {
+        "id": "6fece908cb2ea937",
+        "type": "inject",
+        "z": "e94c626482ce1678",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "10.0",
+        "payloadType": "num",
+        "x": 2350,
+        "y": 100,
+        "wires": [
+            [
+                "4b4435e574db45ed",
+                "c49b999f835b8472",
+                "69abbd1907c049b4",
+                "44df3bb16370b337"
+            ]
+        ]
+    },
+    {
+        "id": "6ad8a8b440a9d1ea",
+        "type": "s7 in",
+        "z": "e94c626482ce1678",
+        "endpoint": "2f5c17fc00a05617",
+        "mode": "all",
+        "variable": "M1 Lauft",
+        "diff": false,
+        "name": "",
+        "x": 1680,
+        "y": 1400,
+        "wires": [
+            [
+                "ee02c17e28699c45",
+                "1e43c427d1fe69d6"
+            ]
+        ]
+    },
+    {
+        "id": "5be5017ebb057eb3",
+        "type": "debug",
+        "z": "e94c626482ce1678",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2380,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "4e7d6add6ffa7db5",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "function 2",
+        "func": "// Hilfsfunktion: LED-Befehl erzeugen\nfunction ledCommand(ledNumber, state) {\n    return \"LED:\" + ledNumber + \":\" + (state ? \"ON\" : \"OFF\");\n}\n\nlet data = msg.payload;\nlet output = [];\n\n// --- Motor 1 ---\nif (data[\"M1 RL\"]) {\n    output.push(\"M1:RL:\" + data[\"M1 Speed\"]);\n} else if (data[\"M1 LL\"]) {\n    output.push(\"M1:LL:\" + data[\"M1 Speed\"]);\n} else if (data[\"M1 Stop\"]) {\n    output.push(\"M1:STOP\");\n}\n\n// LEDs für M1\noutput.push(ledCommand(1, data[\"M1 Bereitschaft\"]));  // LED 1\noutput.push(ledCommand(2, data[\"M1 Lauft\"]));         // LED 2\noutput.push(ledCommand(3, data[\"M1 Storung\"]));       // LED 3\n\n// --- Motor 2 ---\nif (data[\"M2 RL\"]) {\n    output.push(\"M2:RL:\" + data[\"M2 Speed\"]);\n} else if (data[\"M2 LL\"]) {\n    output.push(\"M2:LL:\" + data[\"M2 Speed\"]);\n} else if (data[\"M2 Stop\"]) {\n    output.push(\"M2:STOP\");\n}\n\n// LEDs für M2\noutput.push(ledCommand(4, data[\"M2 Bereitschaft\"]));  // LED 4\noutput.push(ledCommand(5, data[\"M2 Lauft\"]));         // LED 5\noutput.push(ledCommand(6, data[\"M2 Storung\"]));       // LED 6\n\n// --- Motor 3 ---\nif (data[\"M3 RL\"]) {\n    output.push(\"M3:RL:\" + data[\"M3 Speed\"]);\n} else if (data[\"M3 LL\"]) {\n    output.push(\"M3:LL:\" + data[\"M3 Speed\"]);\n} else if (data[\"M3 Stop\"]) {\n    output.push(\"M3:STOP\");\n}\n\n// LEDs für M3\noutput.push(ledCommand(7, data[\"M3 Bereitschaft\"]));  // LED 7\noutput.push(ledCommand(8, data[\"M3 Lauft\"]));         // LED 8\noutput.push(ledCommand(9, data[\"M3 Storung\"]));       // LED 9\n\n// Jedes Kommando einzeln senden → mehrere Nachrichten erzeugen\nreturn output.map(cmd => ({ payload: cmd + \"\\n\" }));\n",
+        "outputs": 1,
+        "timeout": "0",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8dcca45474939ec",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "function 5",
+        "func": "// === KONFIGURATION ===\nconst delayBetweenCommands = 500; // ms\nconst resendInterval = 8000;      // ms\n\n// Hole Zustand aus Kontext\nlet lastState = context.get(\"lastState\") || {};\nlet lastSendTime = context.get(\"lastSendTime\") || 0;\nlet sendQueue = context.get(\"sendQueue\") || [];\nlet sending = context.get(\"sending\") || false;\n\n// Neue Daten und Zeit\nlet data = msg.payload;\nlet now = Date.now();\n\n// --- Hilfsfunktionen ---\nfunction ledCommand(ledNumber, state) {\n    return \"LED:\" + ledNumber + \":\" + (state ? \"ON\" : \"OFF\");\n}\nfunction hasChanged(key) {\n    return data[key] !== lastState[key];\n}\nfunction enqueue(cmd) {\n    sendQueue.push(cmd + \"\\n\");\n}\nfunction processQueue() {\n    if (sending || sendQueue.length === 0) return;\n\n    sending = true;\n    context.set(\"sending\", true);\n\n    function sendNext() {\n        if (sendQueue.length === 0) {\n            sending = false;\n            context.set(\"sending\", false);\n            return;\n        }\n\n        let cmd = sendQueue.shift();\n        node.send({ payload: cmd });\n\n        context.set(\"sendQueue\", sendQueue);\n        setTimeout(sendNext, delayBetweenCommands);\n    }\n\n    sendNext();\n}\n\n// === Generiere neue Befehle, wenn Änderungen oder Zeitablauf ===\nlet commandsGenerated = false;\nif ((now - lastSendTime > resendInterval)) {\n    commandsGenerated = true;\n} else {\n    // Prüfe ob etwas sich geändert hat\n    const relevantKeys = [\n        \"M1 RL\", \"M1 LL\", \"M1 Stop\", \"M1 Speed\",\n        \"M2 RL\", \"M2 LL\", \"M2 Stop\", \"M2 Speed\",\n        \"M3 RL\", \"M3 LL\", \"M3 Stop\", \"M3 Speed\",\n        \"M1 Bereitschaft\", \"M1 Lauft\", \"M1 Storung\",\n        \"M2 Bereitschaft\", \"M2 Lauft\", \"M2 Storung\",\n        \"M3 Bereitschaft\", \"M3 Lauft\", \"M3 Storung\"\n    ];\n    for (let key of relevantKeys) {\n        if (hasChanged(key)) {\n            commandsGenerated = true;\n            break;\n        }\n    }\n}\n\nif (commandsGenerated) {\n    // Motor 1\n    if (data[\"M1 RL\"]) enqueue(\"M1:RL:\" + data[\"M1 Speed\"]);\n    else if (data[\"M1 LL\"]) enqueue(\"M1:LL:\" + data[\"M1 Speed\"]);\n    else if (data[\"M1 Stop\"]) enqueue(\"M1:STOP\");\n\n    // Motor 2\n    if (data[\"M2 RL\"]) enqueue(\"M2:RL:\" + data[\"M2 Speed\"]);\n    else if (data[\"M2 LL\"]) enqueue(\"M2:LL:\" + data[\"M2 Speed\"]);\n    else if (data[\"M2 Stop\"]) enqueue(\"M2:STOP\");\n\n    // Motor 3\n    if (data[\"M3 RL\"]) enqueue(\"M3:RL:\" + data[\"M3 Speed\"]);\n    else if (data[\"M3 LL\"]) enqueue(\"M3:LL:\" + data[\"M3 Speed\"]);\n    else if (data[\"M3 Stop\"]) enqueue(\"M3:STOP\");\n\n    // LED-Mapping\n    const leds = [\n        { key: \"M1 Bereitschaft\", led: 1 },\n        { key: \"M1 Lauft\",        led: 2 },\n        { key: \"M1 Storung\",      led: 3 },\n        { key: \"M2 Bereitschaft\", led: 4 },\n        { key: \"M2 Lauft\",        led: 5 },\n        { key: \"M2 Storung\",      led: 6 },\n        { key: \"M3 Bereitschaft\", led: 7 },\n        { key: \"M3 Lauft\",        led: 8 },\n        { key: \"M3 Storung\",      led: 9 }\n    ];\n    leds.forEach(entry => {\n        enqueue(ledCommand(entry.led, data[entry.key]));\n    });\n\n    // Speichere Zustand\n    context.set(\"lastState\", data);\n    context.set(\"lastSendTime\", now);\n    context.set(\"sendQueue\", sendQueue);\n\n    // Starte Verarbeitung der Queue\n    processQueue();\n}\n\n// nichts zurückgeben, da node.send() intern genutzt wird\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "1000",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee02c17e28699c45",
+        "type": "trigger",
+        "z": "e94c626482ce1678",
+        "name": "",
+        "op1": "",
+        "op2": "",
+        "op1type": "pay",
+        "op2type": "payl",
+        "duration": "1000",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1780,
+        "y": 1480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e92504fa20a880c",
+        "type": "delay",
+        "z": "e94c626482ce1678",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "1000",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "0.5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": true,
+        "outputs": 1,
+        "x": 2610,
+        "y": 2280,
+        "wires": [
+            [
+                "84e0c14e128294d4",
+                "bbed7b85e7ac9654"
+            ]
+        ]
+    },
+    {
+        "id": "05fa500c95129639",
+        "type": "inject",
+        "z": "e94c626482ce1678",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 2350,
+        "y": 140,
+        "wires": [
+            [
+                "4299c3fabdc86cde",
+                "1a9360e8fe756951"
+            ]
+        ]
+    },
+    {
+        "id": "1e43c427d1fe69d6",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "No Leds + Motor",
+        "func": "// === KONFIGURATION ===\nconst delayBetweenCommands = 500; // ms\n\n// Kontextdaten laden\nlet lastState = context.get(\"lastState\") || {};\nlet lastMotorSendTime = context.get(\"lastMotorSendTime\") || 0;\nlet highPrioQueue = context.get(\"highPrioQueue\") || [];\nlet lowPrioQueue = context.get(\"lowPrioQueue\") || [];\nlet sending = context.get(\"sending\") || false;\n\n// Neue Daten\nlet data = msg.payload;\nlet now = Date.now();\n\n// === Hilfsfunktionen ===\nfunction hasChanged(key) {\n    return data[key] !== lastState[key];\n}\nfunction enqueue(queue, cmd) {\n    queue.push(cmd + \"\\n\");\n}\nfunction processQueue() {\n    if (sending || (highPrioQueue.length === 0 && lowPrioQueue.length === 0)) return;\n\n    sending = true;\n    context.set(\"sending\", true);\n\n    function sendNext() {\n        let cmd = null;\n\n        if (highPrioQueue.length > 0) {\n            cmd = highPrioQueue.shift();\n        } else if (lowPrioQueue.length > 0) {\n            cmd = lowPrioQueue.shift();\n        }\n\n        if (cmd) {\n            node.send({ payload: cmd });\n            context.set(\"highPrioQueue\", highPrioQueue);\n            context.set(\"lowPrioQueue\", lowPrioQueue);\n            setTimeout(sendNext, delayBetweenCommands);\n        } else {\n            sending = false;\n            context.set(\"sending\", false);\n        }\n    }\n\n    sendNext();\n}\n\n// === MOTORBEFEHLE: M1, M2, M3 ===\n[\"M1\", \"M2\", \"M3\"].forEach(motor => {\n    const rl = data[`${motor} RL`];\n    const ll = data[`${motor} LL`];\n    const speed = data[`${motor} Speed`] || 0;\n\n    const changed = [\"RL\", \"LL\", \"Speed\"].some(k => hasChanged(`${motor} ${k}`));\n\n    if (changed) {\n        if (rl) {\n            enqueue(highPrioQueue, `${motor}:RL:${speed}`);\n        } else if (ll) {\n            enqueue(highPrioQueue, `${motor}:LL:${speed}`);\n        } else {\n            enqueue(highPrioQueue, `${motor}:STOP`);\n        }\n    }\n});\n\n// === Kontext speichern ===\ncontext.set(\"lastState\", data);\ncontext.set(\"lastMotorSendTime\", now);\ncontext.set(\"highPrioQueue\", highPrioQueue);\ncontext.set(\"lowPrioQueue\", lowPrioQueue);\n\n// === Queue starten ===\nprocessQueue();\n\n// Kein direkter Output (node.send wird intern aufgerufen)\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "1000",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 1400,
+        "wires": [
+            [
+                "6d356f94afe4426a"
+            ]
+        ]
+    },
+    {
+        "id": "c52e0fc7ba8569cf",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "LED + Motors",
+        "func": "// === KONFIGURATION ===\nconst delayBetweenCommands = 500; // ms\n\n// Kontextdaten\nlet lastState = context.get(\"lastState\") || {};\nlet lastMotorSendTime = context.get(\"lastMotorSendTime\") || 0;\nlet lastLEDSendTime = context.get(\"lastLEDSendTime\") || 0;\nlet highPrioQueue = context.get(\"highPrioQueue\") || [];\nlet lowPrioQueue = context.get(\"lowPrioQueue\") || [];\nlet sending = context.get(\"sending\") || false;\n\n// Neue Daten\nlet data = msg.payload;\nlet now = Date.now();\n\n// Hilfsfunktionen\nfunction ledCommand(ledNumber, state) {\n    return \"LED:\" + ledNumber + \":\" + (state ? \"ON\" : \"OFF\");\n}\nfunction hasChanged(key) {\n    return data[key] !== lastState[key];\n}\nfunction enqueue(queue, cmd) {\n    queue.push(cmd + \"\\n\");\n}\n\n// Verarbeitung (mit Priorisierung)\nfunction processQueue() {\n    if (sending || (highPrioQueue.length === 0 && lowPrioQueue.length === 0)) return;\n\n    sending = true;\n    context.set(\"sending\", true);\n\n    function sendNext() {\n        let cmd = null;\n\n        if (highPrioQueue.length > 0) {\n            cmd = highPrioQueue.shift();\n        } else if (lowPrioQueue.length > 0) {\n            cmd = lowPrioQueue.shift();\n        }\n\n        if (cmd) {\n            node.send({ payload: cmd });\n            context.set(\"highPrioQueue\", highPrioQueue);\n            context.set(\"lowPrioQueue\", lowPrioQueue);\n            setTimeout(sendNext, delayBetweenCommands);\n        } else {\n            sending = false;\n            context.set(\"sending\", false);\n        }\n    }\n\n    sendNext();\n}\n\n// === MOTOR-BEFEHLE ===\nlet motorKeys = [\n    \"M1 RL\", \"M1 LL\", \"M1 Stop\", \"M1 Speed\",\n    \"M2 RL\", \"M2 LL\", \"M2 Stop\", \"M2 Speed\",\n    \"M3 RL\", \"M3 LL\", \"M3 Stop\", \"M3 Speed\"\n];\n\nlet motorChanged = motorKeys.some(hasChanged);\nif (motorChanged) {\n    // M1\n    if (data[\"M1 RL\"]) enqueue(highPrioQueue, \"M1:RL:\" + data[\"M1 Speed\"]);\n    else if (data[\"M1 LL\"]) enqueue(highPrioQueue, \"M1:LL:\" + data[\"M1 Speed\"]);\n    else if (data[\"M1 Stop\"]) enqueue(highPrioQueue, \"M1:STOP\");\n\n    // M2\n    if (data[\"M2 RL\"]) enqueue(highPrioQueue, \"M2:RL:\" + data[\"M2 Speed\"]);\n    else if (data[\"M2 LL\"]) enqueue(highPrioQueue, \"M2:LL:\" + data[\"M2 Speed\"]);\n    else if (data[\"M2 Stop\"]) enqueue(highPrioQueue, \"M2:STOP\");\n\n    // M3\n    if (data[\"M3 RL\"]) enqueue(highPrioQueue, \"M3:RL:\" + data[\"M3 Speed\"]);\n    else if (data[\"M3 LL\"]) enqueue(highPrioQueue, \"M3:LL:\" + data[\"M3 Speed\"]);\n    else if (data[\"M3 Stop\"]) enqueue(highPrioQueue, \"M3:STOP\");\n\n    lastMotorSendTime = now;\n}\n\n// === LED-BEFEHLE ===\nlet ledEntries = [\n    { key: \"M1 Bereitschaft\", led: 1 },\n    { key: \"M1 Lauft\",        led: 2 },\n    { key: \"M1 Storung\",      led: 3 },\n    { key: \"M2 Bereitschaft\", led: 4 },\n    { key: \"M2 Lauft\",        led: 5 },\n    { key: \"M2 Storung\",      led: 6 },\n    { key: \"M3 Bereitschaft\", led: 7 },\n    { key: \"M3 Lauft\",        led: 8 },\n    { key: \"M3 Storung\",      led: 9 },\n];\n\nlet ledsChanged = ledEntries.some(entry => hasChanged(entry.key));\nif (ledsChanged) {\n    ledEntries.forEach(entry => {\n        enqueue(lowPrioQueue, ledCommand(entry.led, data[entry.key]));\n    });\n    lastLEDSendTime = now;\n}\n\n// === SPEICHERN ===\ncontext.set(\"lastState\", data);\ncontext.set(\"lastMotorSendTime\", lastMotorSendTime);\ncontext.set(\"lastLEDSendTime\", lastLEDSendTime);\ncontext.set(\"highPrioQueue\", highPrioQueue);\ncontext.set(\"lowPrioQueue\", lowPrioQueue);\n\n// Starte Queue\nprocessQueue();\n\n// Kein direkter Output – wird über node.send() intern gemacht\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "1000",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2140,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b76fa54693c5429",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "g": "ffe1c5040894ce28",
+        "name": "Speichert Alive Wert - PLC",
+        "func": "// Eingehender Alive-Wert\nlet alive = Number(msg.payload);\nif (isNaN(alive)) return null;\n\n// Im Flow-Kontext speichern\nflow.set(\"alive_current_plc\", alive);\nflow.set(\"alive_time_plc\", Date.now());\n\nreturn null; // Kein Output nötig\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"alive_current_plc\", 0);\nflow.set(\"alive_time_plc\", 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "defe036b1f74c005",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "g": "ffe1c5040894ce28",
+        "name": "Connection - PLC",
+        "func": "const now = Date.now();\nconst lastValue = flow.get(\"alive_last\") || 0;\nconst currentValue = flow.get(\"alive_current_plc\") || 0;\nconst lastTime = flow.get(\"alive_time_plc\") || 0;\n\n// Default = keine Erhöhung → false\nlet state = false;\n\n// Prüfen, ob sich Wert erhöht hat\nif (currentValue > lastValue) {\n    state = true;\n    flow.set(\"alive_last\", currentValue);\n}\n\n// Wenn seit X Sekunden gar kein Wert empfangen wurde → auch false\nif ((now - lastTime) > 2000) {\n    state = false;\n}\n\nif (state) {\n    node.status({fill: \"green\", shape: \"dot\", text: \"Connected\"});\n} else {\n    node.status({fill: \"red\", shape: \"ring\", text: \"Disconnected\"});\n}\n\n// Immer senden, jede Sekunde\nreturn {\n    payload: state,\n    topic: \"connection/plc\"\n};\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"alive_last\", 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 1830,
+        "y": 1600,
+        "wires": [
+            [
+                "a79f8550fdce34d8"
+            ]
+        ]
+    },
+    {
+        "id": "e82d54b5e64d8788",
+        "type": "inject",
+        "z": "e94c626482ce1678",
+        "g": "ffe1c5040894ce28",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1610,
+        "y": 1600,
+        "wires": [
+            [
+                "defe036b1f74c005"
+            ]
+        ]
+    },
+    {
+        "id": "10ba2b150d381c15",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "No Leds + Motor",
+        "func": "// === KONFIGURATION ===\nconst delayBetweenCommands = 500; // ms\n\n// Kontextdaten\nlet lastState = context.get(\"lastState\") || {};\nlet lastMotorSendTime = context.get(\"lastMotorSendTime\") || 0;\nlet highPrioQueue = context.get(\"highPrioQueue\") || [];\nlet lowPrioQueue = context.get(\"lowPrioQueue\") || [];\nlet sending = context.get(\"sending\") || false;\n\n// Neue Daten\nlet data = msg.payload;\nlet now = Date.now();\n\nfunction hasChanged(key) {\n    return data[key] !== lastState[key];\n}\nfunction enqueue(queue, cmd) {\n    queue.push(cmd + \"\\n\");\n}\n\n// Verarbeitung (mit Priorisierung)\nfunction processQueue() {\n    if (sending || (highPrioQueue.length === 0 && lowPrioQueue.length === 0)) return;\n\n    sending = true;\n    context.set(\"sending\", true);\n\n    function sendNext() {\n        let cmd = null;\n\n        if (highPrioQueue.length > 0) {\n            cmd = highPrioQueue.shift();\n        } else if (lowPrioQueue.length > 0) {\n            cmd = lowPrioQueue.shift();\n        }\n\n        if (cmd) {\n            node.send({ payload: cmd });\n            context.set(\"highPrioQueue\", highPrioQueue);\n            context.set(\"lowPrioQueue\", lowPrioQueue);\n            setTimeout(sendNext, delayBetweenCommands);\n        } else {\n            sending = false;\n            context.set(\"sending\", false);\n        }\n    }\n\n    sendNext();\n}\n\n// === MOTOR-BEFEHLE ===\nlet motorKeys = [\n    \"M1 RL\", \"M1 LL\", \"M1 Stop\", \"M1 Speed\",\n    \"M2 RL\", \"M2 LL\", \"M2 Stop\", \"M2 Speed\",\n    \"M3 RL\", \"M3 LL\", \"M3 Stop\", \"M3 Speed\"\n];\n\nlet motorChanged = motorKeys.some(hasChanged);\nif (motorChanged) {\n    // M1\n    if (data[\"M1 RL\"]) enqueue(highPrioQueue, \"M1:RL:\" + data[\"M1 Speed\"]);\n    else if (data[\"M1 LL\"]) enqueue(highPrioQueue, \"M1:LL:\" + data[\"M1 Speed\"]);\n    else if (data[\"M1 Stop\"]) enqueue(highPrioQueue, \"M1:STOP\");\n\n    // M2\n    if (data[\"M2 RL\"]) enqueue(highPrioQueue, \"M2:RL:\" + data[\"M2 Speed\"]);\n    else if (data[\"M2 LL\"]) enqueue(highPrioQueue, \"M2:LL:\" + data[\"M2 Speed\"]);\n    else if (data[\"M2 Stop\"]) enqueue(highPrioQueue, \"M2:STOP\");\n\n    // M3\n    if (data[\"M3 RL\"]) enqueue(highPrioQueue, \"M3:RL:\" + data[\"M3 Speed\"]);\n    else if (data[\"M3 LL\"]) enqueue(highPrioQueue, \"M3:LL:\" + data[\"M3 Speed\"]);\n    else if (data[\"M3 Stop\"]) enqueue(highPrioQueue, \"M3:STOP\");\n\n    lastMotorSendTime = now;\n}\n\n\n\n// === SPEICHERN ===\ncontext.set(\"lastState\", data);\ncontext.set(\"lastMotorSendTime\", lastMotorSendTime);\ncontext.set(\"highPrioQueue\", highPrioQueue);\ncontext.set(\"lowPrioQueue\", lowPrioQueue);\n\n// Starte Queue\nprocessQueue();\n\n// Kein direkter Output – wird über node.send() intern gemacht\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "1000",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1890,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72dd2ac371d7b2d8",
+        "type": "function",
+        "z": "e94c626482ce1678",
+        "name": "",
+        "func": "if (msg.payload === true) {\n    msg.payload = \"STOP\";\n    return msg;\n} else {\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1940,
+        "y": 1340,
+        "wires": [
+            [
+                "6d356f94afe4426a"
+            ]
+        ]
+    }
+]

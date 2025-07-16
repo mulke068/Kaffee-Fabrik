@@ -1,0 +1,4 @@
+Use sensors or feedback signals (e.g., Hall effect, encoders) to determine motor states.
+Overcurrent protection for each motor driver using polyfuses or electronic current limiters.
+ESD protection diodes on inputs/outputs.
+Use a reverse-polarity protection diode (e.g., Schottky diode) on the 24V line.

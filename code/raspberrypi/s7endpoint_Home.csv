@@ -1,0 +1,30 @@
+DB50,X0.0;notAus
+DB50,X2.0;M1 Lauft
+DB50,X2.1;M1 Bereitschaft
+DB50,X2.2;M1 Storung
+DB50,X2.3;M1 RL
+DB50,X2.4;M1 Stop
+DB50,X2.5;M1 LL
+DB50,INT4;M1 Speed
+DB50,X6.0;M2 Lauft
+DB50,X6.1;M2 Bereitschaft
+DB50,X6.2;M2 Storung
+DB50,X6.3;M2 RL
+DB50,X6.4;M2 Stop
+DB50,X6.5;M2 LL
+DB50,INT8;M2 Speed
+DB50,X10.0;M3 Lauft
+DB50,X10.1;M3 Bereitschaft
+DB50,X10.2;M3 Storung
+DB50,X10.3;M3 RL
+DB50,X10.4;M3 Stop
+DB50,X10.5;M3 LL
+DB50,INT12;M3 Speed
+DB50,REAL14;voltage
+DB50,REAL18;current
+DB50,REAL22;motorTemp
+DB50,X26.0;motorTempAlert
+DB50,REAL28;powerTemp
+DB50,X32.0;powerTempAlert
+DB50,INT34;aliveCounter
+DB50,INT36;sendAlive
